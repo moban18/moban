@@ -1,0 +1,65 @@
+
+<extend name="User/Base/base" />
+
+<block name="main">
+    <div class="box">
+        <div class="blank"></div>
+        <div id="ur_here">
+            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+        </div>
+    </div>
+    <div class="block clearfix1">
+        <include file="User/Public/left"/>
+
+
+        <div class="AreaR">
+            <div class="AreaR_box">
+                <div class="AreaR_box_1">
+                    <div class="clearfix">
+                        <h5><span
+                                style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">个人资料</span>
+                        </h5>
+                        <div class="blank"></div>
+                        <ul id="userinfo">
+                            <li><a href="__CONTROLLER__/ziliao" >基本资料</a></li>
+                            <li><a href="__CONTROLLER__/tx" class="user_active">头像设置</a></li>
+                        </ul>
+
+                        <div id="user_info">
+                            <form action="" method="post" ENCTYPE="multipart/form-data">
+                            <div class="tx_box">
+                                <h2>从电脑中选择你喜欢的照片:</h2>
+                                <p>尺寸：200X200像素，你可以上传JPG、JPEG、GIF、PNG格式的图片。</p>
+                                <label><input id="file" type="file" name="file"/>选择图片</label>
+                                <input class="userinfo_submit" type="submit" value="确认修改"/>
+                            </div>
+
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+
+    </script>
+
+
+
+</block>
+
+
+
+
+
+
+
+
+
+

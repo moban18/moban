@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>Dashboard</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="ADMIN_CSS/bootstrap.css" rel="stylesheet">
+    <link href="ADMIN_CSS/font-awesome.css" rel="stylesheet">
+    <link href="ADMIN_CSS/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="ADMIN_CSS/beyond.css" rel="stylesheet" type="text/css">
+    <link href="ADMIN_CSS/demo.css" rel="stylesheet">
+    <link href="ADMIN_CSS/typicons.css" rel="stylesheet">
+    <link href="ADMIN_CSS/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+    <include file="Public/head"/>
+
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <include file="Public/left"/>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li>
+                        <a href="__CONTROLLER__/index">属性种类管理</a>
+                    </li>
+                                        <li class="active">添加属性种类</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">新增属性种类</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">属性种类名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control"  placeholder="" name="attrtype_name" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="ADMIN_CSS/jquery_002.js"></script>
+    <script src="ADMIN_CSS/bootstrap.js"></script>
+    <script src="ADMIN_CSS/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="ADMIN_CSS/beyond.js"></script>
+    
+
+
+</body></html>

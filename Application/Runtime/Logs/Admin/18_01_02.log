@@ -1,0 +1,88 @@
+[ 2018-01-02T09:50:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.6552s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:1.7784s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.6864s ]
+
+[ 2018-01-02T09:50:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0000s ]
+
+[ 2018-01-02T09:51:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/recycle_bin.html
+ERR: 非法操作:recycle_bin
+
+[ 2018-01-02T11:27:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:1.0608s ]
+
+[ 2018-01-02T11:27:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.2496s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.3900s ]
+
+[ 2018-01-02T12:12:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0060s ]
+
+[ 2018-01-02T12:17:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsIndustry/index
+ERR: XML标签语法错误 : condition="$v['top'] eq " /
+
+[ 2018-01-02T12:47:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsIndustry/vipedit
+ERR: 非法操作:vipedit
+
+[ 2018-01-02T12:47:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsIndustry/vipedit
+ERR: 非法操作:vipedit
+
+[ 2018-01-02T12:47:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsIndustry/vipedit
+ERR: 非法操作:vipedit
+
+[ 2018-01-02T12:59:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsIndustry/index3.html
+ERR: 非法操作:index3
+
+[ 2018-01-02T13:00:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsIndustry/index3.html
+ERR: 非法操作:index3
+
+[ 2018-01-02T14:31:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsColor/inde
+ERR: 非法操作:inde
+
+[ 2018-01-02T17:29:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0156s ]
+

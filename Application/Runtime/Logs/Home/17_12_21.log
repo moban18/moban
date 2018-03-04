@@ -1,0 +1,27 @@
+[ 2017-12-21T13:56:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/index
+ERR: 无法加载控制器:Regist
+
+[ 2017-12-21T13:56:47+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/index
+ERR: 无法加载控制器:Regist
+
+[ 2017-12-21T13:56:48+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/index
+ERR: 无法加载控制器:Regist
+
+[ 2017-12-21T13:57:34+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/index
+ERR: 无法加载控制器:Regist
+
+[ 2017-12-21T13:57:35+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/index
+ERR: 无法加载控制器:Regist
+
+[ 2017-12-21T13:57:35+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/index
+ERR: 无法加载控制器:Regist
+
+[ 2017-12-21T17:56:46+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%20void(0);
+ERR: 非法操作:javascript void(0);
+
+[ 2017-12-21T17:57:12+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-21T17:57:23+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+

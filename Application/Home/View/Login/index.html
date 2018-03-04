@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <include file="Public/head"/>
+</head>
+<script>
+    var Thinkphp={
+        'login':"__CONTROLLER__/login",
+    };
+</script>
+<body>
+
+<include file="Public/header"/>
+
+<div class="reg">
+
+        <div class="reg_top">
+            <div class="reg_box">
+                <h2>登陆</h2>
+                <p>与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分下载原创模板、精品源码、(兑换礼品正在开发中...)；分享原创代码赢取火币。</p>
+            </div>
+            <a href="###" >注册</a>
+        </div>
+        <div class="reg_mid">
+
+
+                <div class="reg_mid_left">
+                    <p>亲，您可以使用<span>以下帐号</span>直接登录素材火，无需注册</p>
+                    <div class="reg_mid_left_imgs">
+                        <a href="###">
+                            <div class="qq_login_img"></div>
+                            <div class="qq_login_txt">QQ</div>
+                        </a>
+                        <a href="###">
+                            <div class="weix_login_img"></div>
+                            <div class="weix_login_txt">微信</div>
+                        </a>
+                        <a href="###">
+                            <div class="weib_login_img"></div>
+                            <div class="weib_login_txt">微博</div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reg_mid_right">
+                    <div class="reg_mid_right_box">
+                        <div class="input_item">
+                            <div id="email_title" class="item_title ">邮箱</div>
+                            <input id="email" type="text" class="form_input " name="email"/>
+                            <span class="error" style="display:none;color:red;">不能为空</span>
+                            <i class="right_igon" style="display:none"></i>
+                            <span class='grey' style='display: inline-block;'>邮箱为登陆帐号</span>
+                        </div>
+
+                        <div class="input_item">
+                            <div id="password_title" class="item_title">密码</div>
+                            <input id="password" type="password" class="form_input" name="password"/>
+                            <span class="error" style="display:none;color:red;">不能为空</span>
+                            <i class="right_igon" style="display:none"></i>
+                            <span class='grey' style='display: none;'>6-20位</span>
+                        </div>
+                        <div class="input_item">
+                            <div id="verify_title" class="item_title">验证码</div>
+                            <input id="verify" type="text" class="form_input" name="verify"/>
+                            <span class="error" style="display:none;color:red;">不能为空</span>
+                            <i class="right_igon" style="display:none"></i>
+                            <div class="verify_img"><img src="__CONTROLLER__/veifiy_img_login" alt=""  onclick="this.src='__CONTROLLER__/veifiy_img_login/'+Math.random()"/></div>
+                        </div>
+
+
+
+                        <a href="javascript:void(0);" id="login" class="loginBottom">登录</a>
+                    </div>
+
+
+
+                </div>
+
+        </div>
+
+
+
+        <div class="reg_foot">
+            <div class="reg_foot_top">
+                <ul>
+                    <li>扒模板</li>
+                    <li>联系我们</li>
+                    <li>关于我们</li>
+                    <li>招纳贤士</li>
+                </ul>
+                <p>Copyright©2010-2017 All Rights Reserved. 苏ICP备15009298</p>
+            </div>
+            <div class="reg_foot_bot">
+                <a href="####"><img src="__PUBLIC__/images/qq-chat.png" alt=""/></a>
+                <span class="reg_foot_qgroup">qq群：35291327</span>
+                <span class="reg_foot_email">邮箱：416148489@qq.com</span>
+                <span class="reg_foot_phone">手机：18005151538</span>
+
+            </div>
+
+
+        </div>
+
+
+</div>
+</body>
+</html>

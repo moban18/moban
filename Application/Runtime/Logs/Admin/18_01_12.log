@@ -1,0 +1,441 @@
+[ 2018-01-12T11:05:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.4524s ]
+
+[ 2018-01-12T11:06:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.2184s ]
+
+[ 2018-01-12T11:30:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/add
+ERR: 1146:Table 'muban.muban_attr' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_attr`
+
+[ 2018-01-12T11:51:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/order_detail.html
+ERR: 非法操作:order_detail
+
+[ 2018-01-12T14:39:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/index
+ERR: 1054:Unknown column 'a.nav_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.attrtype,b.title FROM muban_attrtype a LEFT JOIN muban_nav b ON a.nav_id = b.id  LIMIT 0,10  
+
+[ 2018-01-12T15:10:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  LIMIT 0,10  
+
+[ 2018-01-12T15:11:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  
+
+[ 2018-01-12T15:13:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  LIMIT 0,10  
+
+[ 2018-01-12T15:13:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  LIMIT 0,10  
+
+[ 2018-01-12T15:13:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  LIMIT 0,10  
+
+[ 2018-01-12T15:13:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  
+
+[ 2018-01-12T15:14:59+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1054:Unknown column 'b.arrtname' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,b.arrtname FROM muban_attrs a LEFT JOIN muban_attr b ON a.attr_id=b.id  LIMIT 0,10  
+
+[ 2018-01-12T17:39:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T17:42:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-12T17:43:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T17:44:59+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Admin\Controller\GoodController.class.php 第 117 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T17:45:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T17:48:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T17:49:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T17:51:49+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=2 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T17:51:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:00:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T18:02:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:03:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:12:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:13:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:15:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:17:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=2 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:17:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-01-12T18:18:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-12T18:19:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE ( nav_id=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.041003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042003s ]
+
+[ 2018-01-12T18:22:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 2  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:22:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:23:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:24:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T18:28:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T18:29:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:29:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 2  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:29:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 4  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:30:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:31:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-12T18:31:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 3  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T18:31:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 4  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-01-12T18:35:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:36:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-12T18:37:45+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T18:40:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:43:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/recycle_bin.html
+ERR: 非法操作:recycle_bin
+
+[ 2018-01-12T18:44:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:44:49+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T18:45:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

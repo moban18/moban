@@ -1,0 +1,11 @@
+[ 2018-02-12T13:02:56+08:00 ] 127.0.0.1 /moban/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+
+[ 2018-02-12T17:44:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/User/index
+ERR: 1054:Unknown column 'b.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM moban_user a LEFT JOIN moban_vip ON a.user_viptype=b.id  
+
+[ 2018-02-12T17:46:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/User/index
+ERR: 1054:Unknown column 'b.vip_name' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.user_email,a.user_nick,a.user_ip,a.reg_time,a.log_time,a.log_num,a.user_lock,b.vip_name FROM moban_user a LEFT JOIN moban_vip ON a.user_viptype=b.id  
+

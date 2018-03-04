@@ -1,0 +1,121 @@
+[ 2018-01-11T09:48:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.8112s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0780s ]
+
+[ 2018-01-11T11:59:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/goods_viptype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_goods`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: goods_viptype D:\wamp\www\moban\Application\Admin\Controller\GoodsController.class.php 第 147 行.
+
+[ 2018-01-11T11:59:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/goods_viptype
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.2500s ]
+SQL: SELECT * FROM `muban_goods`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: goods_viptype D:\wamp\www\moban\Application\Admin\Controller\GoodsController.class.php 第 147 行.
+
+[ 2018-01-11T12:21:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 无法加载控制器:Goods
+
+[ 2018-01-11T12:36:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/add
+ERR: 无法加载控制器:Attrtype
+
+[ 2018-01-11T12:38:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/css/style.css
+ERR: 非法操作:css
+
+[ 2018-01-11T12:38:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/js/jquery.js
+ERR: 非法操作:js
+
+[ 2018-01-11T12:38:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/js/jquery.mCustomScrollbar.concat.min.js
+ERR: 非法操作:js
+
+[ 2018-01-11T12:38:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/js/ueditor.config.js
+ERR: 非法操作:js
+
+[ 2018-01-11T12:38:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrtype/js/ueditor.all.min.js
+ERR: 非法操作:js
+
+[ 2018-01-11T14:04:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: Think\Model:login_in方法不存在！
+
+[ 2018-01-11T14:04:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0020s ]
+
+[ 2018-01-11T14:04:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: Think\Model:login_in方法不存在！
+
+[ 2018-01-11T14:04:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: Think\Model:login_in方法不存在！
+
+[ 2018-01-11T14:07:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0100s ]
+
+[ 2018-01-11T14:07:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/index.html
+ERR: 模板不存在:./Application/Admin/View/Admin/index.html
+
+[ 2018-01-11T14:09:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0050s ]
+
+[ 2018-01-11T15:27:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/index
+ERR: 1054:Unknown column 'attrtype_id' in 'where clause'
+ [ SQL语句 ] : SELECT `typename` FROM `muban_attrtype` WHERE ( 1=1 AND attrtype_id='1' ) LIMIT 1  
+
+[ 2018-01-11T16:02:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/index
+ERR: 1054:Unknown column 'attrtype_id' in 'where clause'
+ [ SQL语句 ] : SELECT `typename` FROM `muban_attrtype` WHERE ( 1=1 AND attrtype_id='1' ) LIMIT 1  
+
+[ 2018-01-11T16:02:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/index
+ERR: 1054:Unknown column 'attrtype_id' in 'where clause'
+ [ SQL语句 ] : SELECT `typename` FROM `muban_attrtype` WHERE ( 1=1 AND attrtype_id='1' ) LIMIT 1  
+

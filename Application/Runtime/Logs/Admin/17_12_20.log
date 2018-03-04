@@ -1,0 +1,37 @@
+[ 2017-12-20T12:51:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:2.7612s ]
+
+[ 2017-12-20T12:51:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0000s ]
+
+[ 2017-12-20T12:51:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0156s ]
+
+[ 2017-12-20T13:31:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/index
+ERR: Think\Controller:get_action方法不存在！
+
+[ 2017-12-20T13:53:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/recycle_bin.html
+ERR: 非法操作:recycle_bin
+
+[ 2017-12-20T13:54:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/user_rank.html
+ERR: 非法操作:user_rank
+

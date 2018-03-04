@@ -1,0 +1,151 @@
+<div class="page-sidebar" id="sidebar">
+    <!-- Page Sidebar Header-->
+    <div class="sidebar-header-wrapper">
+        <input class="searchinput" type="text">
+        <i class="searchicon fa fa-search"></i>
+        <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+    </div>
+    <!-- /Page Sidebar Header -->
+    <!-- Sidebar Menu -->
+    <ul class="nav sidebar-menu">
+        <!--Dashboard-->
+        <li <if condition="$ac eq 'Admin' or $ac eq 'Cate' or $ac eq 'Article'"> class="open"</if> >
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-gear"></i>
+                <span class="menu-text">控制面版</span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li >
+
+                <a href="__MODULE__/Admin/index"><span class="menu-text">管理员管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="__MODULE__/Cate/index"><span class="menu-text">栏目  管理</span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="__MODULE__/Article/index"><span class="menu-text">文章  管理</span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <li <if condition="$ac eq 'Attrtype' or $ac eq 'Attr' or $ac eq 'Attrs' or $ac eq 'Goods' or $ac eq 'Search'"> class="open"</if> >
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-gear"></i>
+                <span class="menu-text">商品管理</span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="__MODULE__/goods/index">
+                                    <span class="menu-text">
+                                        商品管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="__MODULE__/Search/index">
+                                    <span class="menu-text">
+                                        商品搜索设置                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="__MODULE__/Attrtype/index">
+                                    <span class="menu-text">
+                                        商品种类管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="__MODULE__/Attr/index">
+                                    <span class="menu-text">
+                                        商品属性管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <li <if condition="$ac eq 'User'"> class="open"</if> >
+        <a href="#" class="menu-dropdown">
+            <i class="menu-icon fa fa-gear"></i>
+            <span class="menu-text">会员管理</span>
+            <i class="menu-expand"></i>
+        </a>
+        <ul class="submenu">
+            <li>
+                <a href="__MODULE__/User/index">
+                                    <span class="menu-text">
+                                        会员管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="__MODULE__/Search/index">
+                                    <span class="menu-text">
+                                        会员等级                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="__MODULE__/Attrtype/index">
+                                    <span class="menu-text">
+                                        商品种类管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="__MODULE__/Attr/index">
+                                    <span class="menu-text">
+                                        商品属性管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+
+        </ul>
+        </li>
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-gear"></i>
+
+                <span class="menu-text">
+                                系统                            </span>
+
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="/admin/user/index.html">
+                                    <span class="menu-text">
+                                        用户管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/auth_group/index.html">
+                                    <span class="menu-text">
+                                        角色管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/auth_rule/index.html">
+                                    <span class="menu-text">
+                                        权限列表                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+    </ul>
+    <!-- /Sidebar Menu -->
+</div>

@@ -1,0 +1,110 @@
+
+<extend name="User/Base/base" />
+
+<block name="main">
+    <div class="box">
+        <div class="blank"></div>
+        <div id="ur_here">
+            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+        </div>
+    </div>
+    <div class="block clearfix1">
+        <include file="User/Public/left"/>
+
+
+        <div class="AreaR">
+            <div class="AreaR_box">
+                <div class="AreaR_box_1">
+                    <div class="clearfix">
+                        <h5>
+                            <span style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">会员升级</span>
+                        </h5>
+                        <div id="buynote">
+                            <p><span>优惠活动</span></p>
+                            <p><span> 充200元以上送双倍积分，并立即赠送1个月会员，充的多送的多！！</span></p>
+                            <p><span>充300元永久VIP赠送50元积分</span></p>
+                            <p><span>充值若失败请联系管理员QQ416148489,立即送您双倍积分（PS：目前充值成功率100%）</span></p>
+                        </div>
+                        <div class="blank"></div>
+                        <form  method="post" action="__MODULE__/Buy/buyVip">
+                            <div class="formdata1">
+                                <table cellpadding="0">
+                                    <thead>
+                                    <tr>
+                                    <th>选择</th>
+                                    <th>产品名称</th>
+                                    <th>会员类型</th>
+                                    <th>时限(天)</th>
+                                    <th>价格</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="vips" id="v" key="k">
+                                    <tr <if condition="$k%2 eq 0">class="row0"<else />class="row1"</if>>
+                                        <td><input type="radio" name="vip_id" value="{$v.id}"/></td>
+                                        <td>本站{$v.vip_name}</td>
+                                        <td>{$v.vip_type}</td>
+                                        <td>{$v.vip_time}</td>
+                                        <td>{$v.vip_price}元</td>
+                                    </tr>
+                                    </volist>
+                                    </tbody>
+
+                                </table>
+                                <input class="userinfo_submit" type="submit" value="购买" style="margin: 20px 0"/>
+                            </div>
+                        </form>
+                        <form  method="post" action="__MODULE__/Buy/buyJbin#jbin">
+                            <div id="jbin" class="formdata2">
+                                <h2>购买金币（仅用于商业模板）:</h2>
+                                <table cellpadding="0">
+                                    <thead>
+                                    <tr>
+                                        <th>选择</th>
+                                        <th>点卡类型</th>
+                                        <th>金币数量</th>
+                                        <th>购买价格</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="jbins" id="v" key="k">
+                                    <tr <if condition="$k%2 eq 0">class="row0"<else />class="row1"</if>>
+                                        <td><input type="radio" name="jbin_id" value="{$v.id}"/> </td>
+                                        <td>{$v.jbin_type}金币</td>
+                                        <td>{$v.jbin_num}</td>
+                                        <td>{$v.jbin_price}元</td>
+                                    </tr>
+                                    </volist>
+                                    </tbody>
+
+                                </table>
+                                <input class="userinfo_submit" type="submit" value="购买" style="margin: 20px 0"/>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+
+    </script>
+
+
+
+</block>
+
+
+
+
+
+
+
+
+
+

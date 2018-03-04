@@ -1,0 +1,65 @@
+
+<extend name="User/Base/base" />
+
+<block name="main">
+    <div class="box">
+        <div class="blank"></div>
+        <div id="ur_here">
+            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+        </div>
+    </div>
+    <div class="block clearfix1">
+        <include file="User/Public/left"/>
+
+
+        <div class="AreaR">
+            <div class="AreaR_box">
+                <div class="AreaR_box_1">
+                    <div class="clearfix" >
+                        <font class="f5"><b class="f4">{$users.user_email}</b> 欢迎您回来 平台唯一客服QQ：188818310</font><br>
+                        <div class="blank"></div>
+                        您的上一次登录时间: <?php echo date('Y-m-d H:i:s',$users['log_time']);?><br>
+                        <div class="blank"></div>
+                        您的IP: <?php echo $_SERVER['REMOTE_ADDR']; ?> ，来自：<?php echo $location->province.$location->city;?><br>
+                        <div class="blank5"></div>
+                        您的等级是 <span style="color: #0090CE">{$users['vip_name']} </span> ，马上升级VIP <a style="color: #008000;text-decoration:underline" href="__CONTROLLER__/buy">点击这里</a> <br>
+                        <div class="blank5"></div>
+
+                        <div style="margin:5px 0; border:1px solid #f7dd98;padding:10px 20px; background-color:#0090CE; color:#fff">
+                            <img src="__PUBLIC__/images/note.gif" alt="">&nbsp;用户中心公告！           </div>
+                        <br><br>
+                        <div class="f_l" style="width:350px;">
+                            <h5><span>您的账户</span></h5>
+                            <div class="blank"></div>
+                            会员种类：<a href="__CONTROLLER__/buy">{$users['vip_name']}</a><br>
+                            金币余额：<a href="__CONTROLLER__/buy#jbin" style="color:#006bd0;">{$users['user_jbin']}</a><br>
+                            积&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：{$users['user_points']}积分<br>
+                        </div>
+                        <div class="f_r" style="width:350px;">
+                            <h5><span>用户提醒</span></h5>
+                            <div class="blank"></div>
+                            您最近30天内提交了<a href="__CONTROLLER__/myorder" style="color: #0090CE">&nbsp;0&nbsp;</a>个下载<br>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</block>
+
+
+
+
+
+
+
+
+
+

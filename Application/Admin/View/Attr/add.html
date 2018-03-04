@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>Dashboard</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="ADMIN_CSS/bootstrap.css" rel="stylesheet">
+    <link href="ADMIN_CSS/font-awesome.css" rel="stylesheet">
+    <link href="ADMIN_CSS/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="ADMIN_CSS/beyond.css" rel="stylesheet" type="text/css">
+    <link href="ADMIN_CSS/demo.css" rel="stylesheet">
+    <link href="ADMIN_CSS/typicons.css" rel="stylesheet">
+    <link href="ADMIN_CSS/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+    <include file="Public/head"/>
+
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <include file="Public/left"/>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li>
+                        <a href="__CONTROLLER__/index">属性管理</a>
+                    </li>
+                                        <li class="active">添加属性</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">编辑属性</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">属于种类：</label>
+                            <div class="col-sm-6">
+                                <select name="attrtype_id">
+                                    <option value=0>选择属性</option>
+                                    <volist name="attrtypes" id="v">
+                                    <option value="{$v.id}">{$v.attrtype_name}</option>
+                                    </volist>
+                                </select>
+
+                            </div>
+                            <p class="help-block col-sm-4 red"></p>
+                        </div>
+                        <div id="attr_id"></div>
+                        <div id="attrs"></div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">属性名称：</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="attr_name" placeholder="" name="attr_name" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">属性值：</label>
+                            <div class="col-sm-6">
+                                <textarea name="attr_value" style="width:800px;text-align: left;"></textarea>
+                            </div>
+                            <p class="help-block col-sm-4 red">多个值，英文状态下的逗号（','）隔开</p>
+                        </div>
+                         
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="ADMIN_CSS/jquery_002.js"></script>
+    <script src="ADMIN_CSS/bootstrap.js"></script>
+    <script src="ADMIN_CSS/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="ADMIN_CSS/beyond.js"></script>
+    <script>
+        $('select[name=attrtype_id]').change(function(){
+            var attrtype_id=$(this).val();
+            var div=$('#attr_id');
+            var html='';
+            div.html('');
+            $.ajax({
+                type:'post',
+                url:'__CONTROLLER__/getAttr',
+                data:{
+                    attrtype_id:attrtype_id
+                },
+                success:function(data){
+                    var a=eval(data);
+                    html='<div class="form-group">';
+                    html+='<label for="username" class="col-sm-2 control-label no-padding-right">属于属性：</label>';
+                    html+='<div class="col-sm-6"><select name="parent_id" onchange="getAttrs(this)">';
+                    html+='<option value=0>选择属性</option>';
+
+                    $(a).each(function(k,v){
+                        html+='<option value='+v.id+'>'+v.attr_name+'</option>';
+
+                    });
+                    html+='</select></div><p class="help-block col-sm-4 red">*这里不选择是代表没有子属性</p></div>';
+                    html+='<div class="form-group"> <label for="username" class="col-sm-2 control-label no-padding-right">是否有子集：</label> <div class="col-xs-4"> <label> <input class="checkbox-slider yesno" type="checkbox" name="is_attr" value="1"> <span class="text"></span> </label> </div> </div>'
+
+
+                    div.html(html);
+                }
+            });
+        });
+
+        function getAttrs(o){
+            var id=$(o).val();
+            var div=$('#attrs');
+            var html='';
+            var attrs=[];
+            div.html('');
+            $.ajax({
+                type:'post',
+                url:'__CONTROLLER__/getAttrs',
+                data:{
+                    id:id,
+                },
+                success:function(data){
+                    var a=eval(data);
+                    $(a).each(function(k,v){
+                        if(v.is_attr==1){
+                        attrs=v.attr_value.split(',');
+                        html='<div class="form-group">';
+                        html+='<label for="username" class="col-sm-2 control-label no-padding-right" style="color:#DA7632;">'+v.attr_name+'：</label>';
+                        html+='<div class="col-sm-6"><select name="attr_value" onchange="tostr(this.value)">';
+                        html+='<option value=0>选择子属性</option>';
+                        for (var i=0; i<attrs.length;i++) {
+                            html+='<option value='+attrs[i]+'>'+attrs[i]+'</option>';
+                        }
+                        html+='</select></div><p class="help-block col-sm-4 red">*如果选择了此项，则添加是子属性</p></div>'
+                        }else{
+                            html='';
+                        }
+                    });
+                    div.html(html);
+
+                }
+            });
+        }
+
+        function tostr(o){
+            var attr_name=$('#attr_name');
+            if(attr_name.val()){
+                attr_name.val('');
+            }
+            attr_name.val(o);
+        }
+
+    </script>
+
+
+</body></html>

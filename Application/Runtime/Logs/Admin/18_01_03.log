@@ -1,0 +1,151 @@
+[ 2018-01-03T09:57:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.1092s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0312s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+
+[ 2018-01-03T10:22:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/GoodsType/add
+ERR: 无法加载控制器:GoodsType
+
+[ 2018-01-03T11:18:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+ERR: 1146:Table 'muban.muban_good_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_good_type`
+
+[ 2018-01-03T13:58:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/APP_PATH./Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:APP_PATH
+
+[ 2018-01-03T13:58:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/APP_PATH./Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:APP_PATH
+
+[ 2018-01-03T14:00:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application//Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:00:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/APP_PATH./Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:APP_PATH
+
+[ 2018-01-03T14:01:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application//Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:01:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application//Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:02:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:03:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:03:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/__ROOTR__/Application/Extends/uploadify/jquery.uploadify.js
+ERR: 非法操作:__ROOTR__
+
+[ 2018-01-03T14:04:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:04:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:04:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:04:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:17:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:17:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514960225346
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:17:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514960225346
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:17:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:17:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514960237581
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:17:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514960237581
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:17:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:17:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514960271793
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:17:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514960271793
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:34:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/Application/Extends/uploadify/uploadify.css
+ERR: 非法操作:Application
+
+[ 2018-01-03T14:34:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961294185
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:34:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961294185
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:39:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961540544
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:39:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961540544
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:39:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961586558
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:39:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961586558
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:41:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961665393
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:41:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514961665393
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:55:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514962526919
+ERR: 非法操作:uploadify.swf
+
+[ 2018-01-03T14:55:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadify.swf?preventswfcaching=1514962526919
+ERR: 非法操作:uploadify.swf
+

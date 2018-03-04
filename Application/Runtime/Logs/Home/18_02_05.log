@@ -1,0 +1,8 @@
+[ 2018-02-05T17:07:16+08:00 ] 127.0.0.1 /moban/
+ERR: 1146:Table 'moban.moban_nav' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `moban_nav`
+
+[ 2018-02-05T17:07:24+08:00 ] 127.0.0.1 /moban/
+ERR: 1146:Table 'moban.moban_nav' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `moban_nav`
+

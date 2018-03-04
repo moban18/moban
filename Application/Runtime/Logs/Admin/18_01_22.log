@@ -1,0 +1,202 @@
+[ 2018-01-22T13:19:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:1.1388s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0156s ]
+
+[ 2018-01-22T13:29:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0030s ]
+
+[ 2018-01-22T13:29:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-22T13:29:49+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-22T13:30:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0010s ]
+
+[ 2018-01-22T13:30:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-22T13:30:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-22T13:30:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0020s ]
+
+[ 2018-01-22T13:30:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-22T13:30:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-22T13:35:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/recycle_bin.html
+ERR: 非法操作:recycle_bin
+
+[ 2018-01-22T14:08:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0790s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0150s ]
+
+[ 2018-01-22T14:10:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/add
+ERR: Think\Controller:navSort方法不存在！
+
+[ 2018-01-22T14:11:14+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/add
+ERR: Think\Controller:navsort方法不存在！
+
+[ 2018-01-22T14:11:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Nav/add
+ERR: Think\Controller:navsort方法不存在！
+
+[ 2018-01-22T17:46:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.6240s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0624s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.1248s ]
+
+[ 2018-01-22T17:48:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_attrtype` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `muban_attrtype` WHERE `nav_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-22T17:56:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:getAttrtype
+
+[ 2018-01-22T17:57:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:getAttrtype
+
+[ 2018-01-22T17:57:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:getAttrtype
+
+[ 2018-01-22T17:57:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getAttrtype/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:getAttrtype
+
+[ 2018-01-22T17:58:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-22T17:58:59+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 1  [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-22T18:00:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-22T18:04:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-22T18:05:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/%E9%80%89%E6%8B%A9%E6%A0%8F%E7%9B%AE
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-22T18:06:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-22T18:09:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-22T18:10:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/getSecnav/nav_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `muban_nav` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

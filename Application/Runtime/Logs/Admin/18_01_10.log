@@ -1,0 +1,114 @@
+[ 2018-01-10T12:02:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0060s ]
+
+[ 2018-01-10T12:08:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `vipname` FROM `muban_vip` WHERE ( id in () ) 
+
+[ 2018-01-10T12:08:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `vipname` FROM `muban_vip` WHERE ( id in () ) 
+
+[ 2018-01-10T12:09:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `vipname` FROM `muban_vip` WHERE ( id in () ) 
+
+[ 2018-01-10T12:09:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `vipname` FROM `muban_vip` WHERE ( id in () ) 
+
+[ 2018-01-10T12:09:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `vipname` FROM `muban_vip` WHERE ( id in () ) 
+
+[ 2018-01-10T12:09:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT `vipname` FROM `muban_vip` WHERE ( id in (,) ) 
+
+[ 2018-01-10T13:48:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0010s ]
+
+[ 2018-01-10T13:48:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-10T13:48:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-10T13:48:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+
+[ 2018-01-10T13:48:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-10T13:48:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/undefined
+ERR: 非法操作:undefined
+
+[ 2018-01-10T13:49:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+
+[ 2018-01-10T13:51:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题','会员模板','包月会员,包年会员,终身会员','','精品','房地产,网络设计,婚庆摄影,家政家教,游戏,科技,时尚美容') [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: SHOW COLUMNS FROM `muban_goods_info` [ RunTime:0.0010s ]
+SQL: INSERT INTO `muban_goods_info` (`color_id`,`goods_mbs`,`goods_unicode`,`min_photo`,`goods_content`,`goods_id`) VALUES ('红色','12','UTF','./Uploads/2018-01-10/200_5a55a9be23d05.jpg','<p><img src=\"/moban/ueditor/20180110/1515563461128346.jpg\" title=\"1515563461128346.jpg\" alt=\"1-1G22Q20A10-L.jpg\"/>adsfd</p>','13') [ RunTime:0.0010s ]
+
+[ 2018-01-10T13:53:44+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('网络模板','会员模板','包月会员,包年会员,终身会员','','精品','旅游酒店,房地产,网络设计,房产租赁,游戏,科技,生活服务') [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: SHOW COLUMNS FROM `muban_goods_info` [ RunTime:0.0020s ]
+SQL: INSERT INTO `muban_goods_info` (`color_id`,`goods_mbs`,`goods_unicode`,`min_photo`,`goods_content`,`goods_id`) VALUES ('蓝色,红色,橙色,黄色,绿色','36','gb2312','./Uploads/2018-01-10/200_5a55aa5624f5b.jpg','<p><img src=\"/moban/ueditor/20180110/1515563610600852.jpg\" title=\"1515563610600852.jpg\" alt=\"1111111.jpg\"/>asdf</p>','14') [ RunTime:0.0030s ]
+
+[ 2018-01-10T14:01:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('白蓝色bootstrap课程模板_精选教育模板','会员模板','包月会员,包年会员,终身会员','','精品','房地产,游戏') [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: SHOW COLUMNS FROM `muban_goods_info` [ RunTime:0.0010s ]
+SQL: INSERT INTO `muban_goods_info` (`color_id`,`goods_mbs`,`goods_unicode`,`min_photo`,`goods_content`,`goods_id`) VALUES ('红色,橙色,灰色','30','UTF','./Uploads/2018-01-10/200_5a55ac116291b.jpg','<p><img src=\"/moban/ueditor/20180110/1515564055214857.png\" title=\"1515564055214857.png\" alt=\"111.png\"/></p>','15') [ RunTime:0.0010s ]
+
+[ 2018-01-10T17:31:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.6396s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0312s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0468s ]
+

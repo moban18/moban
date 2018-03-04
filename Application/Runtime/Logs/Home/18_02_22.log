@@ -1,0 +1,121 @@
+[ 2018-02-22T13:25:57+08:00 ] 127.0.0.1 /moban/index.php/Home/User/veifiy_img
+ERR: 非法操作:veifiy_img
+
+[ 2018-02-22T13:43:42+08:00 ] 127.0.0.1 /moban/index.php/Home/User/mbmeilishuo/user.php?act=order_list
+ERR: 非法操作:mbmeilishuo
+
+[ 2018-02-22T15:44:51+08:00 ] 127.0.0.1 /moban/index.php/Home/User/mbmeilishuo/user.php?act=order_list
+ERR: 非法操作:mbmeilishuo
+
+[ 2018-02-22T17:24:11+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0050s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519291451' WHERE `id` = 10 [ RunTime:0.0110s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: email D:\wamp\www\moban\Application\Home\Controller\LoginController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-22T17:24:11+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+
+[ 2018-02-22T17:27:26+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519291646' WHERE `id` = 10 [ RunTime:0.0040s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: email D:\wamp\www\moban\Application\Home\Controller\LoginController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-22T17:38:16+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519292296' WHERE `id` = 10 [ RunTime:0.0040s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: email D:\wamp\www\moban\Application\Home\Controller\LoginController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-22T17:48:02+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519292882' WHERE `id` = 10 [ RunTime:0.0040s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: email D:\wamp\www\moban\Application\Home\Controller\LoginController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-22T17:48:26+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0070s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519292906' WHERE `id` = 10 [ RunTime:0.0030s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: email D:\wamp\www\moban\Application\Home\Controller\LoginController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-22T17:50:37+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519293037' WHERE `id` = 10 [ RunTime:0.0050s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-22T18:34:01+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519295641' WHERE `id` = 10 [ RunTime:0.0030s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-22T18:51:01+08:00 ] 127.0.0.1 /moban/index.php/Home/User/index
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,b.vip_name FROM moban_user a LEFT JOIN moban_vip b ON a.user_viptype=b.id  WHERE `id` = '10' LIMIT 1  
+
+[ 2018-02-22T18:53:52+08:00 ] 127.0.0.1 /moban/index.php/Home/User/index
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,b.vip_name FROM moban_user a LEFT JOIN moban_vip b ON a.user_viptype=b.id  WHERE `id` = '10' LIMIT 1  
+
+[ 2018-02-22T18:53:53+08:00 ] 127.0.0.1 /moban/index.php/Home/User/index
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,b.vip_name FROM moban_user a LEFT JOIN moban_vip b ON a.user_viptype=b.id  WHERE `id` = '10' LIMIT 1  
+
+[ 2018-02-22T18:54:41+08:00 ] 127.0.0.1 /moban/index.php/Home/User/index
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,b.id,b.vip_name FROM moban_user a LEFT JOIN moban_vip b ON a.user_viptype=b.id  WHERE `id` = '10' LIMIT 1  
+
+[ 2018-02-22T18:54:42+08:00 ] 127.0.0.1 /moban/index.php/Home/User/index
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,b.id,b.vip_name FROM moban_user a LEFT JOIN moban_vip b ON a.user_viptype=b.id  WHERE `id` = '10' LIMIT 1  
+

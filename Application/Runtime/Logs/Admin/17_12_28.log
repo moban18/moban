@@ -1,0 +1,249 @@
+[ 2017-12-28T08:44:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.3120s ]
+
+[ 2017-12-28T08:44:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.3588s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.1560s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0156s ]
+
+[ 2017-12-28T10:04:44+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('','','1514426684','1514426684','2130706433','0')
+
+[ 2017-12-28T10:05:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('','','1514426702','1514426702','2130706433','0')
+
+[ 2017-12-28T10:05:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('','','1514426702','1514426702','2130706433','0')
+
+[ 2017-12-28T10:05:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('','','1514426702','1514426702','2130706433','0')
+
+[ 2017-12-28T10:05:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('','','1514426702','1514426702','2130706433','0')
+
+[ 2017-12-28T10:05:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('','','1514426703','1514426703','2130706433','0')
+
+[ 2017-12-28T10:22:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: Think\Model:error方法不存在！
+
+[ 2017-12-28T10:25:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/add
+ERR: 1062:Duplicate entry '123@qq.com' for key 'email'
+ [ SQL语句 ] : INSERT INTO `muban_member` (`username`,`email`,`password`,`reg_time`,`last_time`,`login_ip`,`lock`) VALUES ('afsd','123@qq.com','8f6689ae029916841e126e278571794b','1514427938','1514427938','2130706433','0')
+
+[ 2017-12-28T12:57:14+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/vipadd
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `muban_vip` (`vipname`,`viptime`,`vipprice`) VALUES ('包月会员','30','49')
+
+[ 2017-12-28T13:26:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/__CONROLLER__/vipedit
+ERR: 非法操作:__CONROLLER__
+
+[ 2017-12-28T13:27:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/__CONROLLER__/vipedit
+ERR: 非法操作:__CONROLLER__
+
+[ 2017-12-28T13:27:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/__CONROLLER__/vipedit
+ERR: 非法操作:__CONROLLER__
+
+[ 2017-12-28T13:27:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/__CONROLLER__/vipedit
+ERR: 非法操作:__CONROLLER__
+
+[ 2017-12-28T14:10:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:10:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:10:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:10:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:10:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:12:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:12:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_members' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_members`
+
+[ 2017-12-28T14:13:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_vips' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_vips`
+
+[ 2017-12-28T14:13:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.muban_vips' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_vips`
+
+[ 2017-12-28T14:14:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'vip_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND vip_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:15:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'vip_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND vip_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:15:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'member_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND member_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:15:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'member_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND member_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:15:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'member_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND member_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:15:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'member_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND member_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:18:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'vip_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND vip_id='1' ) 
+
+[ 2017-12-28T14:22:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'vip_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND vip_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:22:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1054:Unknown column 'vip_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( 1=1 AND vip_id='1' ) LIMIT 1  
+
+[ 2017-12-28T14:49:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2017-12-28T14:50:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock AS id,`username`,`email`,`reg_time`,`last_time`,`login_ip`,`login_num`,`loc' at line 1
+ [ SQL语句 ] : SELECT member.id,`username`,`email`,`reg_time`,`last_time`,`login_ip`,`login_num`,lock AS id,`username`,`email`,`reg_time`,`last_time`,`login_ip`,`login_num`,`lock`,vip.id AS id,vip.vipname AS vipname,vip.viptime AS viptime FROM muban_member member  JOIN muban_vip vip 
+
+[ 2017-12-28T14:51:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock,vip.id AS id,vip.vipname AS vipname,vip.viptime AS viptime FROM muban_membe' at line 1
+ [ SQL语句 ] : SELECT member.id AS id,member.username AS username,member.email AS email,member.reg_time AS reg_time,member.last_time AS last_time,member.login_ip AS login_ip,member.login_num AS login_num,member.lock AS lock,vip.id AS id,vip.vipname AS vipname,vip.viptime AS viptime FROM muban_member member  JOIN muban_vip vip 
+
+[ 2017-12-28T14:52:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock,vip.vipname AS vipname,vip.viptime AS viptime FROM muban_member member  JOI' at line 1
+ [ SQL语句 ] : SELECT member.id AS id,member.username AS username,member.email AS email,member.reg_time AS reg_time,member.last_time AS last_time,member.login_ip AS login_ip,member.login_num AS login_num,member.lock AS lock,vip.vipname AS vipname,vip.viptime AS viptime FROM muban_member member  JOIN muban_vip vip 
+
+[ 2017-12-28T14:58:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock FROM muban_member member' at line 1
+ [ SQL语句 ] : SELECT member.id AS id,member.username AS username,member.email AS email,member.reg_time AS reg_time,member.last_time AS last_time,member.login_ip AS login_ip,member.login_num AS login_num,member.lock AS lock FROM muban_member member 
+
+[ 2017-12-28T14:59:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT * FROM  
+
+[ 2017-12-28T17:02:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index.html
+ERR: 1146:Table 'muban.member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `member`
+
+[ 2017-12-28T17:28:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 LIMIT 1  
+
+[ 2017-12-28T17:30:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 LIMIT 1  
+
+[ 2017-12-28T17:31:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE ( `id` = null  ) 
+
+[ 2017-12-28T17:31:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 
+
+[ 2017-12-28T17:36:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1054:Unknown column '$id' in 'where clause'
+ [ SQL语句 ] : SELECT m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE ( m.id=$id AND m.vip_id=v.id ) 
+
+[ 2017-12-28T17:37:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 LIMIT 1  
+
+[ 2017-12-28T17:37:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 LIMIT 1  
+
+[ 2017-12-28T17:37:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 LIMIT 1  
+
+[ 2017-12-28T17:37:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE `id` = 9 LIMIT 1  
+
+[ 2017-12-28T17:40:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE ( m.vip_id=v.id ) AND `id` = 9 
+
+[ 2017-12-28T17:42:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1054:Unknown column 'Array' in 'having clause'
+ [ SQL语句 ] : SELECT m.id,m.username,m.email,m.reg_time,m.last_time,m.login_ip,m.login_num,v.vipname,v.viptime FROM `muban_member` `m`,`muban_vip` `v` WHERE ( m.vip_id=v.id ) HAVING Array 
+
+[ 2017-12-28T17:47:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/9
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM muban_member m INNER JOIN muban_vip v ON m.vip_id= v.id  WHERE `id` = '9' 
+
+[ 2017-12-28T17:50:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0040s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0040s ]
+
+[ 2017-12-28T18:26:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/7
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM muban_member m INNER JOIN muban_vip v ON m.vip_id= v.id  WHERE `id` = '7' 
+
+[ 2017-12-28T18:30:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/7
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM muban_member m INNER JOIN muban_vip v ON m.vip_id= v.id  WHERE `id` = '7' LIMIT 1  
+
+[ 2017-12-28T18:35:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/7
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM muban_member m INNER JOIN muban_vip v ON m.vip_id= v.id  WHERE `id` = '7' 
+
+[ 2017-12-28T18:41:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/order_list.html
+ERR: 1054:Unknown column 'order_list' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM muban_member m INNER JOIN muban_vip v ON m.vip_id= v.id  WHERE ( m.id=order_list ) 
+
+[ 2017-12-28T18:41:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/order_list.html
+ERR: 1054:Unknown column 'order_list' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM muban_member m INNER JOIN muban_vip v ON m.vip_id= v.id  WHERE ( m.id=order_list ) 
+
+[ 2017-12-28T18:53:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/edit/id/8
+ERR: Think\Model:ield方法不存在！
+

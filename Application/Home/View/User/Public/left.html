@@ -1,0 +1,86 @@
+
+<div class="AreaL">
+    <div class="AreaL_box">
+        <div class="box_1">
+            <div class="userCenterBox">
+                <div class="userMenu clearfix">
+                    <div class="user_info_box">
+                        <div class="userinfo">
+                            <div class="user-Info_box1">
+                                <a href="__CONTROLLER__/tx">
+                                    <if condition="$users['user_photo'] eq ''">
+                                    <img style="width: 60px;height: 60px" src="__PUBLIC__/images/tx.jpg">
+                                        <else />
+                                        <img style="width: 60px;height: 60px" src="__ROOT__/{$users['user_photo']}">
+                                    </if>
+                                </a>
+                            </div>
+                            <div class="user-name">
+                                <ul>
+                                    <li>
+                                        <a href="__CONTROLLER__/buy">
+                                        <span class="mp-title">积分：</span>
+                                        <span class="mp-num">{$users.user_points}</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="__CONTROLLER__/buy#jbin">
+                                        <span class="mp-title">金币：</span>
+                                        <span class="mp-num">{$users.user_jbin}</span>
+                                        </a>
+
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="userInfo_box2">
+                        <a href="__CONTROLLER__/ziliao">
+                            <h2>帐号类型：<b>{$users['vip_name']}</b></h2>
+                            <p>呢&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：<b>{$users['user_nick']}</b></p>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+        <div class="AreaL_box clearfix">
+            <div class="box_1">
+                <div class="userCenterBox">
+                    <div class="userMenu">
+                        <a href="__MODULE__/User/index" <if condition="$ac eq index">class="active"</if>><img src="__PUBLIC__/images/u1.gif"> 会员中心</a>
+                        <a href="__MODULE__/User/ziliao" <if condition="$ac eq ziliao">class="active"</if> ><img src="__PUBLIC__/images/u2.gif"> 用户信息</a>
+                        <a href="__MODULE__/User/buy" <if condition="$ac eq buy">class="active"</if> ><img src="__PUBLIC__/images/u3.gif"> 加入会员</a>
+                        <a href="__MODULE__/User/buy#jbin"><img src="__PUBLIC__/images/u4.gif"> 充值金币</a>
+                        <a href="__MODULE__/User/operation" <if condition="$ac eq operation">class="active"</if>><img src="__PUBLIC__/images/u5.gif"> 消费记录</a>
+                        <a href="__MODULE__/User/myorder" <if condition="$ac eq myorder">class="active"</if>><img src="__PUBLIC__/images/u6.gif"> 我的下载</a>
+                        <a href="mbmeilishuo/user.php?act=collection_list"><img src="__PUBLIC__/images/u5.gif"> 我的收藏</a>
+                        <a href="mbmeilishuo/user.php?act=message_list"><img src="__PUBLIC__/images/u6.gif"> 我的评论</a>
+                        <a href="mbmeilishuo/user.php?act=logout" style="background:none; text-align:right; margin-right:10px;"><img src="__PUBLIC__/images/bnt_sign.gif"></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+    </div>
+</div>
+
+
+
+
+

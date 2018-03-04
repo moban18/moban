@@ -1,0 +1,556 @@
+[ 2018-02-09T15:12:44+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 1146:Table 'moban.moban_nav' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `moban_nav`
+
+[ 2018-02-09T17:12:46+08:00 ] 127.0.0.1 /moban/index.php/Home/Login
+ERR: Think\Controller:getNavs方法不存在！
+
+[ 2018-02-09T17:13:25+08:00 ] 127.0.0.1 /moban/index.php/Home/regist
+ERR: Think\Controller:getNavs方法不存在！
+
+[ 2018-02-09T17:27:38+08:00 ] 127.0.0.1 /moban/index.php/Home/test
+ERR: 无法加载控制器:Test
+
+[ 2018-02-09T17:37:40+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+
+[ 2018-02-09T17:37:40+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+
+[ 2018-02-09T17:37:42+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+
+[ 2018-02-09T17:40:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+
+[ 2018-02-09T17:54:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+
+[ 2018-02-09T17:54:25+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: member D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 28 行.
+
+[ 2018-02-09T17:54:43+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: member D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 28 行.
+
+[ 2018-02-09T17:55:26+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T17:56:52+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-02-09T17:57:37+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T17:59:54+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:01:51+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:04:32+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','admin','0','1518170672','1518170672','1','2130706433') [ RunTime:0.0680s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:07:32+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:08:39+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:09:19+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:09:50+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:10:20+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:11:14+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:11:57+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:11:58+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:12:05+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:12:08+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:12:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:12:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:12:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:12:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:12:14+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:12:51+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:13:41+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:15:17+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:15:26+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:16:30+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:17:24+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:17:35+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:18:16+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:18:20+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-02-09T18:20:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:20:49+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:21:31+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:21:34+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:21:35+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+
+[ 2018-02-09T18:22:00+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:22:43+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:22:45+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:22:48+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:22:55+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518171775','1518171775','1','2130706433') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:22:55+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+
+[ 2018-02-09T18:24:18+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '188818310@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','jinqingl','e10adc3949ba59abbe56e057f20f883e','1518171858','1518171858','1','2130706433')
+ERR: 1062:Duplicate entry '188818310@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','jinqingl','e10adc3949ba59abbe56e057f20f883e','1518171858','1518171858','1','2130706433')
+
+[ 2018-02-09T18:24:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:24:29+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '188818310@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','jinqingl','e10adc3949ba59abbe56e057f20f883e','1518171869','1518171869','1','2130706433')
+ERR: 1062:Duplicate entry '188818310@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','jinqingl','e10adc3949ba59abbe56e057f20f883e','1518171869','1518171869','1','2130706433')
+
+[ 2018-02-09T18:25:07+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:25:12+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:25:25+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:25:49+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '188818310@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','jinqingl','e10adc3949ba59abbe56e057f20f883e','1518171949','1518171949','1','2130706433')
+ERR: 1062:Duplicate entry '188818310@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('188818310@qq.com','jinqingl','e10adc3949ba59abbe56e057f20f883e','1518171949','1518171949','1','2130706433')
+
+[ 2018-02-09T18:28:54+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '123@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518172134','1518172134','1','2130706433')
+ERR: 1062:Duplicate entry '123@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518172134','1518172134','1','2130706433')
+
+[ 2018-02-09T18:29:08+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:29:20+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '123@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518172160','1518172160','1','2130706433')
+ERR: 1062:Duplicate entry '123@qq.com' for key 'user_email'
+ [ SQL语句 ] : INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518172160','1518172160','1','2130706433')
+
+[ 2018-02-09T18:31:08+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518172268','1518172268','1','2130706433') [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-02-09T18:31:08+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+
+[ 2018-02-09T18:32:56+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_user` (`user_email`,`user_nick`,`user_password`,`reg_time`,`log_time`,`log_num`,`user_ip`) VALUES ('123@qq.com','admin','e10adc3949ba59abbe56e057f20f883e','1518172376','1518172376','1','2130706433') [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-09T18:32:57+08:00 ] 127.0.0.1 /moban/index.php/Home/undefined
+ERR: 无法加载控制器:Undefined
+

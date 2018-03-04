@@ -1,0 +1,649 @@
+[ 2018-01-23T10:28:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.7020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0468s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0000s ]
+
+[ 2018-01-23T12:22:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Good/test
+ERR: 1146:Table 'muban.muban_a' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_a`
+
+[ 2018-01-23T17:20:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0030s ]
+
+[ 2018-01-23T17:27:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index
+ERR: 非法操作:index
+
+[ 2018-01-23T17:28:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/index
+ERR: 模板不存在:./Application/Admin/View/Member/index.html
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/animate.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/weather-icons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/font-awesome.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/demo.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:28:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/typicons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/demo.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/font-awesome.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/weather-icons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/typicons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/animate.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/%7BThink.const./moban/Application/Admin/Public/style%7D/bootstrap.css
+ERR: 非法操作:{Think.const
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/animate.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/typicons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/font-awesome.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/weather-icons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/demo.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/%7BThink.const./moban/Application/Admin/Public/style%7D/bootstrap.css
+ERR: 非法操作:{Think.const
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/animate.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/font-awesome.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/weather-icons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/demo.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/typicons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:33:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/font-awesome.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/weather-icons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/demo.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/typicons.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/animate.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T17:34:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:35:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:35:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:36:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:37:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:37:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T17:37:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Member/style/beyond.css
+ERR: 非法操作:style
+
+[ 2018-01-23T18:06:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/__MODLUE__/Admin/index
+ERR: 非法操作:__MODLUE__
+
+[ 2018-01-23T18:07:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/__MODLUE__/Admin/index
+ERR: 非法操作:__MODLUE__
+
+[ 2018-01-23T18:07:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/__MODLUE__/Admin/index
+ERR: 非法操作:__MODLUE__
+
+[ 2018-01-23T18:07:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/__MODLUE__/Admin/index
+ERR: 非法操作:__MODLUE__
+
+[ 2018-01-23T18:07:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/__MODLUE__/Admin/index
+ERR: 非法操作:__MODLUE__
+
+[ 2018-01-23T18:07:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/__MODLUE__/Admin/index
+ERR: 非法操作:__MODLUE__
+
+[ 2018-01-23T18:07:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/Admin/index
+ERR: 非法操作:Admin
+
+[ 2018-01-23T18:14:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/index
+ERR: 模板不存在:./Application/Admin/View/Admin/index.html
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:15:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:24:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:28:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:28:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:28:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:28:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:29:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:30:56+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:30:56+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:30:56+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:30:56+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:31:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:34:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:35:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:35:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:35:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:35:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:35:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:35:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:36:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery_002.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/bootstrap.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/jquery.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:37:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/style/beyond.js
+ERR: 非法操作:style
+
+[ 2018-01-23T18:44:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/edit/id/1
+ERR: 模板不存在:./Application/Admin/View/Admin/edit.html
+
+[ 2018-01-23T18:53:45+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/del/id/2
+ERR: 非法操作:del
+
+[ 2018-01-23T18:54:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/del/id/2
+ERR: 非法操作:del
+
+[ 2018-01-23T18:54:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/del/id/2
+ERR: 非法操作:del
+

@@ -1,0 +1,138 @@
+[ 2018-01-28T17:16:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attrs/index
+ERR: 1146:Table 'moban.moban_attrstype' doesn't exist
+ [ SQL语句 ] : SELECT a.id,a.attrs_name,a.attrs_value,b.attrstype_name FROM moban_attrs a LEFT JOIN moban_attrstype b ON a.attrstype_id=b.id  
+
+[ 2018-01-28T17:23:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:24:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:29:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:30:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:40:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:46:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-28T17:50:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-28T17:51:44+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-28T17:52:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-28T17:54:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:54:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/add
+ERR: 1146:Table 'moban.moban_attr1' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `moban_attr1`
+
+[ 2018-01-28T17:55:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-28T17:57:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-28T18:00:49+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

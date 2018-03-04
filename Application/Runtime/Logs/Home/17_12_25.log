@@ -1,0 +1,251 @@
+[ 2017-12-25T14:04:29+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/veifiy_img0.4885306920179011
+ERR: 非法操作:veifiy_img0.4885306920179011
+
+[ 2017-12-25T14:07:33+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/verify_img?0.6002801419225046
+ERR: 非法操作:verify_img
+
+[ 2017-12-25T14:08:11+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/verify_img?a=0.8773103345003707
+ERR: 非法操作:verify_img
+
+[ 2017-12-25T14:09:56+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:14:40+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:14:45+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:19:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:20:33+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:21:13+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:28:10+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T14:29:58+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T15:56:05+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T15:56:55+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T15:58:10+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/javascript%EF%BC%9Avoid(0);
+ERR: 非法操作:javascript：void(0);
+
+[ 2017-12-25T15:58:25+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/Thinkphp['url']
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:Thinkphp['url']
+
+[ 2017-12-25T15:59:05+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-25T16:27:01+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-25T16:27:40+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-25T16:27:58+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-25T16:28:35+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-25T16:29:00+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-25T16:47:27+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+
+[ 2017-12-25T16:47:33+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+
+[ 2017-12-25T16:59:46+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+
+[ 2017-12-25T17:02:41+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-25T17:07:07+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+
+[ 2017-12-25T17:22:51+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined variable: mamber D:\wamp\www\moban\Application\Home\Controller\RegistController.class.php 第 26 行.
+
+[ 2017-12-25T17:28:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`login_ip`) VALUES ('asdfdsf@qq.com','afsdf','e10adc3949ba59abbe56e057f20f883e','1514194102','2130706433') [ RunTime:0.0380s ]
+
+[ 2017-12-25T17:30:37+08:00 ] 127.0.0.1 /moban/index.php/Home/test/
+ERR: 无法加载控制器:Test
+
+[ 2017-12-25T17:33:29+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+
+[ 2017-12-25T17:33:42+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`login_ip`) VALUES ('123456@qq.com','123456','e10adc3949ba59abbe56e057f20f883e','1514194422','2130706433') [ RunTime:0.0010s ]
+
+[ 2017-12-25T17:33:53+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`login_ip`) VALUES ('123456@qq.com','123456','e10adc3949ba59abbe56e057f20f883e','1514194433','2130706433') [ RunTime:0.0310s ]
+
+[ 2017-12-25T17:34:11+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`login_ip`) VALUES ('123456@qq.com','123456','e10adc3949ba59abbe56e057f20f883e','1514194451','2130706433') [ RunTime:0.0020s ]
+
+[ 2017-12-25T17:35:46+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`login_ip`) VALUES ('124587@qq.com','123456','e10adc3949ba59abbe56e057f20f883e','1514194546','2130706433') [ RunTime:0.0030s ]
+
+[ 2017-12-25T17:38:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`login_ip`) VALUES ('123456@qq.com','aafdsf','e10adc3949ba59abbe56e057f20f883e','1514194702','2130706433') [ RunTime:0.0480s ]
+
+[ 2017-12-25T17:40:49+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `muban_member` WHERE `email` = '123456@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-12-25T18:09:06+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `muban_member` WHERE `email` = '456789@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: password2 D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1303 行.
+
+[ 2017-12-25T18:11:06+08:00 ] 127.0.0.1 /moban/index.php/Home/Regist/regist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `muban_member` WHERE `email` = '4567892@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `muban_member` (`email`,`username`,`password`,`reg_time`,`last_time`,`login_num`,`login_ip`) VALUES ('4567892@qq.com','23132','e10adc3949ba59abbe56e057f20f883e','1514196666','1514196666','1','2130706433') [ RunTime:0.0030s ]
+

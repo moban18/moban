@@ -1,0 +1,275 @@
+[ 2018-01-09T13:21:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.3900s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:1.2480s ]
+
+[ 2018-01-09T13:39:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0270s ]
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题','2','','125','1','') [ RunTime:0.0310s ]
+
+[ 2018-01-09T13:40:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0130s ]
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_price`,`goods_recommend`) VALUES ('商品标题','2','125','1') [ RunTime:0.0160s ]
+
+[ 2018-01-09T13:41:59+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0070s ]
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_price`,`goods_recommend`) VALUES ('商品标题','2','123','1') [ RunTime:0.0030s ]
+
+[ 2018-01-09T13:50:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+
+[ 2018-01-09T13:50:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0030s ]
+
+[ 2018-01-09T13:57:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+
+[ 2018-01-09T13:57:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+
+[ 2018-01-09T13:58:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题','2','1,2,3,4','123','1','2,3,4,14,15,16') [ RunTime:0.0110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-09T14:03:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题','2','1,2,3,4','125','1','2,3,4,14,15,16') [ RunTime:0.0230s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2018-01-09T14:06:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题11','2','2,3','125','1','2,3,4,5,14,15,17') [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `muban_goods_info` [ RunTime:0.0040s ]
+SQL: INSERT INTO `muban_goods_info` (`color_id`,`goods_mbs`,`goods_unicode`,`min_photo`,`goods_content`,`goods_id`) VALUES ('','34','UTF','./Uploads/2018-01-09/200_5a545bc1cb257.jpg','<p><img src=\"/moban/ueditor/20180109/1515477960137116.jpg\" title=\"1515477960137116.jpg\" alt=\"1-1G22Q20A10-L.jpg\"/>1212</p>','10') [ RunTime:0.0020s ]
+
+[ 2018-01-09T14:09:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题','2','2','212','1','2,3,14,15') [ RunTime:0.0320s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: SHOW COLUMNS FROM `muban_goods_info` [ RunTime:0.0020s ]
+SQL: INSERT INTO `muban_goods_info` (`color_id`,`goods_mbs`,`goods_unicode`,`min_photo`,`goods_content`,`goods_id`) VALUES ('2,3','12','UTF','./Uploads/2018-01-09/200_5a545c7576022.jpg','<p><img src=\"/moban/ueditor/20180109/1515478140710885.jpg\" title=\"1515478140710885.jpg\" alt=\"1111111.jpg\"/>afdsfds</p>','11') [ RunTime:0.0060s ]
+
+[ 2018-01-09T14:19:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `muban_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: INSERT INTO `muban_goods` (`goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`) VALUES ('商品标题1111','1','2,3,4','0','2','2,3,14,15') [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\moban\Application\Common\Common\function.php 第 16 行.
+SQL: SHOW COLUMNS FROM `muban_goods_info` [ RunTime:0.0010s ]
+SQL: INSERT INTO `muban_goods_info` (`color_id`,`goods_mbs`,`goods_unicode`,`min_photo`,`goods_content`,`goods_id`) VALUES ('2,3,4','25','UTF','./Uploads/2018-01-09/200_5a545ed713965.jpg','<p><br/><img src=\"/moban/ueditor/20180109/1515478748796905.jpg\" title=\"1515478748796905.jpg\" alt=\"1-1G22Q20A10-L.jpg\"/><img src=\"/moban/ueditor/20180109/1515478751266323.jpg\" title=\"1515478751266323.jpg\" alt=\"1111111.jpg\"/><img src=\"/moban/ueditor/20180109/1515478755208747.png\" title=\"1515478755208747.png\" alt=\"111.png\"/></p><p><br/></p><p>afdsfdsfds<br/></p>','12') [ RunTime:0.0020s ]
+
+[ 2018-01-09T14:50:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.moban_goods_type' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `muban_goods` LEFT JOIN moban_goods_type B ON goods_type=B.id  
+
+[ 2018-01-09T14:51:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.moban_goods_type' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `muban_goods` LEFT JOIN moban_goods_type B ON goods_type=B.id  
+
+[ 2018-01-09T15:00:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`goods_title`,`goods_type`,`goods_viptype`,`goods_viptype`,`goods_recommend`,`goods_industry` FROM `muban_goods` LEFT JOIN muban_goods_type B ON goods_type=B.id  
+
+[ 2018-01-09T15:02:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`goods_title`,`goods_type`,`goods_viptype`,`goods_viptype`,`goods_recommend`,`goods_industry` FROM muban_goods A LEFT JOIN muban_goods_type B ON goods_type=B.id  
+
+[ 2018-01-09T15:02:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`goods_title`,`goods_type`,`goods_viptype`,`goods_viptype`,`goods_recommend`,`goods_industry` FROM muban_goods A LEFT JOIN muban_goods_type B ON goods_type=B.id  
+
+[ 2018-01-09T15:07:45+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:07:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:08:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:08:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:08:21+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:11:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:11:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:11:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:11:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T15:11:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_godds_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `muban_godds_type`
+
+[ 2018-01-09T17:27:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\wamp\www\moban\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `muban_admin` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `muban_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0060s ]
+SQL: UPDATE `muban_admin` SET `login_time`=NOW(),`login_ip`='2130706433' WHERE `username` = 'admin' [ RunTime:0.0050s ]
+
+[ 2018-01-09T17:32:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>goods.goods_viptype=vip.id AS _on=>goods.goods_viptype=vip.id FROM muban_goods' at line 1
+ [ SQL语句 ] : SELECT goods.id AS id,goods.goods_title AS goods_title,goods.goods_type AS goods_type,goods.goods_viptype AS goods_viptype,goods.goods_price AS goods_price,goods.goods_recommend AS goods_recommend,goods.goods_industry AS goods_industry,GoodsType.type_name AS type_name,Vip.vinpname AS vinpname,Vip._on=>goods.goods_viptype=vip.id AS _on=>goods.goods_viptype=vip.id FROM muban_goods goods  JOIN muban_goods_type GoodsType ON goods.goods_type=GoodsType.id  JOIN muban_vip Vip 
+
+[ 2018-01-09T17:32:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>goods.goods_viptype=vip.id AS _on=>goods.goods_viptype=vip.id FROM muban_goods' at line 1
+ [ SQL语句 ] : SELECT goods.id AS id,goods.goods_title AS goods_title,goods.goods_type AS goods_type,goods.goods_viptype AS goods_viptype,goods.goods_price AS goods_price,goods.goods_recommend AS goods_recommend,goods.goods_industry AS goods_industry,GoodsType.type_name AS type_name,Vip.vinpname AS vinpname,Vip._on=>goods.goods_viptype=vip.id AS _on=>goods.goods_viptype=vip.id FROM muban_goods goods  JOIN muban_goods_type GoodsType ON goods.goods_type=GoodsType.id  JOIN muban_vip Vip 
+
+[ 2018-01-09T17:33:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>vip.id in(goods.goods_viptype) AS _on=>vip.id in(goods.goods_viptype) FROM mub' at line 1
+ [ SQL语句 ] : SELECT goods.id AS id,goods.goods_title AS goods_title,goods.goods_type AS goods_type,goods.goods_viptype AS goods_viptype,goods.goods_price AS goods_price,goods.goods_recommend AS goods_recommend,goods.goods_industry AS goods_industry,GoodsType.type_name AS type_name,Vip.vinpname AS vinpname,Vip._on=>vip.id in(goods.goods_viptype) AS _on=>vip.id in(goods.goods_viptype) FROM muban_goods goods  JOIN muban_goods_type GoodsType ON goods.goods_type=GoodsType.id  JOIN muban_vip Vip 
+
+[ 2018-01-09T17:39:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_ip' doesn't exist
+ [ SQL语句 ] : SELECT * FROM muban_goods a INNER JOIN muban_goods_type INNER JOIN muban_ip b  WHERE ( b.id in(a.goods_viptype) ) 
+
+[ 2018-01-09T17:39:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1146:Table 'muban.muban_ip' doesn't exist
+ [ SQL语句 ] : SELECT * FROM muban_goods a INNER JOIN muban_goods_type INNER JOIN muban_ip b  WHERE ( b.id in(a.goods_viptype) ) 
+
+[ 2018-01-09T17:46:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'agoods_type' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM muban_goods a INNER JOIN muban_goods_type b INNER JOIN muban_vip c INNER JOIN muban_goods_color d  WHERE `agoods_type` = 'bid' 
+
+[ 2018-01-09T17:56:14+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( id in ) 
+
+[ 2018-01-09T17:57:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( id in ) 
+
+[ 2018-01-09T17:57:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( id in ) 
+
+[ 2018-01-09T17:57:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( id in ) 
+
+[ 2018-01-09T17:57:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( id in ) 
+
+[ 2018-01-09T17:57:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in2,3,4 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `muban_vip` WHERE ( id in2,3,4 ) 
+
+[ 2018-01-09T17:59:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'type_name' in 'field list'
+ [ SQL语句 ] : SELECT `type_name` FROM `muban_vip` WHERE ( id in (2,3,4) ) 
+
+[ 2018-01-09T18:03:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:03:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:03:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:03:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:03:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:04:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:04:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+
+[ 2018-01-09T18:04:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/index
+ERR: 1054:Unknown column 'goods_mbs' in 'field list'
+ [ SQL语句 ] : SELECT `goods_title`,`goods_type`,`goods_viptype`,`goods_price`,`goods_recommend`,`goods_industry`,`goods_mbs`,`goods_unicode` FROM `muban_goods` 
+

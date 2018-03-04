@@ -1,0 +1,57 @@
+[ 2018-02-24T17:23:25+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519464205' WHERE `id` = 10 [ RunTime:0.0060s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-24T17:51:15+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/test
+ERR: Think\Controller:encry方法不存在！
+
+[ 2018-02-24T17:53:44+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/test
+ERR: Think\Controller:encry方法不存在！
+
+[ 2018-02-24T17:53:45+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/test
+ERR: Think\Controller:encry方法不存在！
+
+[ 2018-02-24T18:10:05+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519467005' WHERE `id` = 10 [ RunTime:0.0040s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-24T18:15:17+08:00 ] 127.0.0.1 /moban/index.php/Home/test
+ERR: 无法加载控制器:Test
+
+[ 2018-02-24T18:32:02+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-02-24T18:32:08+08:00 ] 127.0.0.1 /moban/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_user` WHERE `user_email` = '188818310@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `moban_user` SET `user_email`='188818310@qq.com',`user_password`='e10adc3949ba59abbe56e057f20f883e',`user_ip`='2130706433',`log_time`='1519468328' WHERE `id` = 10 [ RunTime:0.0070s ]
+SQL: UPDATE `moban_user` SET `log_num`=log_num+1 WHERE `id` = 10 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
