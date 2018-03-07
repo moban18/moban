@@ -1,0 +1,59 @@
+[ 2018-03-06T18:09:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/attrp
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\AttrModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\wamp\www\moban\Application\Admin\Model\AttrModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0100s ]
+SQL: SELECT a.id,a.attr_name,a.attr_value,a.parent_id,b.attrtype_name FROM moban_attr a LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id  WHERE `attrtype_id` = '1'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T18:10:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/attrp
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Model\AttrModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\wamp\www\moban\Application\Admin\Model\AttrModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `moban_attrtype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_attrtype`  [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.attr_name,a.attr_value,a.parent_id,b.attrtype_name FROM moban_attr a LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id  WHERE `attrtype_id` IN ('1','2','3')  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T18:10:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/attrp
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\AttrModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\wamp\www\moban\Application\Admin\Model\AttrModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0100s ]
+SQL: SELECT a.id,a.attr_name,a.attr_value,a.parent_id,b.attrtype_name FROM moban_attr a LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id  WHERE `attrtype_id` = '2'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T18:10:08+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/attrp
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Admin\Model\AttrModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\wamp\www\moban\Application\Admin\Model\AttrModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0140s ]
+SQL: SELECT a.id,a.attr_name,a.attr_value,a.parent_id,b.attrtype_name FROM moban_attr a LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id  WHERE `attrtype_id` = '3'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T18:10:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/attrp
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Model\AttrModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\wamp\www\moban\Application\Admin\Model\AttrModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `moban_attrtype` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `moban_attrtype`  [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.attr_name,a.attr_value,a.parent_id,b.attrtype_name FROM moban_attr a LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id  WHERE `attrtype_id` IN ('1','2','3')  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

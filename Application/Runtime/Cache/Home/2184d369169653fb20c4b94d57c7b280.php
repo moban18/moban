@@ -143,190 +143,179 @@
     </div>
     <div id="classify">
         <div class="classify_box ">
-            <?php foreach($attrs as $v):?>
-                <?php if($v['parent_id']==0):?>
-                <div class="tg_classify_wrap clearfix ">
-                    <dl class="tg_classify_wrap_left">
-                        <dt class="">
-                            <i class="icon_order"></i>
-                            <?php echo ($v['attr_name']); ?>
-                        </dt>
-                    </dl>
-                    <dl class="tg_classify_wrap_right">
-                        <?php $attres=explode(',',$v['attr_value']);?>
-                        <dd class="on1">
-                            <a href="/moban/index.php/Home/Vip/index">
-                                <span>不限</span>
-                            </a>
-                        </dd>
-                        <?php foreach($attres as $v1):?>
-                        <dd class="">
-                            <a href="">
-                                <span><?php echo ($v1); ?></span>
-                            </a>
-                        </dd>
-                        <?php endforeach;?>
-                    </dl>
+            <?php foreach($attrs as $k => $v):?>
+                <?php if($v['attrtype_id']==1):?>
+                    <?php
+ if(I('filter')){ $a=explode('-',I('filter')); }else{ $a=array_fill(0,$num,0); } ?>
+                    <?php if($v['child']):?>
+                        <div class="tg_classify_wrap clearfix ">
+                            <dl class="tg_classify_wrap_left">
+                                <dt class="">
+                                    <i class="icon_order"></i>
+                                    <?php echo ($v['attr_name']); ?>
+                                </dt>
+                            </dl>
+                            <dl class="tg_classify_wrap_right">
+                                <?php $filter=implode('-',$a);?>
+                                <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
+                                    <?php $c=explode('-',I('filter')); $c[$k]=0; $filter=implode('-',$c); ?>
+                                    <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
+                                        </span>不限</span>
+                                    </a>
+                                </dd>
+                                <!--这里取得URL的filter变量-->
+                                <?php if(I('filter')){ $e=explode('-',I('filter')); }?>
+                                <!--这里取得URL的filter变量结束-->
+                                <?php foreach($v['child'] as $v1):?>
+                                    <?php $a[$k]=$v1['id']; $filter=implode('-',$a);?>
+                                    <dd class="<?php if(I('filter') && $e[$k]==$v1['id']){echo 'on1';}?>">
+                                        <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                            <span><?php echo ($v1["attr_name"]); ?></span>
+                                        </a>
+                                    </dd>
+                                <?php endforeach;?>
+                            </dl>
+                        </div>
 
-                </div>
-                <?php endif;endforeach; ?>
-            </volist>
-            <!--<div class="tg_classify_wrap clearfix">
-                <dl class="tg_classify_wrap_left">
-                    <dt class="">
-                        <i class="icon_order"></i>
-                        模板颜色
-                    </dt>
-                </dl>
-                <dl class="tg_classify_wrap_right ">
-                        <dd class="on1">
-                            <a href="http://www.sucaihuo.com/templates/">
-                                <span>不限</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-10-0-0-0-0">
-                                <span>蓝色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-11-0-0-0-0">
-                                <span>红色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-12-0-0-0-0">
-                                <span>橙色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-13-0-0-0-0">
-                                <span>黄色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-14-0-0-0-0">
-                                <span>绿色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-15-0-0-0-0">
-                                <span>黑白</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-17-0-0-0-0">
-                                <span>灰色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-18-0-0-0-0">
-                                <span>黑色</span>
-                            </a>
-                        </dd><dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-19-0-0-0-0">
-                                <span>白色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-113-0-0-0-0">
-                                <span>粉色</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-20-0-0-0-0">
-                                <span>多色</span>
-                            </a>
-                        </dd>
-                </dl>
+
+                <!--这里是分类子集-->
+                        <?php
+ if(I('filter')){ $n=explode('-',I('filter')); } if($n[0]!=0){ foreach($v['child'] as $t =>$j){ if($n[0]==$j['id']){ ?>
+                                        <div class="tg_classify_wrap clearfix ">
+                                            <dl class="tg_classify_wrap_left">
+                                                <dt class="">
+                                                    <i class="icon_order"></i>
+                                                    分类子集
+                                                </dt>
+                                            </dl>
+                                            <dl class="tg_classify_wrap_right">
+                                                <?php $filter=implode('-',$a);?>
+                                                <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
+                                                    <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
+                                                        </span>不限</span>
+                                                    </a>
+                                                </dd>
+                                                <?php foreach($j['value'] as $m):?>
+                                                <?php $a[$k]=$m['vid']; $filter=implode('-',$a);?>
+                                                <dd class="<?php if(I('filter') && $e[$k]==$v1['id']){echo 'on1';}?>">
+                                                    <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                                        <span><?php echo ($m["v1"]); ?></span>
+                                                    </a>
+                                                </dd>
+                                                <?php endforeach;?>
+                                             </dl>
+                                        </div>
+
+                        <?php
+ } } } ?>
+
+                <!--这里是分类子集结束-->
+                    <?php else:?>
+                        <div class="tg_classify_wrap clearfix ">
+                            <dl class="tg_classify_wrap_left">
+                                <dt class="">
+                                    <i class="icon_order"></i>
+                                    <?php echo ($v['attr_name']); ?>
+                                </dt>
+                            </dl>
+                            <dl class="tg_classify_wrap_right">
+                                <?php $filter=implode('-',$a);?>
+                                <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
+                                    <?php $c=explode('-',I('filter')); $c[$k]=0; $filter=implode('-',$c); ?>
+                                    <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
+                                        </span>不限</span>
+                                    </a>
+                                </dd>
+                                <!--这里取得URL的filter变量-->
+                                <?php if(I('filter')){ $d=explode('-',I('filter')); }?>
+                                <!--这里取得URL的filter变量结束-->
+                                <?php foreach($v['value'] as $v1):?>
+                                    <?php $a[$k]=$v1['id']; $filter=implode('-',$a);?>
+                                    <dd class="<?php if(I('filter') && $d[$k]==$v1['id']){echo 'on1';}?>">
+                                        <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                            <span><?php echo ($v1["v1"]); ?></span>
+                                        </a>
+                                    </dd>
+                                <?php endforeach;?>
+                            </dl>
+                        </div>
+                    <?php endif;?>
+
+                <?php endif;?>
+            <?php endforeach; ?>
+                      <!--  <?php
+ if(I('filter')){ $a=explode('-',I('filter')); $curent=$a[$c]; }else{ $a=array_fill(0,$num,0); } ?>-->
+                        <!--<div class="tg_classify_wrap clearfix ">
+                            <dl class="tg_classify_wrap_left">
+                                <dt class="">
+                                    <i class="icon_order"></i>
+                                    <?php echo ($v['attr_name']); ?>
+                                </dt>
+                            </dl>
+                            <dl class="tg_classify_wrap_right">
+                                <?php
+ if(I('filter')){ $a[$c]=0; } ?>
+                                <?php $filter=implode('-',$a);?>
+                                <dd class="<?php if(!I('filter') or $curent==0){echo 'on1';}?>">
+                                    <a href="<?php
+ if(I('filter')=='0-0-0-0'){ echo U('Vip/index'); }else{ echo U('Vip/index',['filter'=>$filter]); } ?>">
+                                        </span>不限</span>
+                                    </a>
+                                </dd>
+                                <?php if($v['is_attr']==1):?>
+                                    <?php foreach($attrs as $v1):?>
+                                        <?php if($v['id']==$v1['parent_id']):?>
+                                        <?php $a[$c]=$v1['id']; $filter=implode('-',$a);?>
+                                        <dd class="<?php if($curent==$v1['id']){echo 'on1';}?>">
+                                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                                <span><?php echo ($v1["attr_name"]); ?></span>
+                                            </a>
+                                        </dd>
+                                    <?php endif;endforeach;?>
+                                <?php else:?>
+                                    <?php foreach($v['value'] as $v2):?>
+                                        <?php $a[$c]=$v2['id']; $filter=implode('-',$a);?>
+                                        <dd class="<?php if($curent==$v2['id']){echo 'on1';}?>">
+                                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                                <span><?php echo ($v2["v1"]); ?></span>
+                                            </a>
+                                        </dd>
+                                    <?php endforeach;?>
+                                <?php endif;?>
+                            </dl>-->
+
+
+
+
+
 
 
             </div>
-
-            <div class="tg_classify_wrap clearfix">
-                    <dl class="tg_classify_wrap_left">
-                        <dt class="">
-                            <i class="icon_order"></i>
-                            模板布局
-                        </dt>
-                    </dl>
-                    <dl class="tg_classify_wrap_right">
-                        <dd class="on1">
-                            <a href="http://www.sucaihuo.com/templates/">
-                                <span>不限</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-0-45-0-0-0">
-                                <span>常列</span>
-                            </a>
-                        </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-46-0-0-0">
-                            <span>两列</span>
-                        </a>
-                    </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-50-0-0-0">
-                            <span>滚动</span>
-                        </a>
-                    </dd>
-                        <dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-51-0-0-0">
-                            <span>全屏</span>
-                        </a>
-                        </dd>
-                        <dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-52-0-0-0">
-                            <span>响应式</span>
-                        </a>
-                    </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-108-0-0-0">
-                            <span>手机wap</span>
-                        </a>
-                    </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-111-0-0-0">
-                            <span>app模板</span>
-                        </a>
-                    </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-49-0-0-0">
-                            <span>iframe</span>
-                        </a>
-                    </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-98-0-0-0">
-                            <span>table</span>
-                        </a>
-                    </dd>
-                    </dl>
-
-            </div>-->
-       <!--     <div class="tg_classify_wrap clearfix">
-                <dl class="tg_classify_wrap_left">
-                    <dt class="">
-                        <i class="icon_order"></i>
-                        模板语言
-                    </dt>
-                </dl>
-                <dl class="tg_classify_wrap_right">
-                        <dd class="on1">
-                            <a href="http://www.sucaihuo.com/templates/">
-                                <span>不限</span>
-                            </a>
-                        </dd>
-                        <dd class="">
-                            <a href="http://www.sucaihuo.com/templates/0-0-0-0-96-0">
-                                <span>中文模板</span>
-                            </a>
-                        </dd><dd class="">
-                        <a href="http://www.sucaihuo.com/templates/0-0-0-0-97-0">
-                            <span>英文模板</span>
-                        </a>
-                    </dd>
-
-                </dl>
-            </div>-->
-
         </div>
 
     </div>
+
+    <script>
+
+       /* $(function(){
+            //搜索标签的点击，出现被选效果
+            var div= $('.tg_classify_wrap');
+            div.each(function(k){
+                var dl=$(this).find('dl').eq(1);
+                var dd=dl.find('dd');
+                dd.each(function(i){
+                    $(this).click(function(){
+                        dd.eq(i).addClass('on1').siblings('dd').removeClass('on1');
+                    });
+                });
+            });
+        });*/
+
+
+
+
+    </script>
+
 
 
 </div>

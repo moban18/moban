@@ -1021,7 +1021,7 @@ table tr:hover {
     margin: 0 auto;
     border: 3px solid #EAEAEA;
 }
-.tg_classify_wrap {
+.tg_classify_wrap,.tbas_child {
     margin: 0px 15px;
     position: relative;
     border-bottom: 1px solid #EAEAEA;
