@@ -1015,6 +1015,7 @@ table tr:hover {
 }
 #classify {
     font-size: 13px;
+
 }
 .classify_box {
     width: 1100px;
@@ -1077,4 +1078,126 @@ table tr:hover {
     /*width: 45px;*/
     margin: 0 auto;
     color: #fff;
+}
+/*栏目模板的条件查询 如：默认，人气*/
+#content {
+    width: 1100px;
+    height: 500px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.sort {
+    background-color:#F9F9F9;
+    border:1px solid #EAEAEA;
+    height: 40px;
+
+}
+.sort .tg_classify_wrap {
+    padding:0px;
+    margin:0px;
+    width: 70px;
+    display: inline-block;
+    border: none;
+    border-right:1px solid #EAEAEA;
+    margin-left: 5px;
+}
+.tg_classify_toggle {
+
+    position:relative;
+
+    float: left;
+}
+.tg_classify_toggle dl {
+    display: inline-block;
+}
+
+.tg_classify_toggle dt a {
+    display: inline-block;
+    margin:1px 0px 1px 10px;
+    height: 40px;
+    line-height:40px;
+
+}
+.tg_classify_toggle dt a .icon_order {
+    position:absolute;
+    top:13px;
+    left:50px;
+    background: url(../images/global.png) no-repeat -5px -78px;
+}
+
+.checkbox_recommond {
+    border:none !important;
+    margin-left: 35px !important;
+}
+
+.checkbox_recommond .tg_classify_toggle dt a .icon_order {
+    background: url(../images/global.png) no-repeat -5px -427px;
+    top:15px;
+    left:-7px;
+}
+.on2 b.icon_order{
+    position:absolute;
+    top:13px;
+    left:50px;
+    background: url(../images/global.png) no-repeat -5px -60px !important;
+}
+.on3 b.icon_order {
+    background: url(../images/global.png) no-repeat -5px -474px !important;
+    top:15px;
+    left:-7px;
+}
+
+.order-page {
+    float: right;
+}
+.find_results_num {
+    margin-right: 10px;
+}
+.order-page span {
+    padding: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+.page-small a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #DDDDDD;
+    vertical-align:middle;
+    margin: 3px;
+    position:relative;
+}
+.page-small a span {
+    display: block;
+    padding: 0;
+    height:0px;
+    width:0px;
+}
+.arrow-left {
+
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #CCCCCC;
+    font-size:0px;
+    position:absolute;
+    top:5px;
+    left:7px;
+}
+.arrow-right {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #666666;
+    font-size:0px;
+    position:absolute;
+    top:5px;
+    left:7px;
+}
+
+
+
+.list {
+    width: 1100px;
+    min-height: 300px;
+    border:1px solid red;
+    margin-top: 20px;
 }

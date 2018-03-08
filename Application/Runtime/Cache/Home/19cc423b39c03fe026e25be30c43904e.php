@@ -145,9 +145,9 @@
         <div class="classify_box ">
             <?php $curent;?>
             <?php foreach($attrs as $k => $v):?>
-                <?php if($v['attrtype_id']==1):?>
+                <?php if($v['attrtype_id']==3):?>
                     <?php
- if(I('filter')){ $a=explode('-',I('filter')); }else{ $a=array_fill(0,$num+1,0); } ?>
+ if(I('filter')){ $a=explode('-',I('filter')); }else{ $a=array_fill(0,$num,0); } ?>
                     <?php if($v['child']):?>
                         <div class="tg_classify_wrap clearfix ">
                             <dl class="tg_classify_wrap_left">
@@ -161,7 +161,7 @@
                                 <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
                                     <?php $c=explode('-',I('filter')); $c[$k]=0; $filter=implode('-',$c); ?>
                                     <a href="<?php
- if($filter=='0-0-0-0'){ echo U('Vip/index'); }elseif(!I('filter')){ echo U('Vip/index'); }else{ echo U('Vip/index',['filter'=>$filter]); } ?>">
+ if($filter=='0-0-0-0'){ echo U('Video/index'); }elseif(!I('filter')){ echo U('Video/index'); }else{ echo U('Video/index',['filter'=>$filter]); } ?>">
                                         </span>不限</span>
                                     </a>
                                 </dd>
@@ -173,7 +173,7 @@
  $a[$k]=$v1['id']; $filter=implode('-',$a); ?>
                                     <dd class="<?php
  if(I('filter') && $e[$k]==$v1['id']){ echo 'on1'; } if($cur && $cur_id==$v1['id']){ echo 'on1'; } ?>">
-                                        <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                        <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
                                             <span><?php echo ($v1["attr_name"]); ?></span>
                                         </a>
                                     </dd>
@@ -181,7 +181,7 @@
                             </dl>
                         </div>
                         <!--这里是固定分类子集-->
-                        <?php if(I('filter')){ $d=explode('-',I('filter')); foreach ($v['child'] as $i =>$h){ foreach ($h['value'] as $p=>$o){ if($d[0]==$o['vid']){ $curent=true; $curent_id= $o['id']; } } } } ?>
+                        <?php if(I('filter')){ $d=explode('-',I('filter')); foreach ($v['child'] as $i =>$h){ foreach ($h['value'] as $p=>$o){ if($d[0]==$o['vid']){ echo $d[0]; $curent=true; $curent_id= $o['id']; } } } } ?>
                         <!--这里是固定分类子集结束-->
                 <!--这里是分类子集-->
                         <?php
@@ -197,7 +197,7 @@
                                                 <?php $filter=implode('-',$a);?>
                                                 <dd class="<?php
  if(!I('filter') or $a[$k]==0){ echo 'on1'; } if($a[$k]==$j['id']){ echo 'on1'; } ?>">
-                                                    <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
+                                                    <a href="<?php echo U('Video/index',['filter'=>$filter]);?>">
                                                         </span>不限</span>
                                                     </a>
                                                 </dd>
@@ -206,7 +206,7 @@
                                                 <?php
  $a=explode('-',I('filter')); $a[$k]=$m['vid']; $filter=implode('-',$a); ?>
                                                 <dd class="<?php if(I('filter') && $e[0]==$m['vid']){echo 'on1';}?>">
-                                                    <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                                    <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
                                                         <span><?php echo ($m["v1"]); ?></span>
                                                     </a>
                                                 </dd>
@@ -219,6 +219,7 @@
 
                 <!--这里是分类子集结束-->
                     <?php else:?>
+                        <?php echo 22222222222;?>
                         <div class="tg_classify_wrap clearfix ">
                             <dl class="tg_classify_wrap_left">
                                 <dt class="">
@@ -231,7 +232,7 @@
                                 <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
                                     <?php $c=explode('-',I('filter')); $c[$k]=0; $filter=implode('-',$c); ?>
                                     <a href="<?php
- if($filter=='0-0-0-0'){ echo U('Vip/index'); }elseif(!I('filter')){ echo U('Vip/index'); }else{ echo U('Vip/index',['filter'=>$filter]); } ?>">
+ if($filter=='0-0-0-0'){ echo U('Video/index'); }elseif(!I('filter')){ echo U('Video/index'); }else{ echo U('Video/index',['filter'=>$filter]); } ?>">
                                         </span>不限</span>
                                     </a>
                                 </dd>
@@ -242,7 +243,7 @@
                                 <?php foreach($v['value'] as $v1):?>
                                 <?php $a[$k]=$v1['id']; $filter=implode('-',$a);?>
                                     <dd class="<?php if(I('filter') && $d[$k]==$v1['id']){echo 'on1';}?>">
-                                        <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                        <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
                                             <span><?php echo ($v1["v1"]); ?></span>
                                         </a>
                                     </dd>
@@ -261,7 +262,7 @@
 
     <div id="content">
         <?php
- if(I('filter')){ $a=explode('-',I('filter')); }else{ $a=array_fill(0,$num+1,0); } ?>
+ if(I('filter')){ $a=explode('-',I('filter')); }else{ $a=array_fill(0,$num,0); } ?>
         <div class="sort">
 
             <?php foreach($searchss['value'] as $v):?>
@@ -272,7 +273,7 @@
  if(I('filter')){ $b=explode('-',I('filter')); } ?>
                             <dt class="<?php if(I('filter') && $b[$num]==$v['vid']){echo 'on2';}?>">
                                 <?php $a[$num]=$v['vid']; $filter=implode('-',$a);?>
-                                <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
                                     <i class="icon_order"></i>
                                     <span><?php echo $v['v1']?></span>
                                     <b class="icon_order"></b>
@@ -287,7 +288,7 @@
  if(I('filter')){ $w=explode('-',I('filter')); } ?>
                             <dt class="<?php if(I('filter') && $w[$num]==$v['vid']){echo 'on3';}?>">
                                 <?php $a[$num]=$v['vid']; $filter=implode('-',$a);?>
-                                <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
                                     <i class="icon_order"></i>
                                     <span>推荐</span>
                                     <b class="icon_order"></b>

@@ -1,18 +1,21 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class VipController extends CommonController {
+class VideoController extends CommonController {
     public function index(){
         $this->getCates();
         $ac=$this->getAc();
-        $atts=M('attr')->where(array('attrtype_id'=>1))->select();
+        $atts=M('attr')->where(array('attrtype_id'=>3))->select();
+
         $search=M('attr')->where(array('attr_name'=>'搜索设置'))->find();
         $searchss=$this->handleSearch($search);
         /*print_r($searchss);die*/;
         $num=count($atts);
+        /*echo $num;*/
+
         $attrss=M('attr')->select();
         $attrs=$this->test($attrss);
-
+        /*print_r($attrs);die;*/
         $this->assign(array(
             'ac'=>$ac,
             'num'=>$num,

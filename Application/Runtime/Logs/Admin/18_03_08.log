@@ -1,0 +1,34 @@
+[ 2018-03-08T17:32:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0020s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-08T17:32:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-08T17:36:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/attrp
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\AttrModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\wamp\www\moban\Application\Admin\Model\AttrModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.attr_name,a.attr_value,a.parent_id,b.attrtype_name FROM moban_attr a LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id  WHERE `attrtype_id` = '3'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
