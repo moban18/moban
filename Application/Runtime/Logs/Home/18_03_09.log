@@ -1,0 +1,15 @@
+[ 2018-03-09T11:32:58+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/index
+ERR: 无法加载控制器:Study
+
+[ 2018-03-09T12:05:12+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/style.css
+ERR: 非法操作:style.css
+
+[ 2018-03-09T12:05:12+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/xueyuan.css
+ERR: 非法操作:xueyuan.css
+
+[ 2018-03-09T12:05:45+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/style.css
+ERR: 非法操作:style.css
+
+[ 2018-03-09T12:05:45+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/xueyuan.css
+ERR: 非法操作:xueyuan.css
+

@@ -280,6 +280,7 @@
                                             <th class="text-center">收藏量</th>
                                             <th class="text-center">评论量</th>
                                             <th class="text-center">下载量</th>
+                                            <th class="text-center">搜索设置</th>
 
                                             <th class="text-center">操作</th>
                                         </tr>
@@ -302,6 +303,7 @@
                                             <td align="center"><?php echo ($v['goods_comment']); ?></td>
                                             <td align="center"><?php echo ($v['goods_store']); ?></td>
                                             <td align="center"><?php echo ($v['goods_recommend']); ?></td>
+                                            <td align="center"><?php echo ($v['download_num']); ?></td>
                                             <td align="center"><?php echo ($v['download_num']); ?></td>
 
                                             <td align="center">

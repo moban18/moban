@@ -161,6 +161,44 @@
 
             </ul>
         </li>
+        <li <?php if($ac == 'User'): ?>class="open"<?php endif; ?> >
+        <a href="#" class="menu-dropdown">
+            <i class="menu-icon fa fa-gear"></i>
+            <span class="menu-text">会员管理</span>
+            <i class="menu-expand"></i>
+        </a>
+        <ul class="submenu">
+            <li>
+                <a href="/moban/index.php/Admin/User/index">
+                                    <span class="menu-text">
+                                        会员管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Search/index">
+                                    <span class="menu-text">
+                                        会员等级                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attrtype/index">
+                                    <span class="menu-text">
+                                        商品种类管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attr/index">
+                                    <span class="menu-text">
+                                        商品属性管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+
+        </ul>
+        </li>
         <li>
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>

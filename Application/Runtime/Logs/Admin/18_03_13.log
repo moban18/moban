@@ -1,0 +1,435 @@
+[ 2018-03-13T10:42:49+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T10:47:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T10:48:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T10:49:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T10:49:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T10:49:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T10:49:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T10:49:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T10:52:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-03-13T10:54:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2018-03-13T11:09:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:11:45+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-13T11:11:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:12:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:12:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/delPhoto
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-03-13T11:12:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:13:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T11:14:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-13T11:15:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T11:16:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:16:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/getVip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_vip`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:17:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Goods/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:17:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0260s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-13T11:17:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:18:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:18:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:18:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0230s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-03-13T11:18:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:22:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0230s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:22:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:28:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttr
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:28:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Attr/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `moban_attr` WHERE `id` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0160s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0220s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T11:29:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0210s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-13T11:29:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0220s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getCates
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0240s ]
+SQL: SELECT `cate_id`,`attrtype_id` FROM `moban_goods` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `moban_cate` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-13T11:29:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Search/getAttrs
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_attr` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `moban_attr` WHERE `attrtype_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_attr` WHERE `parent_id` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

@@ -48,6 +48,7 @@ class GoodsController extends CommonController {
                 'goods_store'=>I('goods_store'),
                 'goods_recommend'=>I('goods_recommend'),
                 'download_num'=>I('download_num'),
+                'goods_tuijian'=>I('goods_tuijian'),
             );
             if(is_array($data['goods_vips'])){
                 $data['goods_vips']=implode(',',$data['goods_vips']);

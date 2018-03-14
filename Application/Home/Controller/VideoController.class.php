@@ -6,21 +6,15 @@ class VideoController extends CommonController {
         $this->getCates();
         $ac=$this->getAc();
         $atts=M('attr')->where(array('attrtype_id'=>3))->select();
-
-        $search=M('attr')->where(array('attr_name'=>'搜索设置'))->find();
-        $searchss=$this->handleSearch($search);
-        /*print_r($searchss);die*/;
+        $sorts=M('goodsSort')->select();
         $num=count($atts);
-        /*echo $num;*/
-
         $attrss=M('attr')->select();
         $attrs=$this->test($attrss);
-        /*print_r($attrs);die;*/
         $this->assign(array(
             'ac'=>$ac,
             'num'=>$num,
             'attrs'=>$attrs,
-            'searchss'=>$searchss,
+            'sorts'=>$sorts,
         ));
         $this->display();
 

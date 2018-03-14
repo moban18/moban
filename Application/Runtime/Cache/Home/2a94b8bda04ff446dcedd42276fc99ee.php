@@ -9,6 +9,7 @@
 <meta name="baidu-site-verification" content="DLLJTpAaCu">
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
 </head>
@@ -1055,7 +1056,7 @@
 
 
 
-<div class="footer_bg">
+<div class="footer_bg clearfix">
     <div class="footer">
         <div class="foot_nav">
             <div class="foot_logo">

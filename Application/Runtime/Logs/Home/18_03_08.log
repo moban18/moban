@@ -1,0 +1,4 @@
+[ 2018-03-08T21:46:42+08:00 ] 127.0.0.1 /moban/index.php/Home/Vip/index
+ERR: 1146:Table 'moban.moban_good_sort' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `moban_good_sort`
+

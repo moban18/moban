@@ -1,0 +1,123 @@
+
+<extend name="Common/base" />
+
+<block name="main">
+    <div class="marquee_box">
+        <div class="w_list">
+            <marquee scrollamount="3" scrolldelay="10">【<span class="marquee_main">
+                <span class="red"><a href="http://www.sucaihuo.com/member/pay.html" rel="nofollow" target="_blank">在线充值</a> 温馨提示：</span>充200元以上立即赠送1个月会员，充的多送的多，永久会员再送50元积分</span>，<a href="http://www.lanrenzhijia.com" target="_blank">懒人之家</a>投放广告和技术问题协助联系QQ416148489】
+            </marquee>
+        </div>
+    </div>
+    <div id="classify">
+        <div class="classify_box ">
+            <?php $curent;?>
+            <?php foreach($attrs as $k => $v):?>
+                <?php if($v['attrtype_id']==3):?>
+                    <?php
+                        if(I('filter')){
+                            $a=explode('-',I('filter'));
+                        }else{
+                            $a=array_fill(0,$num+1,0);
+                        }
+
+
+                    ?>
+                    <?php if($v['child']):?>
+                        <div class="tg_classify_wrap clearfix ">
+                            <dl class="tg_classify_wrap_left">
+                                <dt class="">
+                                    <i class="icon_order"></i>
+                                    {$v['attr_name']}
+                                </dt>
+                            </dl>
+                            <dl class="tg_classify_wrap_right">
+                                <?php $filter=implode('-',$a);?>
+                                <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
+                                    <?php $c=explode('-',I('filter'));
+                                    $c[$k]=0;
+                                    $filter=implode('-',$c);
+
+                                    ?>
+                                    <a href="<?php
+                                        if($filter=='0-0-0-0'){
+                                            echo U('Video/index');
+                                        }elseif(!I('filter')){
+                                            echo U('Video/index');
+                                        }else{
+                                            echo U('Video/index',['filter'=>$filter]);
+                                        }
+                                    ?>">
+                                        </span>不限</span>
+                                    </a>
+                                </dd>
+                                <!--这里取得URL的filter变量-->
+                                <!--<?php if(I('filter')){
+                                    $e=explode('-',I('filter'));
+                                    foreach ($v['child'] as $i =>$h){
+                                        foreach ($h['value'] as $p=>$o){
+                                            if($e[0]==$o['vid']){
+                                                $cur=true;
+                                                $cur_id= $o['id'];
+
+                                            }
+                                        }
+                                    }
+
+                                }?>-->
+
+                                <!--这里取得URL的filter变量结束-->
+                                <?php foreach($v['child'] as $v1):?>
+                                    <?php
+
+
+                                        if(count($a)<2){
+                                            $filter=$v1['id'];
+
+
+                                        }else{
+                                            $a[$k]=$v1['id'];
+                                            $filter=implode('-',$a);
+                                            echo count($a);
+
+                                        }
+
+                                    ?>
+
+                                    <dd class="<?php
+                                        if(I('filter') && $e[$k]==$v1['id']){
+                                            echo 'on1';
+                                        }
+                                        if($cur && $cur_id==$v1['id']){
+                                            echo 'on1';
+                                        }
+
+                                       ?>">
+                                        <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
+                                            <span>{$v1.attr_name}</span>
+                                        </a>
+                                    </dd>
+                                <?php endforeach;?>
+                            </dl>
+                        </div>
+
+                    <?php endif;?>
+
+                <?php endif;?>
+            <?php endforeach; ?>
+
+            </div>
+        </div>
+
+
+</block>
+
+
+
+
+
+
+
+
+
+

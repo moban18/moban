@@ -6,9 +6,9 @@ class VipController extends CommonController {
         $this->getCates();
         $ac=$this->getAc();
         $atts=M('attr')->where(array('attrtype_id'=>1))->select();
-        $search=M('attr')->where(array('attr_name'=>'搜索设置'))->find();
-        $searchss=$this->handleSearch($search);
-        /*print_r($searchss);die*/;
+        $sorts=M('goodsSort')->select();
+
+        /*print_r($sort);die;*/
         $num=count($atts);
         $attrss=M('attr')->select();
         $attrs=$this->test($attrss);
@@ -17,7 +17,7 @@ class VipController extends CommonController {
             'ac'=>$ac,
             'num'=>$num,
             'attrs'=>$attrs,
-            'searchss'=>$searchss,
+            'sorts'=>$sorts,
         ));
         $this->display();
 

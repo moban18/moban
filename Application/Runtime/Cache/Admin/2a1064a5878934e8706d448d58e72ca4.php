@@ -98,7 +98,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -112,25 +112,39 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目 管理</span>
+                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/auth_rule/index.html"><span class="menu-text">权限列表</span>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
 
             </ul>
         </li>
-        <li <?php if($ac == 'Attrtype' or $ac == 'Attr' or $ac == 'Attrs'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Attrtype' or $ac == 'Attr' or $ac == 'Attrs' or $ac == 'Goods' or $ac == 'Search'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">商品管理</span>
                 <i class="menu-expand"></i>
             </a>
             <ul class="submenu">
+                <li>
+                    <a href="/moban/index.php/Admin/goods/index">
+                                    <span class="menu-text">
+                                        商品管理                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Search/index">
+                                    <span class="menu-text">
+                                        商品搜索设置                                    </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
                 <li>
                     <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
@@ -147,6 +161,44 @@
                 </li>
 
             </ul>
+        </li>
+        <li <?php if($ac == 'User'): ?>class="open"<?php endif; ?> >
+        <a href="#" class="menu-dropdown">
+            <i class="menu-icon fa fa-gear"></i>
+            <span class="menu-text">会员管理</span>
+            <i class="menu-expand"></i>
+        </a>
+        <ul class="submenu">
+            <li>
+                <a href="/moban/index.php/Admin/User/index">
+                                    <span class="menu-text">
+                                        会员管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Search/index">
+                                    <span class="menu-text">
+                                        会员等级                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attrtype/index">
+                                    <span class="menu-text">
+                                        商品种类管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attr/index">
+                                    <span class="menu-text">
+                                        商品属性管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+
+        </ul>
         </li>
         <li>
             <a href="#" class="menu-dropdown">

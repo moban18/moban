@@ -9,6 +9,7 @@
 <meta name="baidu-site-verification" content="DLLJTpAaCu">
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
 </head>
@@ -143,7 +144,7 @@
     </div>
     <div id="classify">
         <div class="classify_box ">
-            <?php $curent;?>
+            <?php $curent; $ok=0; ?>
             <?php foreach($attrs as $k => $v):?>
                 <?php if($v['attrtype_id']==1):?>
                     <?php
@@ -158,7 +159,7 @@
                             </dl>
                             <dl class="tg_classify_wrap_right">
                                 <?php $filter=implode('-',$a);?>
-                                <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
+                                <dd class="<?php if(!I('filter') or $a[$ok]==0){echo 'on1';}?>">
                                     <?php $c=explode('-',I('filter')); $c[$k]=0; $filter=implode('-',$c); ?>
                                     <a href="<?php
  if($filter=='0-0-0-0'){ echo U('Vip/index'); }elseif(!I('filter')){ echo U('Vip/index'); }else{ echo U('Vip/index',['filter'=>$filter]); } ?>">
@@ -170,9 +171,9 @@
                                 <!--这里取得URL的filter变量结束-->
                                 <?php foreach($v['child'] as $v1):?>
                                     <?php
- $a[$k]=$v1['id']; $filter=implode('-',$a); ?>
+ $a[$ok]=$v1['id']; $filter=implode('-',$a); ?>
                                     <dd class="<?php
- if(I('filter') && $e[$k]==$v1['id']){ echo 'on1'; } if($cur && $cur_id==$v1['id']){ echo 'on1'; } ?>">
+ if(I('filter') && $e[$ok]==$v1['id']){ echo 'on1'; } if($cur && $cur_id==$v1['id']){ echo 'on1'; } ?>">
                                         <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
                                             <span><?php echo ($v1["attr_name"]); ?></span>
                                         </a>
@@ -196,7 +197,7 @@
                                             <dl class="tg_classify_wrap_right">
                                                 <?php $filter=implode('-',$a);?>
                                                 <dd class="<?php
- if(!I('filter') or $a[$k]==0){ echo 'on1'; } if($a[$k]==$j['id']){ echo 'on1'; } ?>">
+ if(!I('filter') or $a[$ok]==0){ echo 'on1'; } if($a[$k]==$j['id']){ echo 'on1'; } ?>">
                                                     <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
                                                         </span>不限</span>
                                                     </a>
@@ -204,7 +205,7 @@
 
                                                 <?php foreach($j['value'] as $m):?>
                                                 <?php
- $a=explode('-',I('filter')); $a[$k]=$m['vid']; $filter=implode('-',$a); ?>
+ $a=explode('-',I('filter')); $a[$ok]=$m['vid']; $filter=implode('-',$a); ?>
                                                 <dd class="<?php if(I('filter') && $e[0]==$m['vid']){echo 'on1';}?>">
                                                     <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
                                                         <span><?php echo ($m["v1"]); ?></span>
@@ -240,8 +241,8 @@
                                 <!--这里取得URL的filter变量结束-->
 
                                 <?php foreach($v['value'] as $v1):?>
-                                <?php $a[$k]=$v1['id']; $filter=implode('-',$a);?>
-                                    <dd class="<?php if(I('filter') && $d[$k]==$v1['id']){echo 'on1';}?>">
+                                <?php $a[$ok]=$v1['id']; $filter=implode('-',$a);?>
+                                    <dd class="<?php if(I('filter') && $d[$ok]==$v1['id']){echo 'on1';}?>">
                                         <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
                                             <span><?php echo ($v1["v1"]); ?></span>
                                         </a>
@@ -250,7 +251,7 @@
                             </dl>
                         </div>
                     <?php endif;?>
-
+                    <?php $ok++; ?>
                 <?php endif;?>
             <?php endforeach; ?>
 
@@ -263,18 +264,17 @@
         <?php
  if(I('filter')){ $a=explode('-',I('filter')); }else{ $a=array_fill(0,$num+1,0); } ?>
         <div class="sort">
-
-            <?php foreach($searchss['value'] as $v):?>
-                <?php if($v['v1']!=='推荐'):?>
+            <?php foreach($sorts as $v):?>
+                <?php if($v['sort_name']!=='推荐'):?>
                     <div class="tg_classify_wrap clearfix">
                         <dl class="tg_classify_toggle">
                             <?php
  if(I('filter')){ $b=explode('-',I('filter')); } ?>
-                            <dt class="<?php if(I('filter') && $b[$num]==$v['vid']){echo 'on2';}?>">
-                                <?php $a[$num]=$v['vid']; $filter=implode('-',$a);?>
+                            <dt class="<?php if(I('filter') && $b[$num]==$v['id']){echo 'on2';}?>">
+                                <?php $a[$num]=$v['id']; $filter=implode('-',$a);?>
                                 <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
                                     <i class="icon_order"></i>
-                                    <span><?php echo $v['v1']?></span>
+                                    <span><?php echo $v['sort_name'];?></span>
                                     <b class="icon_order"></b>
                                 </a>
                             </dt>
@@ -285,9 +285,9 @@
                         <dl class="tg_classify_toggle checkbox_img ">
                             <?php
  if(I('filter')){ $w=explode('-',I('filter')); } ?>
-                            <dt class="<?php if(I('filter') && $w[$num]==$v['vid']){echo 'on3';}?>">
-                                <?php $a[$num]=$v['vid']; $filter=implode('-',$a);?>
-                                <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                            <dt class="<?php if(I('filter') && $w[$num]==$v['id']){echo 'on3';}?>">
+                                <?php $a[$num]=$v['id']; $filter=implode('-',$a);?>
+                                <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
                                     <i class="icon_order"></i>
                                     <span>推荐</span>
                                     <b class="icon_order"></b>
@@ -295,7 +295,8 @@
                             </dt>
                         </dl>
                     </div>
-                <?php endif;endforeach;?>
+
+            <?php endif; endforeach;?>
 
 
             <div id="order-page" class="order-page">
@@ -326,7 +327,7 @@
 
 
 
-<div class="footer_bg">
+<div class="footer_bg clearfix">
     <div class="footer">
         <div class="foot_nav">
             <div class="foot_logo">
