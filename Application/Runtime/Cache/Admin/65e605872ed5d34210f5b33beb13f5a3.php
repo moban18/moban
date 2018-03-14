@@ -191,14 +191,14 @@
             <li>
                 <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
-                                        商品种类管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
             <li>
                 <a href="/moban/index.php/Admin/Attr/index">
                                     <span class="menu-text">
-                                        商品属性管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>

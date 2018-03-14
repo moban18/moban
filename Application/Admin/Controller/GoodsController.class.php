@@ -11,7 +11,7 @@ class GoodsController extends CommonController {
         $Page->setConfig('prev','上一页');
         $Page->setConfig('next','下一页');
         $show       = $Page->show();//
-        $goodss=$goods->alias('a')->field('a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,b.cate_name')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $goodss=$goods->alias('a')->field('a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,b.cate_name')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($goodss as $k =>$v) {
             if($v['goods_vips']){
                 $a=array();
@@ -212,7 +212,9 @@ class GoodsController extends CommonController {
     public function delSearch($id){
         if($id){
             $search=D('search');
+            $goods=M('goods');
             if($search->delete($id)){
+                $goods->where(array('id'=>I('goods_id')))->setDec('goods_search');
                 $this->success('删除搜索成功');
             }else{
                 $this->error('删除搜索失败');

@@ -85,12 +85,12 @@
                                                         <if condition="$v['attr1_name'] neq '' ">
                                                             <p>规则{$v.id}：{$v['attr1_name']}--{$v['attr2_name']}--{$v['attr_name']}<a class="btn btn-danger btn-sm shiny marginleft" href="__CONTROLLER__/delSearch/id/{$v['id']}">删除</a></p>
                                                             <else/>
-                                                            <p>规则{$v.id}：{$v['attr2_name']}--{$v['attr_name']}<a class="btn btn-danger btn-sm shiny marginleft" href="__CONTROLLER__/delSearch/id/{$v['id']}">删除</a></p>
+                                                            <p>规则{$v.id}：{$v['attr2_name']}--{$v['attr_name']}<a class="btn btn-danger btn-sm shiny marginleft" href="__CONTROLLER__/delSearch/goods_id/<?php echo $_GET['id'];?>/id/{$v['id']}">删除</a></p>
                                                         </if>
 
                                                     </volist>
 
-                                                    <p class="help-block col-sm-6 red">注意：以上的规则只能删除，若要添加<a href="__MODULE__/Search/add">点击这里</a></p>
+                                                    <p class="help-block col-sm-6 red">注意：以上的规则只能删除，若要添加<a href="__MODULE__/Search/add/id/{$goodss['id']}">点击这里</a></p>
                                                 </div>
 
 

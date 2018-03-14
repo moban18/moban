@@ -73,7 +73,7 @@
                                 <select id="goods_id" name="goods_id">
                                     <option value=0>选择商品</option>
                                     <volist name="goods" id="v">
-                                        <option value="{$v.id}">{$v.id}.{$v.goods_name}</option>
+                                        <option value="{$v.id}" <if condition="I('id') eq $v['id']">selected="selected"</if> >{$v.id}.{$v.goods_name}</option>
                                     </volist>
                                 </select>
 
@@ -84,10 +84,11 @@
                             <label for="username" class="col-sm-2 control-label no-padding-right">属于栏目：</label>
                             <div class="col-sm-6">
                                 <select id="cate_id" name="cate_id" disabled>
-                                    <option value=0>请选择商品</option>
+                                    <option value=0>请选择栏目</option>
                                     <volist name="cates" id="v">
                                         <option value="{$v.id}">{$v.cate_name}</option>
                                     </volist>
+
                                 </select>
                             </div>
                         </div>

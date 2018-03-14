@@ -191,14 +191,14 @@
             <li>
                 <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
-                                        商品种类管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
             <li>
                 <a href="/moban/index.php/Admin/Attr/index">
                                     <span class="menu-text">
-                                        商品属性管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
@@ -278,7 +278,7 @@
                             <div class="col-sm-4">
                                 <select id="goods_id" name="goods_id">
                                     <option value=0>选择商品</option>
-                                    <?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["id"]); ?>.<?php echo ($v["goods_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    <?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>" <?php if(I('id') == $v['id']): ?>selected="selected"<?php endif; ?> ><?php echo ($v["id"]); ?>.<?php echo ($v["goods_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
 
                             </div>
@@ -288,8 +288,9 @@
                             <label for="username" class="col-sm-2 control-label no-padding-right">属于栏目：</label>
                             <div class="col-sm-6">
                                 <select id="cate_id" name="cate_id" disabled>
-                                    <option value=0>请选择商品</option>
+                                    <option value=0>请选择栏目</option>
                                     <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+
                                 </select>
                             </div>
                         </div>

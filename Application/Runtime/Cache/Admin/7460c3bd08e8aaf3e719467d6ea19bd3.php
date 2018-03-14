@@ -192,14 +192,14 @@
             <li>
                 <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
-                                        商品种类管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
             <li>
                 <a href="/moban/index.php/Admin/Attr/index">
                                     <span class="menu-text">
-                                        商品属性管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
@@ -304,7 +304,7 @@
                                             <td align="center"><?php echo ($v['goods_store']); ?></td>
                                             <td align="center"><?php echo ($v['goods_recommend']); ?></td>
                                             <td align="center"><?php echo ($v['download_num']); ?></td>
-                                            <td align="center"><?php echo ($v['download_num']); ?></td>
+                                            <td align="center"><?php echo ($v['goods_search']); ?></td>
 
                                             <td align="center">
                                                 <a href="/moban/index.php/Admin/Goods/edit/id/<?php echo ($v["id"]); ?>" class="btn btn-primary btn-sm shiny">

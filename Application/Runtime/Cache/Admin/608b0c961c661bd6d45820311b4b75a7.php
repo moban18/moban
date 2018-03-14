@@ -195,14 +195,14 @@
             <li>
                 <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
-                                        商品种类管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
             <li>
                 <a href="/moban/index.php/Admin/Attr/index">
                                     <span class="menu-text">
-                                        商品属性管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
@@ -289,9 +289,9 @@
                                                 <div id="box">
                                                     <?php if(is_array($searches)): $i = 0; $__LIST__ = $searches;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i; if($v['attr1_name'] != '' ): ?><p>规则<?php echo ($v["id"]); ?>：<?php echo ($v['attr1_name']); ?>--<?php echo ($v['attr2_name']); ?>--<?php echo ($v['attr_name']); ?><a class="btn btn-danger btn-sm shiny marginleft" href="/moban/index.php/Admin/Goods/delSearch/id/<?php echo ($v['id']); ?>">删除</a></p>
                                                             <?php else: ?>
-                                                            <p>规则<?php echo ($v["id"]); ?>：<?php echo ($v['attr2_name']); ?>--<?php echo ($v['attr_name']); ?><a class="btn btn-danger btn-sm shiny marginleft" href="/moban/index.php/Admin/Goods/delSearch/id/<?php echo ($v['id']); ?>">删除</a></p><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                                            <p>规则<?php echo ($v["id"]); ?>：<?php echo ($v['attr2_name']); ?>--<?php echo ($v['attr_name']); ?><a class="btn btn-danger btn-sm shiny marginleft" href="/moban/index.php/Admin/Goods/delSearch/goods_id/<?php echo $_GET['id'];?>/id/<?php echo ($v['id']); ?>">删除</a></p><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
-                                                    <p class="help-block col-sm-6 red">注意：以上的规则只能删除，若要添加<a href="/moban/index.php/Admin/Search/add">点击这里</a></p>
+                                                    <p class="help-block col-sm-6 red">注意：以上的规则只能删除，若要添加<a href="/moban/index.php/Admin/Search/add/id/<?php echo ($goodss['id']); ?>">点击这里</a></p>
                                                 </div>
 
 

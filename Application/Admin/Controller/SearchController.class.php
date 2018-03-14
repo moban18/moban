@@ -38,6 +38,8 @@ class SearchController extends CommonController {
                     $searchs=$search->add($v);
                 }
                 if($searchs){
+                    $serarchss['goods_search']=count($data);
+                    $goods=M('goods')->where(array('id'=>I('goods_id')))->save($serarchss);
                     $this->success('添加搜索属性成功');
                 }else{
                     $this->error('添加搜索属性失败');
