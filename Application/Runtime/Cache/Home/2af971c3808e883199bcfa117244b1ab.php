@@ -10,8 +10,10 @@
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
 <link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/cate.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
+
 </head>
 <body>
 
@@ -133,7 +135,7 @@
 </div>
 
 
-<div id="main">
+<div id="main" class="clearfix">
     
 
     <div class="atr_contain clearfix">
@@ -986,17 +988,15 @@
     <div class="clear"></div>
 </div>
 
-<div id="kefu">
-    <div class="top"> 在线客服<img src="/moban/Public/images/close.gif" class="close"> </div>
-    <div class="middle"> <a target="_top" href="http://wpa.qq.com/msgrd?v=3&amp;uin=970003436&amp;site=qq&amp;menu=yes"><img src="/moban/Public/images/qq.png"></a><br>
-        <a target="_top" href="http://wpa.qq.com/msgrd?v=3&amp;uin=541475789&amp;site=qq&amp;menu=yes"><img src="/moban/Public/images/qq.png"></a> <a target="_top" href="http://wpa.qq.com/msgrd?v=3&amp;uin=383600043&amp;site=qq&amp;menu=yes"><img src="/moban/Public/images/qq.png"></a> </div>
-</div>
 <div class="right_bar"> <img src="/moban/Public/images/right_bar.jpg"> </div>
 <div id="tbox" style="display: block;"> <a class="taoba" title="双语" href="http://www.dede58.com/moban/sy.html" target="_top">双语模板</a>
     <a class="taoba" title="营销型" href="http://www.dede58.com/moban/yx.html" target="_top">营销型模板</a>
     <a class="taoba" title="手机" href="http://www.dede58.com/moban/shouji.html" target="_top">手机模板</a>
     <a class="taoba" title="响应式" href="http://www.dede58.com/moban/xys.html" target="_top">响应式模板</a>
 </div>
+
+<script src="/moban/Public/js/cate.js"></script>
+
 
 
 </body>

@@ -11,7 +11,7 @@ class GoodsController extends CommonController {
         $Page->setConfig('prev','上一页');
         $Page->setConfig('next','下一页');
         $show       = $Page->show();//
-        $goodss=$goods->alias('a')->field('a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,b.cate_name')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $goodss=$goods->alias('a')->field('a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->order('goods_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($goodss as $k =>$v) {
             if($v['goods_vips']){
                 $a=array();
@@ -44,11 +44,14 @@ class GoodsController extends CommonController {
                 'goods_vips'=>I('goods_vips'),
                 'goods_price'=>I('goods_price'),
                 'goods_photo'=>I('goods_photo'),
+                'godds_233_160'=>I('godds_233_160'),
+                'moban_num'=>I('moban_num'),
                 'goods_comment'=>I('goods_comment'),
                 'goods_store'=>I('goods_store'),
                 'goods_recommend'=>I('goods_recommend'),
                 'download_num'=>I('download_num'),
                 'goods_tuijian'=>I('goods_tuijian'),
+                'goods_time'=>time(),
             );
             if(is_array($data['goods_vips'])){
                 $data['goods_vips']=implode(',',$data['goods_vips']);
@@ -141,8 +144,11 @@ class GoodsController extends CommonController {
     //删除商品
     public function del($id){
         $goods=D('goods');
+        $goods_id=$id;
         if($id){
             if($info=$goods->relation(true)->where(array('id'=>$id))->delete()){
+                //删除商品search表对应的搜索属性
+                $search=M('search')->where(array('goods_id'=>$goods_id))->delete();
                 $this->success('删除商品成功',U('Goods/index'));
             }else{
                 $this->error('删除商品失败');
@@ -152,22 +158,6 @@ class GoodsController extends CommonController {
         }
 
     }
-
-
-    public function test(){
-        $str='&lt;p&gt;afds&lt;img src=&quot;/moban/ueditor/20180209/1518142633418957.jpg&quot; title=&quot;1518142633418957.jpg&quot; alt=&quot;1-1G22Q20A10-L.jpg&quot;/&gt;&lt;img src=&quot;/moban/ueditor/20180209/1518142638140756.jpg&quot; title=&quot;1518142638140756.jpg&quot; alt=&quot;1111111.jpg&quot;/&gt;&lt;img src=&quot;/moban/ueditor/20180209/1518142642294165.jpg&quot; title=&quot;1518142642294165.jpg&quot; alt=&quot;1-1G22Q20A10-L.jpg&quot;/&gt;&lt;/p&gt;';
-        $text=stripslashes($str);
-        //<p>afds<img src="/moban/ueditor/20180209/1518142633418957.jpg" title="1518142633418957.jpg" alt="1-1G22Q20A10-L.jpg"/><img src="/moban/ueditor/20180209/1518142638140756.jpg" title="1518142638140756.jpg" alt="1111111.jpg"/><img src="/moban/ueditor/20180209/1518142642294165.jpg" title="1518142642294165.jpg" alt="1-1G22Q20A10-L.jpg"/></p>
-        /*echo $text;die;*/
-        /*preg_match('/src=\"?(.+\.(jpg|gif|bmp|bnp|png))\"?.+/',$text,$arr);*/
-        preg_match_all('/\/ueditor\/\d*\/\d*\.[jpg|jpeg|png|bmp|gif]*/i',$text,$arr);
-        print_r($arr);
-        /*$str='.'.substr($arr[1],12);
-        unlink($str);*/
-    }
-
-
-
 
     public function out(){
         session('a_id',null);
@@ -194,7 +184,22 @@ class GoodsController extends CommonController {
             $Path=$info['upload_file']['savepath'];
             $Name=$info['upload_file']['savename'];
             $allPath=$Path.$Name;
-            echo $allPath;
+                //处理宽度为268像素的图片
+                $image = new \Think\Image();
+                $image->open($allPath);
+                $width=$image->width();
+                $rage=$width/268;
+                $height=$image->height();
+                $newHeight=$height*$rage;
+                $image->thumb(268, $newHeight)->save($allPath);
+                //裁剪233*160首页显示的商品图片
+                $image->open($allPath);
+                $width=$image->width();
+                $small='233_';
+                $smallPath=$Path.$small.$Name;
+                $image->crop(233, 160)->save($smallPath);
+                $total=$allPath.','.$smallPath;
+                 echo $total;
         }
 
     }

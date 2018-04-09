@@ -73,7 +73,7 @@
                                 <select id="goods_id" name="goods_id">
                                     <option value=0>选择商品</option>
                                     <volist name="goods" id="v">
-                                        <option value="{$v.id}" <if condition="I('id') eq $v['id']">selected="selected"</if> >{$v.id}.{$v.goods_name}</option>
+                                        <option value="{$v.id}" <if condition="I('id') eq $v['id']">selected="selected"</if> >{$v.id}.{$v.goods_name}&nbsp;&nbsp;&nbsp;&nbsp;{$v.goods_search}</option>
                                     </volist>
                                 </select>
 

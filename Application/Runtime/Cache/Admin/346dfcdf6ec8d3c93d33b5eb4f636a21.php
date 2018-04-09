@@ -104,7 +104,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article' or $ac == 'Lun'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -118,12 +118,17 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                 </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
+                    <a href="/moban/index.php/Admin/Lun/index"><span class="menu-text">轮播  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -302,6 +307,13 @@
 
 
                                         <div class="form-group" style="margin-top:10px;" >
+                                            <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">模板数：</label>
+                                            <div class="col-sm-1">
+                                                <input class="form-control"  placeholder="" name="moban_num" required="" type="text" value="">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="margin-top:10px;" >
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">商品浏览量：</label>
                                             <div class="col-sm-1">
                                                 <input class="form-control"  placeholder="" name="goods_comment" required="" type="text" value="">
@@ -371,7 +383,7 @@
 
 
                                             </div>
-
+                                            <p class="help-block col-sm-4 red">* 图片宽度为268像素为最佳显示</p>
                                         </div>
                                         <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label no-padding-right">是否推荐：</label>
@@ -484,8 +496,10 @@
                             delPhoto(src);
                             i.html('');
                         }
-                        html='<img alt="'+data+'" id="goods_photo_link" src="/moban'+data+'"/>';
-                        html+='<input id="hid_photo" type=hidden name="goods_photo" value="'+data+'" />';
+                        var photos=data.split(',');
+                        html='<img alt="'+data[0]+'" id="goods_photo_link" src="/moban'+photos[0]+'"/>';
+                        html+='<input id="hid_photo" type=hidden name="goods_photo" value="'+photos[0]+'" />';
+                        html+='<input id="hid_photo_small" type=hidden name="godds_233_160" value="'+photos[1]+'" />';
                         i.html(html);
                         $('#goods_photo').val('');
 

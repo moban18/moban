@@ -107,7 +107,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article' or $ac == 'Lun'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -121,12 +121,17 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                 </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
+                    <a href="/moban/index.php/Admin/Lun/index"><span class="menu-text">轮播  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -274,7 +279,7 @@
                                 <span class="widget-caption">商品基本信息</span>
                             </div>
                             <div class="widget-body">
-                                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                                    <form class="form-horizontal" role="form" action="/moban/index.php/Admin/Goods/add/id=" method="post" enctype="multipart/form-data">
                                         <input type="hidden" name="id" value="<?php echo ($goodss['id']); ?>"/>
                                         <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">商品标题：</label>
@@ -291,7 +296,7 @@
                                                             <?php else: ?>
                                                             <p>规则<?php echo ($v["id"]); ?>：<?php echo ($v['attr2_name']); ?>--<?php echo ($v['attr_name']); ?><a class="btn btn-danger btn-sm shiny marginleft" href="/moban/index.php/Admin/Goods/delSearch/goods_id/<?php echo $_GET['id'];?>/id/<?php echo ($v['id']); ?>">删除</a></p><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
-                                                    <p class="help-block col-sm-6 red">注意：以上的规则只能删除，若要添加<a href="/moban/index.php/Admin/Search/add/id/<?php echo ($goodss['id']); ?>">点击这里</a></p>
+                                                    <p class="help-block col-sm-6 red">注意：以上的规则只能删除，若要添加<a href="<?php echo U('Admin/Search/add',array('id'=>$_GET['id']));?>">点击这里</a></p>
                                                 </div>
 
 
@@ -336,7 +341,13 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <div class="form-group" style="margin-top:10px;" >
+                                            <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">模板数：</label>
+                                            <div class="col-sm-1">
+                                                <input class="form-control"  placeholder="" name="moban_num" required="" type="text" value="<?php echo ($goodss['moban_num']); ?>">
 
+                                            </div>
+                                        </div>
 
                                         <div class="form-group" style="margin-top:10px;" >
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">商品浏览量：</label>
@@ -411,6 +422,7 @@
 
                                                 </i><?php endif; ?>
                                             </div>
+                                            <p class="help-block col-sm-4 red">*直接上传新的图片就会自动修改</p>
                                         </div>
 
                                         <div class="form-group">

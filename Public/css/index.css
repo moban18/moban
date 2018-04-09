@@ -42,7 +42,10 @@ a:hover { text-decoration: none; color: rgb(51, 192, 208); }
 .s_b_link { float: left; height: 22px; line-height: 24px; color: rgb(153, 153, 153); width: 302px; text-align: left; }
 .s_b_link a { color: rgb(51, 51, 51); padding: 0px 5px; }
 .s_rad { float: right; color: rgb(51, 51, 51); font-family: Tahoma,Geneva,sans-serif; line-height: 23px; padding: 0px 0px 0px 8px; text-align: left; opacity: 0.9; position: relative; height: 69px; margin-top: 10px; width: 280px; }
-.index3 { margin: 8px auto 5px; width: 1100px; }
+.index3 {
+    margin: 8px auto 5px;
+    width: 1100px;
+}
 .index5 { margin: 10px auto; width: 1100px; }
 .slideTxtBox3 { height: 100px; overflow: hidden; border: 1px solid rgb(227, 227, 227); text-align: left; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
 .slideTxtBox3 .hd { height: 30px; line-height: 30px; background: rgb(244, 244, 244) none repeat scroll 0% 0%; padding: 0px 20px; border-bottom: 1px solid rgb(227, 227, 227); position: relative; }
@@ -235,12 +238,11 @@ a.dayvip { position: absolute; width: 110px; height: 73px; display: block; right
 .box1_submits a {
     display: inline-block;
     text-align: center;
-    width: 50px;
+    width: 70px;
     height: 30px;
     color: #666666;
     border:1px solid #DCDCDC;
     line-height: 30px;
-    padding: 0 10px;
     border-radius: 8px;
     margin:5px;
 }
@@ -332,6 +334,9 @@ a.dayvip { position: absolute; width: 110px; height: 73px; display: block; right
 .box1_right_imgs .ig{
     position: absolute;
 
+}
+.ig img:hover {
+    opacity:1.0;
 }
 #tabs {
     font-size: 13px;
@@ -431,7 +436,7 @@ a.dayvip { position: absolute; width: 110px; height: 73px; display: block; right
 .index_tui:hover { background: rgb(148, 6, 184) none repeat scroll 0% 0%; }
 .index_fav a:hover { color: rgb(255, 255, 255); }
 .muban { width: 1100px; margin: 8px auto; }
-.mubantitle { padding: 10px 20px; border-bottom: 1px solid rgb(220, 220, 220); font-size: 14px; position: relative; background-color: rgb(255, 255, 255); }
+.mubantitle { padding: 5px 20px; font-size: 14px; position: relative; background-color: rgb(255, 255, 255); }
 .indexTitleT { font-size: 20px; }
 .f12 { font-size: 12px; color: rgb(153, 153, 153); }
 .index3 .col_four { margin-bottom: 12px; margin-right: 12px; width: 266px; }
@@ -699,10 +704,7 @@ img:hover { opacity: 0.7; }
 .blank5{height:5px; line-height:5px;/* _margin:-3px 0;e c m o b a n*/ clear:both; visibility:hidden;}
 .f_l{float:left;}
 .f_r{float:right;}
-.clearfix1:after{
-    content:"."; display:block; height:0; clear:both;
-    visibility:hidden;
-}
+content
 
 .block,.box {
     width:1100px;
@@ -1082,7 +1084,6 @@ table tr:hover {
 /*栏目模板的条件查询 如：默认，人气*/
 #content {
     width: 1100px;
-    height: 500px;
     margin:0 auto;
     margin-top:15px;
 }
@@ -1192,12 +1193,30 @@ table tr:hover {
     top:5px;
     left:7px;
 }
-
-
-
-.list {
-    width: 1100px;
-    min-height: 300px;
-    border:1px solid red;
-    margin-top: 20px;
+/*首页中间VIP模板区的CSS开始*/
+.goods_right_box {
+    margin-bottom:10px;
 }
+.no_flash li a img {
+    opacity:1.0;
+}
+.index3_box {
+    border:1px solid #E5E5E5;
+}
+.index3_left {
+    width: 790px;
+    min-height:500px;
+    float:left;
+}
+
+.index3_right {
+    width: 300px;
+    min-height:500px;
+    float:right;
+}
+
+/*首页中间VIP模板区的CSS结束*/
+
+
+
+

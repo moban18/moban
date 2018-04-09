@@ -22,7 +22,7 @@ class SearchController extends CommonController {
         $this->display();
     }
 
-    public function add(){
+    public function add($id=''){
         $ac=$this->getAc();
         $search=D('search');
         if(IS_POST){
@@ -47,7 +47,7 @@ class SearchController extends CommonController {
            }
 
         }else{
-            $goods=M('goods')->select();
+            $goods=M('goods')->order('goods_time desc')->select();
             $cates=M('cate')->select();
             $attr=M('attr');
             $attrtypes=M('attrtype')->select();

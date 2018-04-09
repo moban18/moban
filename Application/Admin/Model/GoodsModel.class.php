@@ -26,7 +26,7 @@ class GoodsModel extends RelationModel {
                 'goods_view'=>I('goods_view'),
                 'code_url'=>I('code_url'),
                 'download_url'=>I('download_url'),
-                'goods_time'=>time(),
+
             );
             $goods_info=M('goodsInfo')->add($info);
 

@@ -2,45 +2,50 @@
 <extend name="Common/base" />
 
 <block name="main">
-    <div class="marquee_box">
-        <div class="w_list">
-            <marquee scrollamount="3" scrolldelay="10">【<span class="marquee_main">
-                <span class="red"><a href="http://www.sucaihuo.com/member/pay.html" rel="nofollow" target="_blank">在线充值</a> 温馨提示：</span>充200元以上立即赠送1个月会员，充的多送的多，永久会员再送50元积分</span>，<a href="http://www.lanrenzhijia.com" target="_blank">懒人之家</a>投放广告和技术问题协助联系QQ416148489】
-            </marquee>
+    <div id="cate_body" class="clearfix">
+        <div class="marquee_box clearfix">
+            <div class="w_list">
+                <marquee scrollamount="3" scrolldelay="10">【<span class="marquee_main">
+                <span class="red"><a href="http://www.sucaihuo.com/member/pay.html" rel="nofollow"
+                                     target="_blank">在线充值</a> 温馨提示：</span>充200元以上立即赠送1个月会员，充的多送的多，永久会员再送50元积分</span>，<a
+                        href="http://www.lanrenzhijia.com" target="_blank">懒人之家</a>投放广告和技术问题协助联系QQ416148489】
+                </marquee>
+            </div>
         </div>
-    </div>
-    <div id="classify">
-        <div class="classify_box ">
-            <?php $curent;
+        <div id="classify" class="clearfix">
+            <div class="classify_box ">
+                <?php $curent;
             $ok=0;
              ?>
-            <?php foreach($attrs as $k => $v):?>
+                <?php foreach($attrs as $k => $v):?>
                 <?php if($v['attrtype_id']==1):?>
-                    <?php
+                <?php
                         if(I('filter')){
                             $a=explode('-',I('filter'));
                         }else{
-                            $a=array_fill(0,$num+1,0);
+                            $a=array_fill(0,$num+1+1,0);
                         }
+
                     ?>
-                    <?php if($v['child']):?>
-                        <div class="tg_classify_wrap clearfix ">
-                            <dl class="tg_classify_wrap_left">
-                                <dt class="">
-                                    <i class="icon_order"></i>
-                                    {$v['attr_name']}
-                                </dt>
-                            </dl>
-                            <dl class="tg_classify_wrap_right">
-                                <?php $filter=implode('-',$a);?>
-                                <dd class="<?php if(!I('filter') or $a[$ok]==0){echo 'on1';}?>">
-                                    <?php $c=explode('-',I('filter'));
+
+                <?php if($v['child']):?>
+                <div class="tg_classify_wrap clearfix ">
+                    <dl class="tg_classify_wrap_left">
+                        <dt class="">
+                            <i class="icon_order"></i>
+                            {$v['attr_name']}
+                        </dt>
+                    </dl>
+                    <dl class="tg_classify_wrap_right">
+                        <?php $filter=implode('-',$a);?>
+                        <dd class="<?php if(!I('filter') or $a[$ok]==0){echo 'on1';}?>">
+                            <?php $c=explode('-',I('filter'));
                                     $c[$k]=0;
                                     $filter=implode('-',$c);
 
                                     ?>
-                                    <a href="<?php
-                                        if($filter=='0-0-0-0'){
+                            <a href="<?php
+                                        if($filter=='0-0-0-0-0-0'){
                                             echo U('Vip/index');
                                         }elseif(!I('filter')){
                                             echo U('Vip/index');
@@ -48,30 +53,30 @@
                                             echo U('Vip/index',['filter'=>$filter]);
                                         }
                                     ?>">
-                                        </span>不限</span>
-                                    </a>
-                                </dd>
-                                <!--这里取得URL的filter变量-->
-                                <?php if(I('filter')){
+                                </span>不限</span>
+                            </a>
+                        </dd>
+                        <!--这里取得URL的filter变量-->
+                        <?php if(I('filter')){
                                     $e=explode('-',I('filter'));
                                     foreach ($v['child'] as $i =>$h){
-                                        foreach ($h['value'] as $p=>$o){
-                                            if($e[0]==$o['vid']){
-                                                $cur=true;
-                                                $cur_id= $o['id'];
+                        foreach ($h['value'] as $p=>$o){
+                        if($e[0]==$o['vid']){
+                        $cur=true;
+                        $cur_id= $o['id'];
 
-                                            }
-                                        }
-                                    }
+                        }
+                        }
+                        }
 
-                                }?>
-                                <!--这里取得URL的filter变量结束-->
-                                <?php foreach($v['child'] as $v1):?>
-                                    <?php
+                        }?>
+                        <!--这里取得URL的filter变量结束-->
+                        <?php foreach($v['child'] as $v1):?>
+                        <?php
                                         $a[$ok]=$v1['id'];
                                         $filter=implode('-',$a);
                                     ?>
-                                    <dd class="<?php
+                        <dd class="<?php
                                         if(I('filter') && $e[$ok]==$v1['id']){
                                             echo 'on1';
                                         }
@@ -80,29 +85,29 @@
                                         }
 
                                        ?>">
-                                        <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
-                                            <span>{$v1.attr_name}</span>
-                                        </a>
-                                    </dd>
-                                <?php endforeach;?>
-                            </dl>
-                        </div>
-                        <!--这里是固定分类子集-->
-                        <?php if(I('filter')){
+                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <span>{$v1.attr_name}</span>
+                            </a>
+                        </dd>
+                        <?php endforeach;?>
+                    </dl>
+                </div>
+                <!--这里是固定分类子集-->
+                <?php if(I('filter')){
                                 $d=explode('-',I('filter'));
                                 foreach ($v['child'] as $i =>$h){
-                                     foreach ($h['value'] as $p=>$o){
-                                        if($d[0]==$o['vid']){
-                                            $curent=true;
-                                            $curent_id= $o['id'];
-                                         }
-                                     }
-                                }
-                            }
-                        ?>
-                        <!--这里是固定分类子集结束-->
+                foreach ($h['value'] as $p=>$o){
+                if($d[0]==$o['vid']){
+                $curent=true;
+                $curent_id= $o['id'];
+                }
+                }
+                }
+                }
+                ?>
+                <!--这里是固定分类子集结束-->
                 <!--这里是分类子集-->
-                        <?php
+                <?php
                         if(I('filter')){
                             $n=explode('-',I('filter'));
                         }
@@ -113,21 +118,21 @@
                                 $a=array_fill(0,$num,0);
                             }
                             foreach($v['child'] as $t =>$j){
-                                    if($curent){
-                                        $n[0]=$curent_id;
-                                    }
-                                    if($n[0]==$j['id']){
-                                        ?>
-                                        <div class="tg_classify_wrap clearfix ">
-                                            <dl class="tg_classify_wrap_left">
-                                                <dt class="">
-                                                    <i class="icon_order"></i>
-                                                    分类子集
-                                                </dt>
-                                            </dl>
-                                            <dl class="tg_classify_wrap_right">
-                                                <?php $filter=implode('-',$a);?>
-                                                <dd class="<?php
+                if($curent){
+                $n[0]=$curent_id;
+                }
+                if($n[0]==$j['id']){
+                ?>
+                <div class="tg_classify_wrap clearfix ">
+                    <dl class="tg_classify_wrap_left">
+                        <dt class="">
+                            <i class="icon_order"></i>
+                            分类子集
+                        </dt>
+                    </dl>
+                    <dl class="tg_classify_wrap_right">
+                        <?php $filter=implode('-',$a);?>
+                        <dd class="<?php
                                                     if(!I('filter') or $a[$ok]==0){
                                                         echo 'on1';
                                                     }
@@ -136,28 +141,28 @@
                                                     }
 
                                                  ?>">
-                                                    <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
-                                                        </span>不限</span>
-                                                    </a>
-                                                </dd>
+                            <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
+                                </span>不限</span>
+                            </a>
+                        </dd>
 
-                                                <?php foreach($j['value'] as $m):?>
-                                                <?php
+                        <?php foreach($j['value'] as $m):?>
+                        <?php
                                                         $a=explode('-',I('filter'));
                                                         $a[$ok]=$m['vid'];
                                                         $filter=implode('-',$a);
 
                                                 ?>
-                                                <dd class="<?php if(I('filter') && $e[0]==$m['vid']){echo 'on1';}?>">
-                                                    <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
-                                                        <span>{$m.v1}</span>
-                                                    </a>
-                                                </dd>
-                                                <?php endforeach;?>
-                                             </dl>
-                                        </div>
+                        <dd class="<?php if(I('filter') && $e[0]==$m['vid']){echo 'on1';}?>">
+                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <span>{$m.v1}</span>
+                            </a>
+                        </dd>
+                        <?php endforeach;?>
+                    </dl>
+                </div>
 
-                        <?php
+                <?php
 
                                     }
                                 }
@@ -165,23 +170,23 @@
                        ?>
 
                 <!--这里是分类子集结束-->
-                    <?php else:?>
-                        <div class="tg_classify_wrap clearfix ">
-                            <dl class="tg_classify_wrap_left">
-                                <dt class="">
-                                    <i class="icon_order"></i>
-                                    {$v['attr_name']}
-                                </dt>
-                            </dl>
-                            <dl class="tg_classify_wrap_right">
-                                <?php $filter=implode('-',$a);?>
-                                <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
-                                    <?php $c=explode('-',I('filter'));
+                <?php else:?>
+                <div class="tg_classify_wrap clearfix ">
+                    <dl class="tg_classify_wrap_left">
+                        <dt class="">
+                            <i class="icon_order"></i>
+                            {$v['attr_name']}
+                        </dt>
+                    </dl>
+                    <dl class="tg_classify_wrap_right">
+                        <?php $filter=implode('-',$a);?>
+                        <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
+                            <?php $c=explode('-',I('filter'));
                                     $c[$k]=0;
                                     $filter=implode('-',$c);
                                     ?>
-                                    <a href="<?php
-                                        if($filter=='0-0-0-0'){
+                            <a href="<?php
+                                        if($filter=='0-0-0-0-0-0'){
                                             echo U('Vip/index');
                                         }elseif(!I('filter')){
                                             echo U('Vip/index');
@@ -189,107 +194,225 @@
                                             echo U('Vip/index',['filter'=>$filter]);
                                         }
                                     ?>">
-                                        </span>不限</span>
-                                    </a>
-                                </dd>
-                                <!--这里取得URL的filter变量-->
-                                <?php if(I('filter')){
+                                </span>不限</span>
+                            </a>
+                        </dd>
+                        <!--这里取得URL的filter变量-->
+                        <?php if(I('filter')){
                                     $d=explode('-',I('filter'));
                                 }?>
-                                <!--这里取得URL的filter变量结束-->
+                        <!--这里取得URL的filter变量结束-->
 
-                                <?php foreach($v['value'] as $v1):?>
-                                <?php $a[$ok]=$v1['id']; $filter=implode('-',$a);?>
-                                    <dd class="<?php if(I('filter') && $d[$ok]==$v1['id']){echo 'on1';}?>">
-                                        <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
-                                            <span>{$v1.v1}</span>
-                                        </a>
-                                    </dd>
-                                <?php endforeach;?>
-                            </dl>
-                        </div>
-                    <?php endif;?>
-                    <?php $ok++; ?>
+                        <?php foreach($v['value'] as $v1):?>
+                        <?php $a[$ok]=$v1['id']; $filter=implode('-',$a);?>
+                        <dd class="<?php if(I('filter') && $d[$ok]==$v1['id']){echo 'on1';}?>">
+                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <span>{$v1.v1}</span>
+                            </a>
+                        </dd>
+                        <?php endforeach;?>
+                    </dl>
+                </div>
                 <?php endif;?>
-            <?php endforeach; ?>
+                <?php $ok++; ?>
+                <?php endif;?>
+                <?php endforeach; ?>
 
             </div>
         </div>
 
-    </div>
-
-    <div id="content">
-        <?php
+        <div id="content" class="content clearfix">
+            <?php
             if(I('filter')){
-                $a=explode('-',I('filter'));
+                $h=explode('-',I('filter'));
             }else{
-                $a=array_fill(0,$num+1,0);
+                $h=array_fill(0,$num+1+1,0);
+
             }
-        ?>
-        <div class="sort">
-            <?php foreach($sorts as $v):?>
+             ?>
+
+            <div class="sort clearfix">
+                <?php foreach($sorts as $v):?>
                 <?php if($v['sort_name']!=='推荐'):?>
-                    <div class="tg_classify_wrap clearfix">
-                        <dl class="tg_classify_toggle">
-                            <?php
+                <div class="tg_classify_wrap clearfix">
+                    <dl class="tg_classify_toggle">
+                        <?php
                                 if(I('filter')){
                                     $b=explode('-',I('filter'));
                                 }
                             ?>
-                            <dt class="<?php if(I('filter') && $b[$num]==$v['id']){echo 'on2';}?>">
-                                <?php $a[$num]=$v['id']; $filter=implode('-',$a);?>
-                                <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
-                                    <i class="icon_order"></i>
-                                    <span><?php echo $v['sort_name'];?></span>
-                                    <b class="icon_order"></b>
-                                </a>
-                            </dt>
-                        </dl>
-                    </div>
+                        <dt class="<?php if(I('filter') && $b[$num]==$v['id']){echo 'on2';}?>">
+                            <?php $h[$ok]=$v['id']; $filter=implode('-',$h);?>
+                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <i class="icon_order"></i>
+                                <span><?php echo $v['sort_name'];?></span>
+                                <b class="icon_order"></b>
+                            </a>
+                        </dt>
+                    </dl>
+                </div>
                 <?php else:?>
-                    <div class="tg_classify_wrap checkbox_recommond clearfix">
-                        <dl class="tg_classify_toggle checkbox_img ">
-                            <?php
-                                        if(I('filter')){
-                                            $w=explode('-',I('filter'));
-                                        }
-                                    ?>
-                            <dt class="<?php if(I('filter') && $w[$num]==$v['id']){echo 'on3';}?>">
-                                <?php $a[$num]=$v['id']; $filter=implode('-',$a);?>
-                                <a href="<?php echo U('Video/index',['filter'=>$filter])?>">
-                                    <i class="icon_order"></i>
-                                    <span>推荐</span>
-                                    <b class="icon_order"></b>
-                                </a>
-                            </dt>
-                        </dl>
-                    </div>
+                <div class="tg_classify_wrap checkbox_recommond clearfix">
+                    <dl class="tg_classify_toggle checkbox_img ">
+                        <?php
+                            if(I('filter')){
+                                    $h=explode('-',I('filter'));
+                                }else{
+                                    $h=array_fill(0,$num+1+1,0);
 
-            <?php endif; endforeach;?>
+                                }
+                          ?>
+                        <dt class="<?php if(I('filter') && $h[$num]==$v['id']){echo 'on3';}?>">
+                            <?php $h[$ok]=$v['id']; $filter=implode('-',$h);?>
+                            <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+                                <i class="icon_order"></i>
+                                <span>推荐</span>
+                                <b class="icon_order"></b>
+                            </a>
+                        </dt>
+                    </dl>
+                </div>
+                <?php endif; endforeach;?>
+                <?php $ok++;?>
 
+                <div id="order-page" class="order-page">
+                    <span class="find_results_num">共<span class="red"> <?php echo $count;?> </span>个网站模板</span>
+                    <span class="page-small">
+                        <?php if(I('filter')){
+                            $L=explode('-',I('filter'));
+                           $L[$ok]= $L[$ok]-1;
+                            $pre=implode('-',$L);
+                        }?>
+                    <a class="prev-btn page-btn" href="<?php
+                    if($L[$ok]<=0){
+                        echo 'javascript:void(0);';
+                    }else{
+                        echo U('Vip/index',['filter'=>$pre]);
+                    }
+                    ?>">
 
-            <div id="order-page" class="order-page">
-                <span class="find_results_num">共<span class="red"> 198 </span>个网站模板</span>
-                <span class="page-small">
-                    <a class="prev-btn page-btn" href="javascript:void(0);">
-                        <span class="arrow-left arrow arrow-left-none"></span>
+                        <span class="arrow-left arrow" <?php
+                        if($L[$ok]>=1){
+                            echo 'style="border-right: 5px solid #666666;"';
+                            }
+                        ?>
+                        ></span>
                     </a>
-                    <span class="orange">1</span>/5
-                    <a class="pnext-btn page-btn" href="http://www.sucaihuo.com/templates/3-10-0-1-0-2">
-                        <span class="arrow-right arrow "></span>
+                    <span class="orange"><?php if($a[$ok]==0){echo 1;}else{echo $a[$ok];}?></span>/{$pages}
+                        <?php if(I('filter')){
+                            $L=explode('-',I('filter'));
+                            $L[$ok]= $L[$ok]+1;
+                            if($L[$ok]>=$pages){
+                                    $L[$ok]=$pages;
+                                }
+                            $nex=implode('-',$L);
+                        }else{
+                            $L=array_fill(0,$num+1+1,0);
+                            $L[$ok]= 1;
+                            $L[$ok]=$L[$ok]+1;
+                            $nex=implode('-',$L);
+                        }
+                    ?>
+                    <a class="pnext-btn page-btn" href="<?php echo U('Vip/index',['filter'=>$nex])?>">
+                        <span class="arrow-right arrow "
+                        <?php
+                        if($L[$ok]>=$pages){
+                        echo 'style="border-left: 5px solid #CCCCCC;"';
+                        }
+                        ?>></span>
                     </a>
                 </span>
+                </div>
+            </div>
+            <div id="list" class="list">
+                <div class="list_box clearfix">
+                    <?php foreach($goodres as $v):?>
+                    <div class="goods_box">
+                        <a href="###"><img src="__ROOT__/{$v['goods_photo']}" alt=""/></a>
+                        <p class="goods_title">
+                            <a href="###">{$v['goods_name']}</a>
+                        </p>
+                        <div class="statics">
+                            <a class="download citecommon">下载 <em>0次</em></a>
+                            <a class="comment citecommon">评论 <em>0条</em></a>
+                            <a class="scores citecommon">浏览 <em>1次</em></a>
+                            <a class="modalnum citecommon last">模板 <em>7个</em></a>
+                        </div>
+                    </div>
+                    <?php endforeach;?>
+                </div>
             </div>
 
+            <div class="page_list clearfix">
+                共 <span class="tatle">4260</span> 个网站模板
+                <?php if(I('filter')){
+                            $L=explode('-',I('filter'));
+                           $L[$ok]= $L[$ok]-1;
+                            $pre=implode('-',$L);
+                        }?>
+                <a href="<?php
+                    if($L[$ok]<=0){
+                        echo 'javascript:void(0);';
+                    }else{
+                        echo U('Vip/index',['filter'=>$pre]);
+                    }
+                    ?>" class="pre">上一页</a>
+
+                <?php for($i=1;$i<=$pages;$i++):?>
+                <?php
+                if(I('filter')){
+                    $z=explode('-',I('filter'));
+                    $curr=$z[$ok];
+                    if($curr=='' || $curr==0){
+                        $curr=1;
+                    }
+
+                }else{
+                    $z=array_fill(0,$num+1+1,0);
+                    $curr=1;
+                }
+                 ?>
+                <?php $z[$ok]=$i; $filter=implode('-',$z);?>
+                <a <?php if($curr==$i):?>
+                         class="curr"
+                    <?php else:?>
+                        class="num"
+                        href= <?php echo U('Vip/index',['filter'=>$filter])?>
+                    <?php endif;?>
+                >{$i}</a>
+                <?php endfor;?>
+                <!--<a href="###" class="end">...107</a>-->
+                <?php if(I('filter')){
+                    $L=explode('-',I('filter'));
+                    $L[$ok]= $L[$ok]+1;
+                    if($L[$ok]>=$pages){
+                        $L[$ok]=$pages;
+                        }
+                        $nex=implode('-',$L);
+                    }else{
+                        $L=array_fill(0,$num+1+1,0);
+                        $L[$ok]= 1;
+                        $L[$ok]=$L[$ok]+1;
+                        $nex=implode('-',$L);
+                }
+                ?>
+                <a href="<?php echo U('Vip/index',['filter'=>$nex])?>" class="next">下一页</a>
+
+            </div>
 
         </div>
 
 
-
-        <div class="list"></div>
-
-
     </div>
+    <script>
+       /*$(window).ready(function(){
+           $('.curr').attr('href','');
+       });
+*/
+
+
+
+    </script>
 
 </block>
 

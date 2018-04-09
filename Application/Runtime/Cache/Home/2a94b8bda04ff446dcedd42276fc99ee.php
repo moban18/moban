@@ -10,8 +10,10 @@
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
 <link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/cate.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
+
 </head>
 <body>
 
@@ -133,16 +135,16 @@
 </div>
 
 
-<div id="main">
+<div id="main" class="clearfix">
     
     <div class="box1">
         <div class="box1_left">
             <div class="box1_left_box1">
                 <h2>精美模板导航</h2>
                 <div class="box1_left_mid">
-                    <a href="###" class="pc_phone">PC+手机版</a>
-                    <a href="###" class="pc">PC版</a>
-                    <a href="###" class="phone">手机版</a>
+                    <a href="/moban/index.php/Home/Vip/index" class="pc_phone">PC+手机版</a>
+                    <a href="/moban/index.php/Home/Vip/index" class="pc">PC版</a>
+                    <a href="/moban/index.php/Home/Vip/index/filter/0-0-17-0-0-0.html" class="phone">手机版</a>
 
                 </div>
                 <div class="box1_left_mid2">
@@ -151,18 +153,11 @@
                         <h3>行业</h3>
                     </div>
                     <div class="box1_submits">
-                        <a href="###">全部</a>
-                        <a href="###">运行</a>
-                        <a href="###">广告</a>
-                        <a href="###">全部</a>
-                        <a href="###">运行</a>
-                        <a href="###">广告</a>
-                        <a href="###">全部</a>
-                        <a href="###">运行</a>
-                        <a href="###">广告</a>
-                        <a href="###">全部</a>
-                        <a href="###">运行</a>
-                        <a href="###">广告</a>
+                        <a href="/moban/index.php/Home/Vip/index">全部</a>
+                        <?php foreach($attrters as $k=>$v): $filter=$v['id']; if($k<11): ?>
+                        <a href='/moban/index.php/Home/Vip/index/filter/<?php echo $filter;?>-0-0-0-0-0.html'><?php echo $v['attr_value'];?></a>
+                        <?php endif;endforeach;?>
+
                     </div>
 
                 </div>
@@ -173,122 +168,40 @@
 
                     </div>
                 </div>
-
-
                     <div class="alls">
-                        <a href="javascript:void(0);" >全部</a>
-                        <a href="###">网店(147)</a>
-                        <a href="###">商业(53)</a>
-                        <a href="###">宠物(30)</a>
-                        <a href="###">餐饮(53)</a>
-                        <a href="###">物流、货运(51)</a>
-                        <a href="###">旅游、风景(82)</a>
-                        <a href="###">运动(46)</a>
-                        <a href="###">农业(49)</a>
-                        <a href="###">广告(48)</a>
-                        <a href="###">拍卖、典当(17)</a>
-                        <a href="###">美容、护肤(47)</a>
-                        <a href="###">文教、书籍(9)</a>
-                        <a href="###">酿造、酒类(49)</a>
-                        <a href="###">汽车服务(41)</a>
-                        <a href="###">化工、涂料(35)</a>
-                        <a href="###">服装(57)</a>
-                        <a href="###">通讯、数码(30)</a>
-                        <a href="###">电脑(13)</a>
-                        <a href="###">文化(7)</a>
-                        <a href="###">设计、装饰(78)</a>
-                        <a href="###">教育、培训(74)</a>
-                        <a href="###">家电(46)</a>
-                        <a href="###">电子、电气(63)</a>
-                        <a href="###">能源、灯具(45)</a>
-                        <a href="###">娱乐、休闲(15)</a>
-                        <a href="###">环保(49)</a>
-                        <a href="###">展览、展会(24)</a>
-                        <a href="###">家居、日用百货(84)</a>
-                        <a href="###">流行、时尚(6)</a>
-                        <a href="###">金融、投资(78)</a>
-                        <a href="###">鲜花(45)</a>
-                        <a href="###">食品(74)</a>
-                        <a href="###">礼品、工艺品(25)</a>
-                        <a href="###">眼镜(27)</a>
-                        <a href="###">五金(42)</a>
-                        <a href="###">酒店(41)</a>
-                        <a href="###">机械、工业制品(100)</a>
-                        <a href="###">仪器、仪表(38)</a>
-                        <a href="###">IT科技、软件(47)</a>
-                        <a href="###">珠宝、首饰(37)</a>
-                        <a href="###">法律、律师(45)</a>
-                        <a href="###">皮具(19)</a>
-                        <a href="###">传媒、广电(28)</a>
-                        <a href="###">医疗、保健(47)</a>
-                        <a href="###">办公用品(33)</a>
-                        <a href="###">摄影、冲印(39)</a>
-                        <a href="###">印刷、包装(34)</a>
-                        <a href="###">房地产(43)</a>
-                        <a href="###">橡胶、塑料制品(27)</a>
-                        <a href="###">学校(43)</a>
-                        <a href="###">安防、监控器材(36)</a>
-                        <a href="###">鞋帽(25)</a>
-                        <a href="###">茶叶(46)</a>
-                        <a href="###">纺织(26)</a>
-                        <a href="###">票务(9)</a>
-                        <a href="###">玩具(17)</a>
-                        <a href="###">贸易、出口(33)</a>
-                        <a href="###">钟表(38)</a>
-                        <a href="###">婚礼、婚庆(41)</a>
-                        <a href="###">其他(55)</a>
-                        <a href="###">网店</a>
-                        <div class="clear"></div>
-
+                            <a href="/moban/index.php/Home/Vip/index" >全部</a>
+                            <?php foreach($attrteres as $k=>$v): $filter=$v['id']; ?>
+                            <a href="/moban/index.php/Home/Vip/index/filter/<?php echo $filter;?>-0-0-0-0-0.html"><?php echo $v['attr_value'];?></a>
+                            <?php endforeach;?>
+                            <div class="clear"></div>
                     </div>
-
-
-
-
-
             </div>
-
         </div>
+
         <div class="box1_right">
+            <!--轮播图片区-->
             <div class="box1_right_top">
                 <div class="box1_right_imgs">
-                    <a class="ig"><img src="/moban/Public/images/1.jpg"/></a>
-                    <a class="ig"><img src="/moban/Public/images/2.jpg"/></a>
-                    <a class="ig"><img src="/moban/Public/images/3.jpg"/></a>
-                    <a class="ig"><img src="/moban/Public/images/4.jpg"/></a>
-                    <a class="ig"><img  src="/moban/Public/images/5.jpg"/></a>
+                    <?php foreach($luns_photos as $v):?>
+                    <a herf="###" class="ig"><img src="/moban/<?php echo ($v); ?>"/></a>
+                    <?php endforeach;?>
                 </div>
                 <ul id="tabs">
-                    <li class="tab">1</li>
-                    <li class="tab">2</li>
-                    <li class="tab">3</li>
-                    <li class="tab">4</li>
-                    <li class="tab">5</li>
+                    <?php for($i=0;$i<count($luns_photos);$i++):?>
+                    <li class="tab"><?php echo $i;?></li>
+                    <?php endfor;?>
                 </ul>
-
-
             </div>
+            <!--轮播图片区结束-->
+            <!--轮播区文章区开始-->
             <div class="box1_right_bottom">
                 <ul id="box1_titles">
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题1afsdfd</a></li>
-
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题</a></li>
-                    <li><a href="###">手机端汽车销售行业h5场景招聘专题1afsdfd</a></li>
-
+                    <?php foreach($newGoods as $v):?>
+                    <li><a href="###" alt="<?php echo mb_substr($v['goods_name'],0,16,'utf-8');?>"><?php echo mb_substr($v['goods_name'],0,18,'utf-8');?></a></li>
+                    <?php endforeach;?>
                 </ul>
-
             </div>
+            <!--轮播区文章区结束-->
 
 
         </div>
@@ -297,16 +210,7 @@
 
     </div>
 
-        <!--内容推荐-->
-
-        <!--右侧功能开始-->
-
-
-
-
-
-
-
+    <!--首页中间VIP模板展示开始-->
         <div class="box2 muban" id="index_1">
             <div class="mubantitle"> <span class="indexTitleT"><a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a></span> <span class="f12"></span>
                 <div class="itmore">
@@ -314,551 +218,374 @@
 
                     <a href="http://www.dede58.com/a/dedecode/">更多模板</a> </div>
             </div>
+
             <div class="index3">
-                <div class="col_four">
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/shop/2017/1214/5159.html" rel="nofollow"> <img src="/moban/Public/images/1-1g2141524120-l.jpg" alt="房产信息门户织梦模板(带手机端)" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-                                <em class="icotj"><img src="/moban/Public/images/vip.gif" width="47" height="46"></em>
-                                <a href="http://www.dede58.com/shop/2017/1214/5159.html" title="房产信息门户织梦模板(带手机端)">房产信息门户织梦模板(带手机端)</a></p>
+                <!--首页中间VIP模板左边开始-->
+                <div class="index3_left">
+                    <div class="index3_box">
+                        <div class="article_recommon">
+                            <ul class="godds_recommon no_flash">
+                                <li>
+                                    <a href="###">
+                                        <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="###">
+                                        <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="###">
+                                        <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="###">
+                                        <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="###">
+                                        <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="###">
+                                        <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box1_right_bottom  ">
+                            <ul id="box1_titles">
+                                <li><a href="###" alt="环保科技废弃物污染治理类织梦模板">环保科技废弃物污染治理类织梦模板(带</a></li>
+                                <li><a href="###" alt="大气好看的电子商务平台购物商城模">大气好看的电子商务平台购物商城模板</a></li>
+                                <li><a href="###" alt="html5响应式台球俱乐部网站模">html5响应式台球俱乐部网站模板</a></li>
+                                <li><a href="###" alt="橙色大气html5响应式木材切割">橙色大气html5响应式木材切割机公</a></li>
+                                <li><a href="###" alt="简洁大气的淋浴房洁具公司网站模板">简洁大气的淋浴房洁具公司网站模板</a></li>
+                                <li><a href="###" alt="简单的股票基金对比页面手机模板">简单的股票基金对比页面手机模板</a></li>
+                                <li><a href="###" alt="简单的手机智能选股页面html模">简单的手机智能选股页面html模板</a></li>
+                                <li><a href="###" alt="绿色风格水果蔬菜农产品批发商城模">绿色风格水果蔬菜农产品批发商城模板【</a></li>
+                                <li><a href="###" alt="html5响应式妇产医院妇幼保健">html5响应式妇产医院妇幼保健院网</a></li>
+                                <li><a href="###" alt="weui手机移动端鲜花商城app">weui手机移动端鲜花商城app页面</a></li>
+                                <li><a href="###" alt="红色大气html5响应式美容美甲">红色大气html5响应式美容美甲网站</a></li>
+                                <li><a href="###" alt="蓝色简洁的口腔医院在线预约挂号页">蓝色简洁的口腔医院在线预约挂号页面手</a></li>
+                            </ul>
                         </div>
 
-                        <div class="project-tax">[<a href="http://www.dede58.com/shop/">商业模板</a>] 8880金币</div>
+                    </div>
+
+
+                </div>
+                <!--首页中间VIP模板右边开始-->
+                <div class="index3_right">
+                    <div class="goods_right_box">
+                        <div class="goods_right_box_top">
+                            <h1>推荐模板</h1>
+                            <span>/Template</span>
+                            <a href="###">更多&gt;</a>
+                        </div>
+                        <!--右边推荐模板22个-->
+                        <div class="goods_right_ul clearfix ">
+                            <ul>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+                                <li>
+                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                    <span>03-17</span>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="col_four ">
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/svip/5128.html" rel="nofollow"> <img class="lazy" src="/moban/Public/images/1-1g2091155570-l.jpg" data-original="/moban/Public/images/1-1G2091155570-L.jpg" alt="响应式精细零件五金类企业织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-                                <em class="icotj"><img src="/moban/Public/images/012.small.gif" width="47" height="46"></em>
-                                <a href="http://www.dede58.com/svip/5128.html" title="响应式精细零件五金类企业织梦模板(自适应手机端)">响应式精细零件五金类企业织梦模板(自适应手机端)</a></p>
-                        </div>
 
-                        <div class="project-tax">[<a href="http://www.dede58.com/svip/">终身会员模板</a>] 下载权限：终身会员</div>
-                    </div>
-                </div>
-                <div class="col_four ">
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/svip/5041.html" rel="nofollow"> <img class="lazy" src="/moban/Public/images/1-1g2021126020-l.jpg" data-original="http://www.dede58.com/uploads/allimg/171202/1-1G2021126020-L.jpg" alt="响应式照明灯饰类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-                                <em class="icotj"><img src="/moban/Public/images/012.small.gif" width="47" height="46"></em>
-                                <a href="http://www.dede58.com/svip/5041.html" title="响应式照明灯饰类网站织梦模板(自适应手机端)">响应式照明灯饰类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/svip/">终身会员模板</a>] 下载权限：终身会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/svip/4988.html" rel="nofollow"> <img class="lazy" src="/moban/Public/images/1-1g1251344150-l.jpg" data-original="http://www.dede58.com/uploads/allimg/171125/1-1G1251344150-L.jpg" alt="响应式汽车车载仪表类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-                                <em class="icotj"><img src="/moban/Public/images/012.small.gif" width="47" height="46"></em>
-                                <a href="http://www.dede58.com/svip/4988.html" title="响应式汽车车载仪表类网站织梦模板(自适应手机端)">响应式汽车车载仪表类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/svip/">终身会员模板</a>] 下载权限：终身会员</div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5160.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171215/1-1G2151039300-L.jpg" src="/moban/Public/images/1-1g2151039300-l.jpg" alt="响应式入境国内出境旅游行业类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5160.html" title="响应式入境国内出境旅游行业类网站织梦模板(自适应手机端)">响应式入境国内出境旅游行业类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5158.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171214/1-1G2141141210-L.jpg" src="/moban/Public/images/1-1g2141141210-l.jpg" alt="调节阀调压器开关阀行业类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5158.html" title="调节阀调压器开关阀行业类网站织梦模板(带手机端)">调节阀调压器开关阀行业类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5151.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171213/1-1G2131254390-L.jpg" src="/moban/Public/images/1-1g2131254390-l.jpg" alt="响应式药品保健类企业网站织梦模板(自适应移动端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5151.html" title="响应式药品保健类企业网站织梦模板(自适应移动端)">响应式药品保健类企业网站织梦模板(自适应移动端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5129.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171209/1-1G2091551140-L.jpg" src="/moban/Public/images/1-1g2091551140-l.jpg" alt="响应式大学技术学院类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5129.html" title="响应式大学技术学院类网站织梦模板(自适应手机端)">响应式大学技术学院类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5080.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171205/1-1G205163H70-L.jpg" src="/moban/Public/images/1-1g205163h70-l.jpg" alt="响应式液压滤油机类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5080.html" title="响应式液压滤油机类网站织梦模板(自适应手机端)">响应式液压滤油机类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5042.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171202/1-1G2021615390-L.jpg" src="/moban/Public/images/1-1g2021615390-l.jpg" alt="响应式精品包装白酒类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5042.html" title="响应式精品包装白酒类网站织梦模板(自适应手机端)">响应式精品包装白酒类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/5011.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/171130/1-1G130105043594.jpg" src="/moban/Public/images/1-1g130105043594.jpg" alt="科技研发设备类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/5011.html" title="科技研发设备类网站织梦模板(带手机端)">科技研发设备类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4989.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171127/1-1G12G05Q40-L.jpg" src="/moban/Public/images/1-1g12g05q40-l.jpg" alt="医疗保健儿科科研类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4989.html" title="医疗保健儿科科研类网站织梦模板(带手机端)">医疗保健儿科科研类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4984.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171124/1-1G124160R90-L.jpg" src="/moban/Public/images/1-1g124160r90-l.jpg" alt="被套枕套床上用品类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4984.html" title="被套枕套床上用品类网站织梦模板(带手机端)">被套枕套床上用品类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4957.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171122/1-1G1221020230-L.jpg" src="/moban/Public/images/1-1g1221020230-l.jpg" alt="电线电缆设备辅助材料类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4957.html" title="电线电缆设备辅助材料类网站织梦模板(带手机端)">电线电缆设备辅助材料类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4944.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171120/1-1G1201616050-L.jpg" src="/moban/Public/images/1-1g1201616050-l.jpg" alt="汽车零配件生产维修保养类织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4944.html" title="汽车零配件生产维修保养类织梦模板(带手机端)">汽车零配件生产维修保养类织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4926.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171118/1-1G11Q006210-L.jpg" src="/moban/Public/images/1-1g11q006210-l.jpg" alt="市政园林景观苗木类网站织梦dedecms模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4926.html" title="市政园林景观苗木类网站织梦dedecms模板(带手机端)">市政园林景观苗木类网站织梦dedecms模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4876.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171115/1-1G1151343180-L.jpg" src="/moban/Public/images/1-1g1151343180-l.jpg" alt="响应式企业管理类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4876.html" title="响应式企业管理类网站织梦模板(自适应手机端)">响应式企业管理类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4863.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171115/1-1G115101S50-L.jpg" src="/moban/Public/images/1-1g115101s50-l.jpg" alt="洁净家居家政服务类网站织梦dedecms模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4863.html" title="洁净家居家政服务类网站织梦dedecms模板(带手机端)">洁净家居家政服务类网站织梦dedecms模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4844.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171113/1-1G1131130450-L.jpg" src="/moban/Public/images/1-1g1131130450-l.jpg" alt="电子元件工程工具类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4844.html" title="电子元件工程工具类网站织梦模板(带手机端)">电子元件工程工具类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4821.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171111/1-1G1111116190-L.jpg" src="/moban/Public/images/1-1g1111116190-l.jpg" alt="出国留学签证类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4821.html" title="出国留学签证类网站织梦模板(带手机端)">出国留学签证类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4807.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171109/1-1G1091144040-L.jpg" src="/moban/Public/images/1-1g1091144040-l.jpg" alt="服装面料裁剪设计企业网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4807.html" title="服装面料裁剪设计企业网站织梦模板(带手机端)">服装面料裁剪设计企业网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4757.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171107/1-1G10F942400-L.jpg" src="/moban/Public/images/1-1g10f942400-l.jpg" alt="家居床上用品类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4757.html" title="家居床上用品类网站织梦模板(带手机端)">家居床上用品类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4702.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171103/1-1G1031033420-L.jpg" src="/moban/Public/images/1-1g1031033420-l.jpg" alt="茶叶基地种植类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4702.html" title="茶叶基地种植类网站织梦模板(带手机端)">茶叶基地种植类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4668.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171102/1-1G1021354210-L.jpg" src="/moban/Public/images/1-1g1021354210-l.jpg" alt="响应式单页滑动展示网站织梦模板(html5自适应)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4668.html" title="响应式单页滑动展示网站织梦模板(html5自适应)">响应式单页滑动展示网站织梦模板(html5自适应)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4615.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171031/1-1G0311645540-L.jpg" src="/moban/Public/images/1-1g0311645540-l.jpg" alt="响应式电子产品配件类网站织梦模板(自适应手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4615.html" title="响应式电子产品配件类网站织梦模板(自适应手机端)">响应式电子产品配件类网站织梦模板(自适应手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4585.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171030/1-1G030102I60-L.jpg" src="/moban/Public/images/1-1g030102i60-l.jpg" alt="印刷色彩设备生产类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4585.html" title="印刷色彩设备生产类网站织梦模板(带手机端)">印刷色彩设备生产类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4577.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171027/1-1G02G010230-L.jpg" src="/moban/Public/images/1-1g02g010230-l.jpg" alt="文化传媒传播类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4577.html" title="文化传媒传播类网站织梦模板(带手机端)">文化传媒传播类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4573.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171025/1-1G0250954560-L.jpg" src="/moban/Public/images/1-1g0250954560-l.jpg" alt="机动车驾驶培训学校驾校类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4573.html" title="机动车驾驶培训学校驾校类网站织梦模板(带手机端)">机动车驾驶培训学校驾校类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4570.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171023/1-1G0230945440-L.jpg" src="/moban/Public/images/1-1g0230945440-l.jpg" alt="金融投资控股类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4570.html" title="金融投资控股类网站织梦模板(带手机端)">金融投资控股类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4569.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171021/1-1G0211603580-L.jpg" src="/moban/Public/images/1-1g0211603580-l.jpg" alt="模特服装设计展示类织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4569.html" title="模特服装设计展示类织梦模板(带手机端)">模特服装设计展示类织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4564.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171018/1-1G01Q315420-L.jpg" src="/moban/Public/images/1-1g01q315420-l.jpg" alt="装潢设计装修公司类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4564.html" title="装潢设计装修公司类网站织梦模板(带手机端)">装潢设计装修公司类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
-                <div class="col_four none">
-
-                    <div class="projects">
-                        <div class="projects-thumbnail"> <a href="http://www.dede58.com/a/dedecode/4562.html" rel="nofollow"> <img class="lazy" data-original="http://www.dede58.com/uploads/allimg/171017/1-1G01F95F50-L.jpg" src="/moban/Public/images/1-1g01f95f50-l.jpg" alt="电源开关研发销售行业类网站织梦模板(带手机端)" style="display: block;" width="258" height="180"> <span class="project-thumbnail-overlay"></span>
-                            <p class="project-to-detail"></p>
-                        </a> </div>
-                        <div class="project-desc">
-                            <p>
-
-
-
-                                <a href="http://www.dede58.com/a/dedecode/4562.html" title="电源开关研发销售行业类网站织梦模板(带手机端)">电源开关研发销售行业类网站织梦模板(带手机端)</a></p>
-                        </div>
-
-                        <div class="project-tax">[<a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a>] 下载权限：高级会员</div>
-                    </div>
-                </div>
 
 
 
                 <div class="clear"></div>
             </div>
+
         </div>
+    <!--首页中间VIP模板展示结束-->
+    <!--首页中间终生会员模板展示开始-->
+    <div class="box2 muban" id="index_1">
+        <div class="mubantitle"> <span class="indexTitleT"><a href="http://www.dede58.com/a/dedecode/">终生会员模板</a></span> <span class="f12"></span>
+            <div class="itmore">
+
+
+                <a href="http://www.dede58.com/a/dedecode/">更多模板</a> </div>
+        </div>
+
+        <div class="index3">
+            <!--首页中间VIP模板左边开始-->
+            <div class="index3_left">
+                <div class="index3_box">
+                    <div class="article_recommon">
+                        <ul class="godds_recommon no_flash">
+                            <li>
+                                <a href="###">
+                                    <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                </a>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box1_right_bottom  ">
+                        <ul id="box1_titles">
+                            <li><a href="###" alt="环保科技废弃物污染治理类织梦模板">环保科技废弃物污染治理类织梦模板(带</a></li>
+                            <li><a href="###" alt="大气好看的电子商务平台购物商城模">大气好看的电子商务平台购物商城模板</a></li>
+                            <li><a href="###" alt="html5响应式台球俱乐部网站模">html5响应式台球俱乐部网站模板</a></li>
+                            <li><a href="###" alt="橙色大气html5响应式木材切割">橙色大气html5响应式木材切割机公</a></li>
+                            <li><a href="###" alt="简洁大气的淋浴房洁具公司网站模板">简洁大气的淋浴房洁具公司网站模板</a></li>
+                            <li><a href="###" alt="简单的股票基金对比页面手机模板">简单的股票基金对比页面手机模板</a></li>
+                            <li><a href="###" alt="简单的手机智能选股页面html模">简单的手机智能选股页面html模板</a></li>
+                            <li><a href="###" alt="绿色风格水果蔬菜农产品批发商城模">绿色风格水果蔬菜农产品批发商城模板【</a></li>
+                            <li><a href="###" alt="html5响应式妇产医院妇幼保健">html5响应式妇产医院妇幼保健院网</a></li>
+                            <li><a href="###" alt="weui手机移动端鲜花商城app">weui手机移动端鲜花商城app页面</a></li>
+                            <li><a href="###" alt="红色大气html5响应式美容美甲">红色大气html5响应式美容美甲网站</a></li>
+                            <li><a href="###" alt="蓝色简洁的口腔医院在线预约挂号页">蓝色简洁的口腔医院在线预约挂号页面手</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--首页中间VIP模板右边开始-->
+            <div class="index3_right">
+                <div class="goods_right_box">
+                    <div class="goods_right_box_top">
+                        <h1>推荐模板</h1>
+                        <span>/Template</span>
+                        <a href="###">更多&gt;</a>
+                    </div>
+                    <!--右边推荐模板22个-->
+                    <div class="goods_right_ul clearfix ">
+                        <ul>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+                            <li>
+                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
+                                <span>03-17</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <!--首页中间终生会员模板展示结束-->
+
+
+
+
+
+
+
+
+
+
         <div class="box3 edu" id="index_3">
             <div class="edutitle"> <span class="indexTitleT">视频·图文教程</span> <span class="f12">不知从哪里开始，不知怎学，那就看看大伙咋弄弄得！</span>
                 <div class="itmore">
@@ -1106,17 +833,15 @@
     <div class="clear"></div>
 </div>
 
-<div id="kefu">
-    <div class="top"> 在线客服<img src="/moban/Public/images/close.gif" class="close"> </div>
-    <div class="middle"> <a target="_top" href="http://wpa.qq.com/msgrd?v=3&amp;uin=970003436&amp;site=qq&amp;menu=yes"><img src="/moban/Public/images/qq.png"></a><br>
-        <a target="_top" href="http://wpa.qq.com/msgrd?v=3&amp;uin=541475789&amp;site=qq&amp;menu=yes"><img src="/moban/Public/images/qq.png"></a> <a target="_top" href="http://wpa.qq.com/msgrd?v=3&amp;uin=383600043&amp;site=qq&amp;menu=yes"><img src="/moban/Public/images/qq.png"></a> </div>
-</div>
 <div class="right_bar"> <img src="/moban/Public/images/right_bar.jpg"> </div>
 <div id="tbox" style="display: block;"> <a class="taoba" title="双语" href="http://www.dede58.com/moban/sy.html" target="_top">双语模板</a>
     <a class="taoba" title="营销型" href="http://www.dede58.com/moban/yx.html" target="_top">营销型模板</a>
     <a class="taoba" title="手机" href="http://www.dede58.com/moban/shouji.html" target="_top">手机模板</a>
     <a class="taoba" title="响应式" href="http://www.dede58.com/moban/xys.html" target="_top">响应式模板</a>
 </div>
+
+<script src="/moban/Public/js/cate.js"></script>
+
 
 
 </body>

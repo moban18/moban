@@ -23,7 +23,6 @@ $(function(){
             if(i==5) {
                 i=0;
             }
-
         },2000);
     }
 
@@ -404,14 +403,38 @@ $(function(){
                 }
                 
             });
-
-            
-            
-            
         });
 
-
-
+    //打赏功能JS开始
+        $('.platform-radio-box').click(function(){
+            var platform_checked=$('.platform-checked');
+            platform_checked.removeClass('platform-checked');
+            $(this).addClass('platform-checked').siblings('.platform-radio-box').removeClass('platform-checked');
+            var data_id=platform_checked.attr('data-id');
+            if(data_id=='weichat'){
+                $('.cy-reward-code img').each(function(){
+                    var node_type=$(this).attr('node-type');
+                    if(node_type=='alipay-code'){
+                        $(this).css('display','block').siblings('.cy-reward-code img').css('display','none');
+                    }
+                });
+            }
+            if(data_id=='alipay'){
+                $('.cy-reward-code img').each(function(){
+                    var node_type=$(this).attr('node-type');
+                    if(node_type=='weichat-code'){
+                        $(this).css('display','block').siblings('.cy-reward-code img').css('display','none');
+                    }
+                });
+            }
+        });
+        $('.dashang_top').click(function(){
+            $('#cy-reward-pop').show();
+        });
+        $('.cy-close-btn').click(function(){
+            $('#cy-reward-pop').hide();
+        });
+        //打赏功能JS结束
 
 
 
