@@ -23,11 +23,13 @@ class GoodsController extends CommonController {
                 $goodss[$k]['goods_vips']= $b;
             }
         }
+        $cates=M('cate')->select();
         $this->assign(
             array(
                 'ac'=>$ac,
                 'goodss'=>$goodss,
                 'page'=>$show,
+                'cates'=>$cates,
             )
         );
         $this->display();
@@ -56,7 +58,6 @@ class GoodsController extends CommonController {
             if(is_array($data['goods_vips'])){
                 $data['goods_vips']=implode(',',$data['goods_vips']);
             }
-
             if($goods->create($data)){
                 if($info=$goods->add()){
                     $this->success('添加成功',U('Goods/index'));
@@ -94,12 +95,14 @@ class GoodsController extends CommonController {
                 'goods_vips'=>I('goods_vips'),
                 'goods_price'=>I('goods_price'),
                 'goods_photo'=>I('goods_photo'),
+                'godds_233_160'=>I('godds_233_160'),
                 'goods_comment'=>I('goods_comment'),
                 'goods_store'=>I('goods_store'),
                 'goods_recommend'=>I('goods_recommend'),
                 'download_num'=>I('download_num'),
                 'goods_content'=>I('goods_content'),
                 'goods_author'=>I('goods_author'),
+                'goods_tuijian'=>I('goods_tuijian'),
                 'goods_view'=>I('goods_view'),
                 'code_url'=>I('code_url'),
                 'download_url'=>I('download_url'),
@@ -126,7 +129,6 @@ class GoodsController extends CommonController {
             if(!empty($searchs)){
                 $searches=$goods->getAttrName($searchs);
             }
-
             $this->assign(
                 array(
                     'goodss'=>$goodss,
@@ -230,6 +232,53 @@ class GoodsController extends CommonController {
 
     }
 
+    //商品列表 搜索；商品栏目及搜索设置搜索
+    public function searchOthers(){
+            /*print_r($_POST);die;*/
+            //判断 如果搜索标题存在，那其它2个搜索参数，忽略；反之，就按其它3个参数搜索
+            if(!empty(I('goods_name'))){
+                $title=I('goods_name');
+                $where['goods_name']=array('like','%'.$title.'%');
+            }else{
+                //一个参数为空；
+                $cate_id=I('cate_id');
+                $goods_search=I('goods_search');
+                $goods_tuijian=I('goods_tuijian');
+
+                if($cate_id==0){
+                    if(!$goods_search){
+                        if(!$goods_tuijian){
+                        }else{
+                            $where['goods_tuijian']=$goods_tuijian;
+                        }
+                    }else{
+                        $where['goods_search']=0;
+                        if($goods_tuijian){
+                            $where['goods_tuijian']=$goods_tuijian;
+                        }
+                    }
+                }else{
+                    $where['cate_id']=$cate_id;
+                }
+            }
+            $goods=D('goods');
+            $count      = $goods->where($where)->count();
+            $Page       = new \Think\Page($count,15);
+            $Page->setConfig('prev','上一页');
+            $Page->setConfig('next','下一页');
+            $show       = $Page->show();//
+            $goodss=$goods->where($where)->alias('a')->field('a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->order('goods_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+            $cates=M('cate')->select();
+            $ac=$this->getAc();
+            $this->assign(array(
+                'ac'=>$ac,
+                'cates'=>$cates,
+                'goodss'=>$goodss,
+                'page'=>$show,
+
+            ));
+            $this->display();
+    }
 
 }
 

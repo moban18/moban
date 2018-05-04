@@ -15,6 +15,7 @@
     <link href="/moban/Application/Admin/Public/style/font-awesome.css" rel="stylesheet">
     <link href="/moban/Application/Admin/Public/style/weather-icons.css" rel="stylesheet">
 
+
     <!--Beyond styles-->
     <link id="beyond-link" href="/moban/Application/Admin/Public/style/beyond.css" rel="stylesheet" type="text/css">
     <link href="/moban/Application/Admin/Public/style/demo.css" rel="stylesheet">
@@ -25,9 +26,15 @@
         .page {  text-align: right;  margin:20px 50px 0 0; }
         .prev,.next,.num{display: inline-block;height: 25px; border:1px solid #2DC3E8;padding: 3px 9px;}
         .current { display:inline-block;border:1px solid #2DC3E8;padding: 2px 9px; margin:0 3px; background:#0092FF;color:#fff; }
+        /*后台商品搜索CSS*/
+        .float_left{float:left;}
+        .goods_search{float:left;margin-left:10px;}
+        .goods_search_input{width:250px;height:25px;padding:2px 1px 2px 10px;}
+        .goods_search_submit{background-color:#2BBBDF;color:#fff}
 
 
     </style>
+
 </head>
 <body>
 <!-- 头部 -->
@@ -267,8 +274,20 @@
             <div class="page-body">
 
                 <div style="clear: both;"></div>
-                <button type="button" tooltip="添加属性" class="btn btn-sm btn-azure btn-addon"  onClick="javascript:window.location.href = '/moban/index.php/Admin/Search/add'"> <i class="fa fa-plus"></i> Add
-                </button>
+                <div class="goods_search_box clearfix">
+                    <form method="post" action="/moban/index.php/Admin/Search/searchOthers">
+                        <button type="button" tooltip="添加属性" class="btn btn-sm btn-azure btn-addon float_left"  onClick="javascript:window.location.href = '/moban/index.php/Admin/Search/add'"> <i class="fa fa-plus"></i> Add
+                        </button>
+
+                    <div class="goods_search float_left">
+                        <span style="color:#2BBBDF">查询商品id：</span>
+                        <input type="text" class="goods_search_input" name="goods_name"/>
+                    </div>
+                    <div class="search_btn_box float_left clearfix">
+                        <input class="goods_search_submit btn btn-sm" type="submit" value="查询"/>
+                    </div>
+                    </form>
+                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="widget">
@@ -288,9 +307,9 @@
 
                                         <?php if(is_array($searchs)): $i = 0; $__LIST__ = $searchs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
                                             <td align="center" id="cate_id"><?php echo ($v["id"]); ?></td>
-                                            <td align="center"><?php echo ($v["goods_id"]); ?></td>
+                                            <td align="center"><?php echo ($v['goods_id']); ?>--<?php echo ($v["goods_name"]); ?></td>
                                             <td align="center"><?php echo ($v["attr_name"]); ?></td>
-                                            <td align="center"><?php echo ($v["attr_id"]); ?></td>
+                                            <td align="center"><?php echo ($v["attrter_id"]); ?></td>
                                             <td align="center">
                                                 <a href="/moban/index.php/Admin/Search/del/id/<?php echo ($v["id"]); ?>" onClick="if(confirm('确定要删除吗')==false)return false;" class="btn btn-danger btn-sm shiny">
                                                     <i class="fa fa-trash-o"></i> 删除

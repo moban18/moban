@@ -13,7 +13,7 @@ class GoodsModel extends RelationModel {
             'mapping_type'=>self::HAS_ONE,
             'class_name'=>'goods_info',
             'foreign_key'=>'goods_id',
-            'as_fields'=>'goods_content,goods_author,goods_view,code_url,download_url,goods_time'
+            'as_fields'=>'goods_content,goods_author,goods_view,code_url,download_url'
         ),
     );
 

@@ -294,6 +294,12 @@
                                             </div>
                                         </div>
                                         <div id="goods_auth" class="form-group" style="margin-top:10px;"></div>
+                                        <div id="goods_price" class="form-group" style="margin-top:10px;">
+                                            <label for="goods_price" class="col-sm-2 control-label " style="text-align:right;padding-top:5px;color:#C55407">模板价格：</label>
+                                            <div class="col-sm-1">
+                                                <input class="form-control" name="goods_price" required="" value="" type="text">                                            </div>
+                                            <p class="help-block col-sm-4 red">*模板必要填价格</p>
+                                        </div>
                                         <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">属于种类：</label>
                                             <div class="col-sm-6">
@@ -373,15 +379,15 @@
                                                 <input class="form-control"  placeholder="" name="code_url" required="" type="text" value="">
 
                                             </div>
+                                            <p class="help-block col-sm-4 red">*链接一定要带http 就会自动跳转</p>
                                         </div>
 
                                         <div class="form-group" style="margin-top:10px;">
                                             <span for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">商品首页图片：</span>
                                             <div class="col-sm-4">
                                                 <label for="goods_photo"><img src="/moban/Application/Admin/Public/images/upload.png"></label>
-                                                <input type="file" id="goods_photo" multiple style="display:none;" ><i id="app"></i>
-
-
+                                                <input type="file" id="goods_photo" multiple style="display:none;" >
+                                                <i id="app"></i>
                                             </div>
                                             <p class="help-block col-sm-4 red">* 图片宽度为268像素为最佳显示</p>
                                         </div>
@@ -442,7 +448,7 @@
                 var div=$('#goods_auth');
                 div.html('');
                 if(cate_id==3){
-                    html='<label for="goods_price" class="col-sm-2 control-label " style="text-align:right;padding-top:5px;color:#C55407">商业模板价格：</label> <div class="col-sm-1"> <input class="form-control" name="goods_price" required="" type="text" value=""> </div><p class="help-block col-sm-4 red">*商业模板必要填价格</p>';
+                    html='<!--<label for="goods_price" class="col-sm-2 control-label " style="text-align:right;padding-top:5px;color:#C55407">商业模板价格：</label> <div class="col-sm-1"> <input class="form-control" name="goods_price" required="" type="text" value=""> </div><p class="help-block col-sm-4 red">*商业模板必要填价格</p>-->';
                     div.html(html);
                 }else{
                     $.ajax({
@@ -453,7 +459,7 @@
                             var a=eval(data);
                             html='<label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px; color:#C55407">下载权限：</label>';
                             $(a).each(function(k,v){
-                                html+=' <div class="col-lg-1 col-sm-1 col-xs-1"> <div class="checkbox"> <label> <input type="checkbox" class="colored-blue" name="goods_vips[]" value="'+v.id+'" > <span class="text" style="color:#036F9E">'+v.vip_name+'</span> </label> </div> </div>';
+                                html+=' <div class="col-lg-1 col-sm-1 col-xs-1"> <div class="checkbox"> <label> <input type="checkbox" class="colored-blue" name="goods_vips[]" value="'+v.id+'" > <span class="text" style="color:#036F9E;width:80px">'+v.vip_name+'</span> </label> </div> </div>';
                             });
 
                             div.html(html);
@@ -475,7 +481,8 @@
                 var prech=/.(gif|jpg|jpeg|png|GIF|JPG|bmp)$/;
                 var big=2*1024;
                 var html='';
-                var src=$('#goods_photo_link').attr('alt');
+                var src=$('#hid_photo').val();
+                var smallSrc=$('#hid_photo_small').val();
                 var i=$('#app');
                 if(!prech.test(value1)){
                     alert('错误！请上传指定文件类型');
@@ -494,12 +501,13 @@
                     success:function(data){
                         if(src){
                             delPhoto(src);
+                            delPhoto(smallSrc);
                             i.html('');
                         }
                         var photos=data.split(',');
                         html='<img alt="'+data[0]+'" id="goods_photo_link" src="/moban'+photos[0]+'"/>';
-                        html+='<input id="hid_photo" type=hidden name="goods_photo" value="'+photos[0]+'" />';
-                        html+='<input id="hid_photo_small" type=hidden name="godds_233_160" value="'+photos[1]+'" />';
+                        html+='<input id="hid_photo" type="hidden" name="goods_photo" value="'+photos[0]+'" />';
+                        html+='<input id="hid_photo_small" type="hidden" name="godds_233_160" value="'+photos[1]+'" />';
                         i.html(html);
                         $('#goods_photo').val('');
 
@@ -517,8 +525,6 @@
                     success:function(data){
                         if(data==1){
                             $('#goods_photo').val('');
-                        }else{
-                            alert('原图片删除失败');
                         }
                    }
                 });

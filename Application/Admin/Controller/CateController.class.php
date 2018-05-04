@@ -6,7 +6,7 @@ class CateController extends CommonController {
     public function index(){
         $ac=$this->getAc();
         $cate=D('cate');
-        $cates=$cate->select();
+        $cates=$cate->field('a.id,a.cate_name,a.cate_url,a.cate_sort,a.cate_title,a.cate_keywords,a.cate_description,b.attrtype_name')->alias('a')->join('LEFT JOIN moban_attrtype b ON a.attrtype_id=b.id')->order('id asc')->select();
         $this->assign(
             array(
                 'ac'=>$ac,
@@ -25,6 +25,7 @@ class CateController extends CommonController {
                 'cate_sort'=>I('cate_sort'),
                 'attrtype_id'=>I('attrtype_id'),
                 'cate_title'=>I('cate_title'),
+                'cate_url'=>I('cate_url'),
                 'cate_keywords'=>I('cate_keywords'),
                 'cate_description'=>I('cate_description'),
             );
@@ -60,6 +61,7 @@ class CateController extends CommonController {
                 'cate_sort'=>I('cate_sort'),
                 'attrtype_id'=>I('attrtype_id'),
                 'cate_title'=>I('cate_title'),
+                'cate_url'=>I('cate_url'),
                 'cate_keywords'=>I('cate_keywords'),
                 'cate_description'=>I('cate_description'),
             );
@@ -81,9 +83,7 @@ class CateController extends CommonController {
                     'cates'=>$cates,
                     'attrtypes'=>$attrtypes,
                     'ac'=>$ac,
-
                 )
-
             );
             $this->display();
         }

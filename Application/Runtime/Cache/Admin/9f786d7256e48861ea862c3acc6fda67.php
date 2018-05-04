@@ -20,11 +20,20 @@
     <link href="/moban/Application/Admin/Public/style/demo.css" rel="stylesheet">
     <link href="/moban/Application/Admin/Public/style/typicons.css" rel="stylesheet">
     <link href="/moban/Application/Admin/Public/style/animate.css" rel="stylesheet">
+    <link href="/moban/Application/Admin/Public/style/jquery.searchableSelect.css" rel="stylesheet">
     <style type="text/css">
         .ok:after {
             content: '<br>';
         }
+        .searchable-select {
+            z-index: 9999 !important;
+        }
+        .searchable-select-holder {
+            width:400px !important;
+        }
+
     </style>
+
     
 </head>
 <body>
@@ -280,7 +289,7 @@
 
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">选择商品：</label>
-                            <div class="col-sm-4">
+                            <div class="col-sm-6">
                                 <select id="goods_id" name="goods_id">
                                     <option value=0>选择商品</option>
                                     <?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>" <?php if(I('id') == $v['id']): ?>selected="selected"<?php endif; ?> ><?php echo ($v["id"]); ?>.<?php echo ($v["goods_name"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($v["goods_search"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -379,30 +388,13 @@
     <script src="/moban/Application/Admin/Public/style/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="/moban/Application/Admin/Public/style/beyond.js"></script>
+    <script src="/moban/Application/Admin/Public/style/jquery-1.11.1.min.js"></script>
+    <script src="/moban/Application/Admin/Public/style/jquery.searchableSelect.js"></script>
     <script>
         //选择不同的产品，出现不同的栏目;
-        $('#goods_id').change(function(){
-            var goods_id=$(this).val();
-            $.ajax({
-                type:'post',
-                url:'/moban/index.php/Admin/Search/getCates',
-                data:{
-                    goods_id:goods_id
-                },
-                dataType:'json',
-                success:function(data){
-                    $('#cate_id').val(data.id);
-                    if(data.attrtype_id==null){
-                        $('#attrtype_id').val(0);
-                    }else{
-                        $('#attrtype_id').val(data.attrtype_id);
-                        getAttrs(data.attrtype_id);
-                    }
-
-                }
-            });
-        });
-
+        var Thinkphp={
+            'getCates':'/moban/index.php/Admin/Search/getCates',
+        }
         //选择不同种类，展现不同的属性；
         function getAttrs(attrtype_id){
             var div=$('#attr_box');
@@ -460,7 +452,9 @@
         }
 
 
-
+        $(function(){
+            $('#goods_id').searchableSelect();
+        });
 
 
 

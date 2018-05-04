@@ -98,7 +98,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article' or $ac == 'Lun'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -112,12 +112,17 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                 </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
+                    <a href="/moban/index.php/Admin/Lun/index"><span class="menu-text">轮播  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -186,14 +191,14 @@
             <li>
                 <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
-                                        商品种类管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
             <li>
                 <a href="/moban/index.php/Admin/Attr/index">
                                     <span class="menu-text">
-                                        商品属性管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
@@ -271,9 +276,9 @@
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">属于模板类型</label>
                             <div class="col-sm-6">
-                                <select name="pid">
+                                <select name="attrtype_id">
                                     <option value=0>选择种类</option>
-                                    <?php if(is_array($attrtypes)): $i = 0; $__LIST__ = $attrtypes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>" <?php if($v['id'] == $cates['attrtype_id']): ?>selected='selected'<?php endif; ?>><?php echo ($v['attrtype_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    <?php if(is_array($attrtypes)): $i = 0; $__LIST__ = $attrtypes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v['id']); ?>" <?php if($cates['attrtype_id'] == $v['id']): ?>selected='selected'<?php endif; ?>><?php echo ($v['attrtype_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
 
                             </div>
@@ -285,6 +290,13 @@
                                 <input class="form-control"  name="cate_name" required="" type="text" value="<?php echo ($cates['cate_name']); ?>">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">栏目URL：</label>
+                            <div class="col-sm-2">
+                                <input class="form-control"  placeholder="" name="cate_url" required="" type="text" value="<?php echo ($cates['cate_url']); ?>">
+                            </div>
+                            <p class="help-block col-sm-4 red">*如：Vip/index</p>
                         </div>
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">title：</label>

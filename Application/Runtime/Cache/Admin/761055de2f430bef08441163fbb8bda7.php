@@ -98,7 +98,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article' or $ac == 'Lun'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -112,12 +112,17 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                 </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
+                    <a href="/moban/index.php/Admin/Lun/index"><span class="menu-text">轮播  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -161,6 +166,44 @@
                 </li>
 
             </ul>
+        </li>
+        <li <?php if($ac == 'User'): ?>class="open"<?php endif; ?> >
+        <a href="#" class="menu-dropdown">
+            <i class="menu-icon fa fa-gear"></i>
+            <span class="menu-text">会员管理</span>
+            <i class="menu-expand"></i>
+        </a>
+        <ul class="submenu">
+            <li>
+                <a href="/moban/index.php/Admin/User/index">
+                                    <span class="menu-text">
+                                        会员管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Search/index">
+                                    <span class="menu-text">
+                                        会员等级                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attrtype/index">
+                                    <span class="menu-text">
+                                        ???                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attr/index">
+                                    <span class="menu-text">
+                                        ???                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+
+        </ul>
         </li>
         <li>
             <a href="#" class="menu-dropdown">
@@ -239,7 +282,7 @@
                         </div>
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">选择栏目：</label>
-                            <div class="col-sm-1">
+                            <div class="col-sm-2">
                                 <select name="cate_id">
                                     <option value=0>选择栏目</option>
                                     <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option <?php if($v['id'] == $articles['cate_id']): ?>selected="selected"<?php endif; ?>  value="<?php echo ($v["id"]); ?>"><?php echo ($v["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -258,6 +301,20 @@
                             <div class="col-sm-2">
                                 <input class="form-control"  name="article_anthor" required="" type="text" value="<?php echo ($articles['article_anthor']); ?>">
                             </div>
+                        </div>
+                        <div class="form-group" style="margin-top:10px;">
+                            <span for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">文章首页图片：</span>
+                            <div class="col-sm-4">
+                                <label for="goods_photo"><img src="/moban/Application/Admin/Public/images/upload.png"></label>
+                                <input type="file" id="goods_photo" multiple style="display:none;" >
+                                <?php if($articles['article_136_86'] != '' ): ?><i id="app">
+                                        <img alt="'+data+'" id="goods_photo_link" src="/moban/<?php echo ($articles['article_136_86']); ?>"/>
+                                        <input id="hid_photo" name="article_136_86" value="<?php echo ($articles['article_136_86']); ?>" type="hidden">
+                                        <input id="hid_photo_small" name="article_80_60" value="<?php echo ($articles['article_80_60']); ?>" type="hidden">
+
+                                    </i><?php endif; ?>
+                            </div>
+                            <p class="help-block col-sm-4 red">*直接上传新的图片就会自动修改</p>
                         </div>
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">文章内容：</label>
@@ -299,7 +356,67 @@
             initialFrameHeight:320
         });
 
+        //上传图片与CONTROLLER交换数据
+        $('#goods_photo').change(function(){
+            var img=$("#goods_photo")[0].files[0];
+            var size = img.size;
+            var value1 =$("#goods_photo")[0].value;
+            var types='gif,jpeg,jpg,png,bmp';
+            var prech=/.(gif|jpg|jpeg|png|GIF|JPG|bmp)$/;
+            var big=2*1024;
+            var html='';
+            var src=$('#hid_photo').val();
+            var smallSrc=$('#hid_photo_small').val();
+            var i=$('#app');
+            if(!prech.test(value1)){
+                alert('错误！请上传指定文件类型');
+            }
+            if(!size>big){
+                alert('错误！上传文本大于2M');
+            }
+            var data=new FormData();
+            data.append('upload_file', img);
+            $.ajax({
+                type:'post',
+                url:'/moban/index.php/Admin/Article/uploadImg',
+                data:data,
+                contentType: false,
+                processData: false,
+                success:function(data){
+                    if(src){
+
+                        delPhoto(src);
+                        delPhoto(smallSrc);
+                        i.html('');
+                    }
+                    var photos=data.split(',');
+                    html='<img alt="'+photos[0]+'" id="goods_photo_link" src="/moban'+photos[0]+'"/>';
+                    html+='<input id="hid_photo" type="hidden" name="article_136_86" value="'+photos[0]+'" />';
+                    html+='<input id="hid_photo_small" type="hidden" name="article_80_60" value="'+photos[1]+'" />';
+                    i.html(html);
+                    $('#goods_photo').val('');
+
+                }
+            });
+        });
+        //上传图片，把不要的图片从后台删除
+        function delPhoto(src){
+            $.ajax({
+                type:'post',
+                url:'/moban/index.php/Admin/Article/delPhoto',
+                data:{
+                    src:src,
+                },
+                success:function(data){
+                    if(data==1){
+                        $('#goods_photo').val('');
+                    }
+                }
+            });
+        }
+
     </script>
+
 
 
 </body></html>

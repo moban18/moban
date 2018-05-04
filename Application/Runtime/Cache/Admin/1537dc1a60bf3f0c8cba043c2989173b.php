@@ -97,7 +97,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article' or $ac == 'Lun'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -111,12 +111,17 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                 </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
+                    <a href="/moban/index.php/Admin/Lun/index"><span class="menu-text">轮播  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -185,14 +190,14 @@
             <li>
                 <a href="/moban/index.php/Admin/Attrtype/index">
                                     <span class="menu-text">
-                                        商品种类管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
             <li>
                 <a href="/moban/index.php/Admin/Attr/index">
                                     <span class="menu-text">
-                                        商品属性管理                                    </span>
+                                        ???                                    </span>
                     <i class="menu-expand"></i>
                 </a>
             </li>
@@ -267,6 +272,8 @@
                                             <th class="text-center">ID</th>
                                             <th class="text-center">栏目名称</th>
                                             <th class="text-center">栏目title</th>
+                                            <th class="text-center">栏目URL</th>
+                                            <th class="text-center">模板属性</th>
                                             <th class="text-center">栏目keywords</th>
                                             <th class="text-center">栏目description</th>
                                             <th class="text-center">栏目排序</th>
@@ -279,6 +286,8 @@
                                             <td align="center" id="cate_id"><?php echo ($v["id"]); ?></td>
                                             <td align="center"><?php echo ($v["cate_name"]); ?></td>
                                             <td align="center"><?php echo mb_substr($v['cate_title'],0,20,'utf8').'...';?></td>
+                                            <td align="center"><?php echo ($v["cate_url"]); ?></td>
+                                            <td align="center"><?php echo ($v["attrtype_name"]); ?></td>
                                             <td align="center"><?php echo mb_substr($v['cate_keywords'],0,20,'utf8').'...';?></td>
                                             <td align="center"><?php echo mb_substr($v['cate_description'],0,20,'utf8').'...';?></td>
                                             <td align="center">

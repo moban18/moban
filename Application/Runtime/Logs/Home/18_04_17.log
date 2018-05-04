@@ -1,0 +1,43 @@
+[ 2018-04-17T11:14:28+08:00 ] 127.0.0.1 /moban/index.php/Home/Vip/index/filter/0-0-0-0-1-0.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` WHERE `cate_id` = 1 LIMIT -5,5  
+
+[ 2018-04-17T11:45:54+08:00 ] 127.0.0.1 /moban/index.php/Home/Vip/index/filter/0-0.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` WHERE `cate_id` = 1 LIMIT -5,5  
+
+[ 2018-04-17T14:12:32+08:00 ] 127.0.0.1 /moban/index.php/Home/Free
+ERR: 无法加载控制器:Free
+
+[ 2018-04-17T16:47:09+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< {$id} order ' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< {$id} order by id Desc limit 1)
+
+[ 2018-04-17T16:48:19+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< {$id} order ' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< {$id} order by id desc limit 1)
+
+[ 2018-04-17T16:48:21+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< {$id} order ' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< {$id} order by id desc limit 1)
+
+[ 2018-04-17T16:48:22+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< {$id} order ' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< {$id} order by id desc limit 1)
+
+[ 2018-04-17T16:48:54+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< 3 order by i' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< 3 order by id desc limit 1)
+
+[ 2018-04-17T16:48:56+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< 3 order by i' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< 3 order by id desc limit 1)
+
+[ 2018-04-17T16:49:40+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< 3 limit 1)' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< 3 limit 1)
+
+[ 2018-04-17T16:49:42+08:00 ] 127.0.0.1 /moban/index.php/Home/Study/content/id/3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form moban_article where id=(select id from moban_article where id< 3 limit 1)' at line 1
+ [ SQL语句 ] : select * form moban_article where id=(select id from moban_article where id< 3 limit 1)
+

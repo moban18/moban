@@ -20,11 +20,20 @@
     <link href="ADMIN_CSS/demo.css" rel="stylesheet">
     <link href="ADMIN_CSS/typicons.css" rel="stylesheet">
     <link href="ADMIN_CSS/animate.css" rel="stylesheet">
+    <link href="ADMIN_CSS/jquery.searchableSelect.css" rel="stylesheet">
     <style type="text/css">
         .ok:after {
             content: '<br>';
         }
+        .searchable-select {
+            z-index: 9999 !important;
+        }
+        .searchable-select-holder {
+            width:400px !important;
+        }
+
     </style>
+
     
 </head>
 <body>
@@ -69,7 +78,7 @@
 
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">选择商品：</label>
-                            <div class="col-sm-4">
+                            <div class="col-sm-6">
                                 <select id="goods_id" name="goods_id">
                                     <option value=0>选择商品</option>
                                     <volist name="goods" id="v">
@@ -177,30 +186,13 @@
     <script src="ADMIN_CSS/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="ADMIN_CSS/beyond.js"></script>
+    <script src="ADMIN_CSS/jquery-1.11.1.min.js"></script>
+    <script src="ADMIN_CSS/jquery.searchableSelect.js"></script>
     <script>
         //选择不同的产品，出现不同的栏目;
-        $('#goods_id').change(function(){
-            var goods_id=$(this).val();
-            $.ajax({
-                type:'post',
-                url:'__CONTROLLER__/getCates',
-                data:{
-                    goods_id:goods_id
-                },
-                dataType:'json',
-                success:function(data){
-                    $('#cate_id').val(data.id);
-                    if(data.attrtype_id==null){
-                        $('#attrtype_id').val(0);
-                    }else{
-                        $('#attrtype_id').val(data.attrtype_id);
-                        getAttrs(data.attrtype_id);
-                    }
-
-                }
-            });
-        });
-
+        var Thinkphp={
+            'getCates':'__CONTROLLER__/getCates',
+        }
         //选择不同种类，展现不同的属性；
         function getAttrs(attrtype_id){
             var div=$('#attr_box');
@@ -258,7 +250,9 @@
         }
 
 
-
+        $(function(){
+            $('#goods_id').searchableSelect();
+        });
 
 
 

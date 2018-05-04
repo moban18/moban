@@ -1,0 +1,382 @@
+
+<extend name="Common/base" />
+
+<block name="main">
+    <script src="{:C('QRCODE')}/jquery.qrcode.min.js"></script>
+    <input type="hidden" name="goods_id" value="<?php echo I('id');?>"/>
+    <div class="goods_show_box">
+        <div id="goods_show">
+            <!--模板内容面包导航-->
+            <div class="goods_sbreadcrumbs">
+                <span>&gt;</span><a href="__MODULE__/{$cateInfo['cate_url']}" target="_blank">{$cateInfo['cate_name']}</a>
+                <span>&gt;</span>
+                <a href="__CONTROLLER__/index/filter/{$attr['id']}-0-0-0-0-0">
+                {$attr['attr_name']}
+                </a>
+                <span>&gt;</span>
+                <a href="__CONTROLLER__/index/filter/{$searchs[0]['attrter_id']}-0-0-0-0-0" target="_blank">
+                    <?php if($searchs){
+                        echo $searchs[0]['attr_name'];
+                    }?>
+                </a>
+                <span>&gt;</span>{$info['goods_name']}
+            </div>
+            <!--模板内容面包结束-->
+            <!--模板内容主体开始-->
+            <div id="goods_show_main clearfix">
+                <!--主体左边开始-->
+                <div class="goods_show_main_left">
+                    <div class="head  clearfix">
+                        <div class="head_inner clearfix ">
+                            <a class="userPic" href="http://www.sucaihuo.com/space/uid/1" target="_blank"><img
+                                    class="round-image" alt="头像" src="__PUBLIC__/images/1.jpg" height="40"
+                                    width="40"></a>
+                            <!--标题处理【原创】红色字体开始-->
+                            <?php
+                            $b='【原创】';
+                            $a=strpos($info['goods_name'],$b);
+                            $c=substr($info['goods_name'],0,$a);
+                            ?>
+                            <!--标题处理【原创】红色字体结束-->
+                            <h1 class="clearfix"><?php if($a>0):?>
+                                <?php echo $c;?>
+                                【<b class="red">原创</b>】
+                                <?php else:?>
+                                <?php echo $info['goods_name'];?>
+                                <?php endif;?>
+                            </h1>
+                            <div class="share_collect">
+                                <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1523005464780">
+                                    <a class="bds_more" href="#" data-cmd="more"></a>
+                                    <a class="bds_tsina" title="分享到新浪微博" href="#" data-cmd="tsina"></a>
+                                    <a class="bds_tieba" title="分享到百度贴吧" href="#" data-cmd="tieba"></a>
+                                    <a class="bds_qzone" title="分享到QQ空间" href="#" data-cmd="qzone"></a>
+                                    <a class="bds_sqq" title="分享到QQ好友" href="#" data-cmd="sqq"></a>
+                                    <a class="bds_tqq" title="分享到腾讯微博" href="#" data-cmd="tqq"></a>
+                                    <a class="bds_renren" title="分享到人人网" href="#" data-cmd="renren"></a>
+                                    <a class="bds_douban" title="分享到豆瓣网" href="#" data-cmd="douban"></a>
+                                    <a class="bds_mshare" title="分享到一键分享" href="#" data-cmd="mshare"></a>
+                                </div>
+                                <script>window._bd_share_config = {
+                                    "common": {
+                                        "bdSnsKey": {},
+                                        "bdText": "",
+                                        "bdMini": "2",
+                                        "bdMiniList": false,
+                                        "bdPic": "",
+                                        "bdStyle": "0",
+                                        "bdSize": "16"
+                                    }, "share": {}
+                                };
+                                with (document)
+                                    0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+                            </div>
+                            <p class="info clearfix">
+                                <span class="fr">来源：{$_SERVER["SERVER_NAME"]}__CONTROLLER__/content/id/{$info.id}</span>
+                                <a href="http://www.moban18.com/" target="_blank"><span
+                                        class="red">模板易吧</span></a>
+                                <span class="addtime"><?php echo date('Y-m-d H:i',$info['goods_time'])?></span><span>浏览(<span>{$info['goods_comment']}</span>)</span>
+
+                                <a class="poster_likes " onclick="getCollect($(this))"
+                                   href="javascript:void(0)">
+                                    <i class="like_remove
+                                    <?php
+                                    if($store){
+                                    echo 'like_status';
+                                    }?>
+                                "></i><em>收藏</em>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="goods_boximgages">
+                        <!--模板正文-->
+                        <?php echo htmlspecialchars_decode($goodsInfo['goods_content'])?>
+
+                    </div>
+
+                    <div class="template_feature">
+                        <span class="feature">
+                            分类：<a href="__CONTROLLER__/index/filter/{$attr['id']}-0-0-0-0-0">
+                {$attr['attr_name']}
+                </a>
+                            &gt; <a href="__CONTROLLER__/index/filter/{$searchs[0]['attrter_id']}-0-0-0-0-0">
+                    <?php if($searchs){
+                        echo $searchs[0]['attr_name'];
+                    }?>
+                </a></span>
+                        <span class="feature">
+                            <?php foreach($searchs as $v):
+                            if($v['attr_id']==3):
+                            ?>
+
+                            布局：
+                            <a href="__CONTROLLER__/index/filter/0-0-{$v['attrter_id']}-0-0-0" target="_blank">
+                            <?php echo $v['attr_name'];?>
+                            </a>
+                            <?php endif; endforeach;?>
+                        </span>
+                        <span class="feature">
+
+                            颜色：
+                            <?php foreach($searchs as $v):
+                            if($v['attr_id']==2):
+                            ?>
+                            <a href="__CONTROLLER__/index/filter/0-{$v['attrter_id']}-0-0-0-0" target="_blank"><?php echo $v['attr_name'];?></a>&nbsp;
+                            <?php endif;endforeach;?>
+                        </span>
+                        <span class="feature">模板数：<a onclick="getTemplatesMap('4337');">{$info['moban_num']}</a></span>
+                    </div>
+                    <div class="viptype">
+                        下载权限：
+                        <input type="hidden" name="viptype" value="{$info['goods_vips']}"/>
+                        <input type="hidden" name="jbin" value="{$info['goods_price']}"/>
+                        <?php foreach($vips as $v):?>
+                        <span><?php echo $v['vip_name'];?></span>&nbsp;&nbsp;
+                        <?php endforeach;?>
+                        <p class="vip_notise">注：会员免金币下载，如已下载，系统不会重复购买</p>
+                    </div>
+                    <div class="buttons clearfix">
+                        <span class="btnbox">
+                            <a class="bigbtn demo" id="btn_demo" href="http://yanshi.sucaihuo.com/modals/43/4337/demo"
+                               target="_blank" rel="nofollow">查看演示</a>
+                            <span class="dlnum">
+                                下载资源：
+                                <strong class="orange">{$info['download_num']}</strong>
+                                次
+                            </span>
+                        </span>
+                        <div class="qrcode_box" id="qrcode_box" style="display:none">
+                            <p>手机扫码访问：</p>
+                            <div id="qrcode"></div>
+                            <!--<img src="" id="qrcode">-->
+                            <!--<img src="__ROOT__/{$goodsInfo['code_imgs']}">-->
+                        </div>
+                        <span class="btnbox">
+                            <a class="bigbtn download notlogin" onclick="downloadZipBox()">下载资源</a>
+                            <span class="dlcount">
+                                购买金币：
+                                <strong class="orange">{$info['goods_price']}</strong>金币
+                            </span>
+                        </span>
+
+                    </div>
+                    <div class="goods_tags clearfix">
+                        <span>标签：</span>
+                        <a class="tags_a" href="###" target="_blank">摄影</a>
+
+                    </div>
+                    <div class="goods_pagess clearfix">
+                        <div class="goods_pagess_pre">
+                            <a href="__CONTROLLER__/content/id/{$pre[0]['id']}" target="_blank">{$pre[0]['goods_name']}</a>
+                        </div>
+                        <div class="goods_pagess_nex">
+                            <a href="__CONTROLLER__/content/id/{$nex[0]['id']}" target="_blank">{$nex[0]['goods_name']}</a>
+                        </div>
+
+                    </div>
+                    <div class="article_dashang">
+                        <div class="dashang_top"></div>
+                        <div id="cy-reward-pop" style="display:none">
+                            <div node-type="cy-close-btn" class="cy-close-btn"></div>
+                            <img class="cy-avatar" src="__PUBLIC__/images/pY9YN2e_jpg.jpg">
+                            <div class="cy-reward-title">感谢你的支持，我会继续努力！
+                            </div>
+                            <div node-type="cy-reward-code" class="cy-reward-code">
+                                <img node-type="alipay-code" style="display:block" src="__PUBLIC__/images/pY9Ygvv_png.png">
+                                <img node-type="weichat-code" style="display:none" src="__PUBLIC__/images/pY9YfZU_png.png">
+                            </div>
+                            <div class="cy-reward-txt">扫码打赏，建议金额1-10元</div>
+                            <div node-type="platform-choice" class="platform-choice clearfix">
+                                <div class="platform-item clearfix">
+                                    <span node-type="check-platform" data-id="alipay" class="platform-radio-box platform-checked"></span>
+                                    <span class="platform-logo alipay"></span>
+                                </div>
+                                <div class="platform-item clearfix">
+                                    <span node-type="check-platform" data-id="weichat" class="platform-radio-box"></span>
+                                    <span class="platform-logo weichat"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--主体左边结束-->
+                <!--主体右边开始-->
+                <div class="goods_show_main_right">
+                    <div class="goods_right_box">
+                        <div class="goods_right_box_top">
+                            <h1>相关模板</h1>
+                            <span>/Relative</span>
+                            <a href="__CONTROLLER__/index">更多></a>
+                        </div>
+                        <div class="goods_right_ul clearfix">
+                            <ul>
+                                <?php foreach($xgGoods as $v):?>
+                                <li>
+                                    <a href="__CONTROLLER__/content/id/{$v['id']}" target="_blank">{$v['goods_name']}</a>
+                                    <span>
+                                        <?php echo date('m-d',$v['goods_time'])?>
+                                    </span>
+                                </li>
+                                <?php endforeach;?>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="goods_right_box">
+                        <div class="goods_right_box_top">
+                            <h1>推荐模板</h1>
+                            <span>/Recommed</span>
+                            <a href="__CONTROLLER__/index">更多></a>
+                        </div>
+                        <div class="goods_right_ul clearfix">
+                            <ul>
+                                <?php foreach($tjGoods as $v):?>
+                                <li>
+                                    <a href="#__CONTROLLER__/content/id/{$v['id']}" target="_blank">{$v['goods_name']}</a>
+                                    <span><?php echo date('m-d',$v['goods_time'])?></span>
+                                </li>
+                                <?php endforeach;?>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="goods_right_box">
+                        <div class="goods_right_box_top">
+                            <h1>标签云</h1>
+                            <span>/Tag</span>
+                            <a href="__MODULE__/Vip">更多></a>
+                        </div>
+                        <div class="goods_right_a clearfix">
+                            <?php foreach($tabs as $v):
+                        $filter=$v['id'].'-0-0-0-0-0';
+                    ?>
+                            <a target="_blank" href="<?php echo U('Vip/index',['filter'=>$filter])?>">{$v['attr_value']}</a>
+                            <?php endforeach;?>
+                        </div>
+
+                    </div>
+                    <div class="goods_right_box">
+                        <div class="goods_right_box_top">
+                            <h1>最新模板</h1>
+                            <span>/New</span>
+                            <a href="__CONTROLLER__/index">更多></a>
+                        </div>
+                        <div class="goods_right_ul clearfix">
+                            <ul>
+                                <?php foreach($newGoods as $v):?>
+                                <li>
+                                    <a href="#__CONTROLLER__/content/id/{$v['id']}" target="_blank">{$v['goods_name']}</a>
+                                    <span><?php echo date('m-d',$v['goods_time'])?></span>
+                                </li>
+                                <?php endforeach;?>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--主体右边结束-->
+            </div>
+            <!--模板内容主体结束-->
+
+        </div>
+    </div>
+    <script>
+        $('.demo ').mouseover(function () {
+            var div = $('#qrcode_box');
+            div.css({'display': 'block'});
+            $(this).mouseout(function () {
+                div.css({'display': 'none'});
+            });
+        });
+
+        $(function() {
+            var tagss = $('.goods_right_a a');
+            tagss.each(function(){
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                $(this).css("background-color","rgb("+r+","+g+","+b+")");
+                $(this).css("opacity",'0.7');
+            });
+
+            tagss.hover(function(){
+                $(this).css("opacity",'1.0');
+                $(this).mouseout(function(){
+                    $(this).css("opacity",'0.7');
+                });
+            });
+
+        });
+        //点击收藏功能
+        function getCollect(o){
+            var i=$(o).find('.like_remove');
+            var classN=i.attr('class');
+            var goods_id=$('input[name=goods_id]').val();
+            $.ajax({
+                type:'post',
+                url:'__MODULE__/GoodsStore/addStore',
+                data:{
+                    goods_id:goods_id,
+                },
+                success:function(data){
+                   if(data==0){
+                       i.removeClass('like_status');
+                   }else{
+                       i.addClass('like_status');
+                   }
+                }
+            });
+        }
+        //下载资料功能
+        function downloadZipBox(){
+            var viptype=$('input[name=viptype]').val();
+            var goods_jbin=$('input[name=jbin]').val();
+            var goods_id=$('input[name=goods_id]').val();
+            $.ajax({
+                type:'post',
+                url:'__CONTROLLER__/getLoad',
+                data:{
+                    viptype:viptype,
+                    goods_jbin:goods_jbin,
+                    goods_id:goods_id,
+                },
+                success:function(data){
+                    if(data==0){
+                        alert('已有下载过，不需要重新下载');
+                    }
+                    if(data==1){
+                        alert('会员下载权限');
+                    }
+                    if(data==4){
+                        alert('金币购买下载，扣除350金币');
+                    }
+                    if(data==3){
+                        alert('不是会员，也没有金币');
+                    }
+                }
+            });
+
+
+        }
+/*生成二维码*/
+    $('#qrcode').qrcode({
+        render: "canvas", //也可以替换为table
+        width: 180,
+        height: 180,
+        text: "{$goodsInfo['code_url']}"
+    });
+
+    </script>
+</block>
+
+
+
+
+
+
+
+
+
+

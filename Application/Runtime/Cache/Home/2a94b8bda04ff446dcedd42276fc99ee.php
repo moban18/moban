@@ -78,14 +78,14 @@
             <div class="searchx">
                 <div class="ss">
                     <div class="s_form">
-                        <form name="formsearch" method="get" action="" target="_blank">
-                            <input name="kwtype" value="0" type="hidden">
-                            <input name="typeid" value="1" type="hidden">
+                        <form name="" method="get" action="/moban/index.php/Home/Index/search" target="_blank">
+                            <!--<input name="kwtype" value="0" type="hidden">
+                            <input name="typeid" value="1" type="hidden">-->
                             <div class="s1">
-                                <input class="keywords" name="q" id="q" title="请输入关键字" value="模板18搜索..." onfocus="if(this.value=='模板18搜索...'){this.value='';}" onblur="if(this.value==''){this.value='模板18搜索...';}" maxlength="27" type="text">
+                                <input class="keywords" name="keywords" id="q" title="请输入关键字" value="模板18搜索..." onfocus="if(this.value=='模板18搜索...'){this.value='';}" onblur="if(this.value==''){this.value='模板18搜索...';}" maxlength="27" type="text">
                             </div>
                             <div class="s2">
-                                <select name="typeid" class="search-option" id="typeid">
+                                <select name="cate_id" class="search-option" id="typeid">
                                     <option value="0" selected="1">全部</option>
                                     <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
@@ -117,12 +117,19 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+ if($ac=='Index' || empty($ac)){ echo 'on'; } ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){ echo 'on'; }?>
+                        ">
                     <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </li>
+                <?php endforeach;?>
 
 
 
@@ -182,12 +189,12 @@
             <!--轮播图片区-->
             <div class="box1_right_top">
                 <div class="box1_right_imgs">
-                    <?php foreach($luns_photos as $v):?>
-                    <a herf="###" class="ig"><img src="/moban/<?php echo ($v); ?>"/></a>
+                    <?php foreach($newLuns as $v):?>
+                    <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['goods_id']); ?>" class="ig" target="_blank"><img src="/moban/<?php echo ($v['links']); ?>"/></a>
                     <?php endforeach;?>
                 </div>
                 <ul id="tabs">
-                    <?php for($i=0;$i<count($luns_photos);$i++):?>
+                    <?php for($i=0;$i<count($newLuns);$i++):?>
                     <li class="tab"><?php echo $i;?></li>
                     <?php endfor;?>
                 </ul>
@@ -197,26 +204,19 @@
             <div class="box1_right_bottom">
                 <ul id="box1_titles">
                     <?php foreach($newGoods as $v):?>
-                    <li><a href="###" alt="<?php echo mb_substr($v['goods_name'],0,16,'utf-8');?>"><?php echo mb_substr($v['goods_name'],0,18,'utf-8');?></a></li>
+                    <li><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>"  target="_blank" alt="<?php echo mb_substr($v['goods_name'],0,16,'utf-8');?>"><?php echo ($v['goods_name']); ?></a></li>
                     <?php endforeach;?>
                 </ul>
             </div>
             <!--轮播区文章区结束-->
-
-
         </div>
-
-
-
     </div>
 
     <!--首页中间VIP模板展示开始-->
         <div class="box2 muban" id="index_1">
-            <div class="mubantitle"> <span class="indexTitleT"><a href="http://www.dede58.com/a/dedecode/">VIP整站模板</a></span> <span class="f12"></span>
+            <div class="mubantitle"> <span class="indexTitleT"><a href="/moban/index.php/Home/Vip/index">VIP整站模板</a></span> <span class="f12"></span>
                 <div class="itmore">
-
-
-                    <a href="http://www.dede58.com/a/dedecode/">更多模板</a> </div>
+                    <a href="/moban/index.php/Home/Vip/index">更多模板</a> </div>
             </div>
 
             <div class="index3">
@@ -225,52 +225,25 @@
                     <div class="index3_box">
                         <div class="article_recommon">
                             <ul class="godds_recommon no_flash">
+                                <?php foreach($vipGoods as $k=>$v):?>
+                                    <?php if($k<6):?>
                                 <li>
-                                    <a href="###">
-                                        <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                    <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" title="<?php echo ($v['goods_name']); ?>" target="_blank">
+                                        <img src="/moban/<?php echo ($v['godds_233_160']); ?>">
+                                        <span><?php echo ($v['goods_name']); ?></span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="###">
-                                        <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="###">
-                                        <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="###">
-                                        <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="###">
-                                        <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="###">
-                                        <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
-                                    </a>
-                                </li>
+
+                                <?php endif; endforeach;?>
                             </ul>
                         </div>
                         <div class="box1_right_bottom  ">
                             <ul id="box1_titles">
-                                <li><a href="###" alt="环保科技废弃物污染治理类织梦模板">环保科技废弃物污染治理类织梦模板(带</a></li>
-                                <li><a href="###" alt="大气好看的电子商务平台购物商城模">大气好看的电子商务平台购物商城模板</a></li>
-                                <li><a href="###" alt="html5响应式台球俱乐部网站模">html5响应式台球俱乐部网站模板</a></li>
-                                <li><a href="###" alt="橙色大气html5响应式木材切割">橙色大气html5响应式木材切割机公</a></li>
-                                <li><a href="###" alt="简洁大气的淋浴房洁具公司网站模板">简洁大气的淋浴房洁具公司网站模板</a></li>
-                                <li><a href="###" alt="简单的股票基金对比页面手机模板">简单的股票基金对比页面手机模板</a></li>
-                                <li><a href="###" alt="简单的手机智能选股页面html模">简单的手机智能选股页面html模板</a></li>
-                                <li><a href="###" alt="绿色风格水果蔬菜农产品批发商城模">绿色风格水果蔬菜农产品批发商城模板【</a></li>
-                                <li><a href="###" alt="html5响应式妇产医院妇幼保健">html5响应式妇产医院妇幼保健院网</a></li>
-                                <li><a href="###" alt="weui手机移动端鲜花商城app">weui手机移动端鲜花商城app页面</a></li>
-                                <li><a href="###" alt="红色大气html5响应式美容美甲">红色大气html5响应式美容美甲网站</a></li>
-                                <li><a href="###" alt="蓝色简洁的口腔医院在线预约挂号页">蓝色简洁的口腔医院在线预约挂号页面手</a></li>
+                                <?php foreach($vipGoods as $k=>$v):?>
+                                    <?php if($k>6):?>
+                                <li><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" title="<?php echo ($v['goods_name']); ?>" target="_blank"><?php echo ($v['goods_name']); ?></a></li>
+                                <?php endif; endforeach;?>
+
                             </ul>
                         </div>
 
@@ -289,105 +262,18 @@
                         <!--右边推荐模板22个-->
                         <div class="goods_right_ul clearfix ">
                             <ul>
+                                <?php foreach($vipGoodss as $v):?>
                                 <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
+                                    <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>"><?php echo ($v['goods_name']); ?>}</a>
+                                    <span><?php echo date('m-d',$v['goods_time']);?></span>
                                 </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
-                                <li>
-                                    <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                    <span>03-17</span>
-                                </li>
+                                <?php endforeach;?>
+
 
                             </ul>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
                 <div class="clear"></div>
             </div>
 
@@ -395,65 +281,35 @@
     <!--首页中间VIP模板展示结束-->
     <!--首页中间终生会员模板展示开始-->
     <div class="box2 muban" id="index_1">
-        <div class="mubantitle"> <span class="indexTitleT"><a href="http://www.dede58.com/a/dedecode/">终生会员模板</a></span> <span class="f12"></span>
+        <div class="mubantitle"> <span class="indexTitleT"><a href="/moban/index.php/Home/Svip/index" title="生会员模板">终生会员模板</a></span> <span class="f12"></span>
             <div class="itmore">
-
-
-                <a href="http://www.dede58.com/a/dedecode/">更多模板</a> </div>
+                <a href="/moban/index.php/Home/Svip/index">更多模板</a> </div>
         </div>
-
         <div class="index3">
             <!--首页中间VIP模板左边开始-->
             <div class="index3_left">
                 <div class="index3_box">
                     <div class="article_recommon">
                         <ul class="godds_recommon no_flash">
+                          <?php foreach($svipGoods as $k => $v):?>
+                            <?php if($k<6):?>
+
                             <li>
-                                <a href="###">
-                                    <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
+                                <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" title="<?php echo ($v['goods_name']); ?>">
+                                    <img src="/moban/<?php echo ($v['godds_233_160']); ?>">
+                                    <span><?php echo ($v['goods_name']); ?></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="###">
-                                    <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
-                                </a>
-                            </li>
-                            <li>
-                                <a href="###">
-                                    <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
-                                </a>
-                            </li>
-                            <li>
-                                <a href="###">
-                                    <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
-                                </a>
-                            </li>
-                            <li>
-                                <a href="###">
-                                    <img src="/moban/Public/images/artrecommon1.png">白蓝色bootstrap课程模板_精选教育模板
-                                </a>
-                            </li>
-                            <li>
-                                <a href="###">
-                                    <img src="/moban/Public/images/artrecommon2.png">白蓝色bootstrap课程模板_精选教育模板
-                                </a>
-                            </li>
+                        <?php endif; endforeach;?>
+
                         </ul>
                     </div>
                     <div class="box1_right_bottom  ">
                         <ul id="box1_titles">
-                            <li><a href="###" alt="环保科技废弃物污染治理类织梦模板">环保科技废弃物污染治理类织梦模板(带</a></li>
-                            <li><a href="###" alt="大气好看的电子商务平台购物商城模">大气好看的电子商务平台购物商城模板</a></li>
-                            <li><a href="###" alt="html5响应式台球俱乐部网站模">html5响应式台球俱乐部网站模板</a></li>
-                            <li><a href="###" alt="橙色大气html5响应式木材切割">橙色大气html5响应式木材切割机公</a></li>
-                            <li><a href="###" alt="简洁大气的淋浴房洁具公司网站模板">简洁大气的淋浴房洁具公司网站模板</a></li>
-                            <li><a href="###" alt="简单的股票基金对比页面手机模板">简单的股票基金对比页面手机模板</a></li>
-                            <li><a href="###" alt="简单的手机智能选股页面html模">简单的手机智能选股页面html模板</a></li>
-                            <li><a href="###" alt="绿色风格水果蔬菜农产品批发商城模">绿色风格水果蔬菜农产品批发商城模板【</a></li>
-                            <li><a href="###" alt="html5响应式妇产医院妇幼保健">html5响应式妇产医院妇幼保健院网</a></li>
-                            <li><a href="###" alt="weui手机移动端鲜花商城app">weui手机移动端鲜花商城app页面</a></li>
-                            <li><a href="###" alt="红色大气html5响应式美容美甲">红色大气html5响应式美容美甲网站</a></li>
-                            <li><a href="###" alt="蓝色简洁的口腔医院在线预约挂号页">蓝色简洁的口腔医院在线预约挂号页面手</a></li>
+                            <?php foreach($svipGoods as $k => $v):?>
+                             <?php if($k>6):?>
+                            <li><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" alt="<?php echo ($v['goods_name']); ?>"><?php echo ($v['goods_name']); ?></a></li>
+                            <?php endif; endforeach;?>
                         </ul>
                     </div>
 
@@ -467,132 +323,35 @@
                     <div class="goods_right_box_top">
                         <h1>推荐模板</h1>
                         <span>/Template</span>
-                        <a href="###">更多&gt;</a>
+                        <a href="/moban/index.php/Home/Svip/index">更多&gt;</a>
                     </div>
                     <!--右边推荐模板22个-->
                     <div class="goods_right_ul clearfix ">
                         <ul>
+                            <?php foreach($svipGoodss as $v):?>
                             <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
+                                <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" title="$v['goods_name']}"><?php echo ($v['goods_name']); ?></a>
+                                <span><?php echo date('m-d',$v['goods_time']);?></span>
                             </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
-                            <li>
-                                <a href="###">html5响应式摄影爱好者团队作afdfsdfds</a>
-                                <span>03-17</span>
-                            </li>
+                            <?php endforeach;?>
 
                         </ul>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
             <div class="clear"></div>
         </div>
 
     </div>
     <!--首页中间终生会员模板展示结束-->
-
-
-
-
-
-
-
-
-
-
+    <!--视频图文模板展示开始-->
         <div class="box3 edu" id="index_3">
             <div class="edutitle"> <span class="indexTitleT">视频·图文教程</span> <span class="f12">不知从哪里开始，不知怎学，那就看看大伙咋弄弄得！</span>
                 <div class="itmore">
-
-                    <a href="http://www.dede58.com/a/dedejq/">织梦技巧</a>　/　<a href="http://www.dede58.com/a/dedeaz/">安装使用</a>　/　<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/">故障问题</a>　/　
-
-                    <a href="http://www.dede58.com/a/zhimengjiaocheng/" target="_top">更多教程</a>
+                    <?php foreach($ar_cates as $k=>$v): if($k<=3): ?>
+                    <a href="/moban/index.php/Home/Study/index/cate/<?php echo ($v['id']); ?>"><?php echo ($v['cate_name']); ?></a>　/　
+                    <?php endif; endforeach;?>
+                    <a href="/moban/index.php/Home/Study/index" target="_top">更多教程</a>
                 </div>
             </div>
             <div class="edubox">
@@ -601,13 +360,17 @@
                     <div class="bankuai1">
                         <!-- 焦点图代码 开始 -->
                         <div id="fsD1" class="focus">
+                            <!--图片开始-->
                             <div id="D1pic1" class="fPic">
                                 <div class="fcon" style="display: none;"> <a target="_top" href="http://www.dede58.com/a/dedeaz/1583.html"><img class="lazy" data-original="http://www.dede58.com/uploads/allimg/141224/153R12114-0.jpg" src="/moban/Public/images/loading.gif" style="opacity: 1;"></a> <span class="shadow"><a target="_top" href="http://www.dede58.com/a/dedeaz/1583.html">织梦CMS整站源码通用安装教程</a></span> </div>
 
-                                <div class="fcon" style="display: block;"> <a target="_top" href="http://www.dede58.com/plus/view.php?aid=4218"><img src="/moban/Public/images/1-1f6221j9220-l.jpg" style="opacity: 1;"></a> <span class="shadow"><a target="_top" href="http://www.dede58.com/plus/view.php?aid=4218">织梦cms的安全设置专题</a></span> </div>
-                                <div class="fcon" style="display: none;"> <a target="_top" href="http://www.dede58.com/a/dedeaz/4007.html"><img src="/moban/Public/images/1-1f51g640502m.png" style="opacity: 1;"></a> <span class="shadow"><a target="_top" href="http://www.dede58.com/a/dedeaz/4007.html">织梦安装入门视频教程（织梦58莹莹主讲）</a></span> </div>
-
+                                <div class="fcon" style="display: block;"> <a target="_top" href="http://www.dede58.com/plus/view.php?aid=4218"><img src="/moban/Public/images/1-1f6221j9220-l.jpg" style="opacity: 1;"></a> <span class="shadow"><a target="_top" href="http://www.dede58.com/plus/view.php?aid=4218">织梦cms的安全设置专题</a></span>
+                                </div>
+                                <div class="fcon" style="display: none;"> <a target="_top" href="http://www.dede58.com/a/dedeaz/4007.html"><img src="/moban/Public/images/1-1f51g640502m.png" style="opacity: 1;"></a> <span class="shadow"><a target="_top" href="http://www.dede58.com/a/dedeaz/4007.html">织梦安装入门视频教程（织梦58莹莹主讲）</a></span>
+                                </div>
                             </div>
+                            <!--图片结束-->
+
                             <div class="fbg">
                                 <div class="D1fBt" id="D1fBt" style="display: none;"> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a><a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>2</i></a> </div>
                             </div>
@@ -615,89 +378,64 @@
 
                         <!-- 代码 结束 -->
                         <div class="tbtj">
+                            <?php foreach($articles_center as $k=>$v): if($k==0): ?>
                             <div class="wenzhangtxt">
-                                <h1><a href="http://www.dede58.com/a/dedeaz/4206.html" title="Dedecms文件目录结构解说（能知道织梦每个文件有什么用）">Dedecms文件目录结构解说（能知道织梦每</a></h1>
-                                <p>鉴于很多新手朋友不知道织梦很多目录和文件具体有何作用，而现互联网亦没有相对全面的dedecms文件目录解说，so，织梦新手网在相对全面的基础上整理了以下目录文件，莹莹首... <a href="http://www.dede58.com/a/dedeaz/4206.html">[详细]</a></p>
-
+                                <h1><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" title="$v['article_title']}" target="_blank"><?php echo mb_substr($v['article_title'],0,15,'utf-8')?></a></h1>
+                                <p><?php echo mb_substr($v['article_dec'],0,150,'utf-8')?>... <a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" target="_blank">[详细]</a></p>
                             </div>
+                            <?php endif; endforeach;?>
                             <div class="wenzhanglist">
-                                <li><span>12-13</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/"><b>故障问题</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/5156.html" title="织梦dede后台的模块管理列表变成空白了？">织梦dede后台的模块管理列表变成空白了？</a></li>
-                                <li><span>12-13</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/"><b>故障问题</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/5153.html" title="织梦CMS安装提示 Safe Alert: Request Error step 2!的解决办法">织梦CMS安装提示 Safe Alert: Request Erro</a></li>
-                                <li><span>12-12</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/development/"><b>程序开发</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/development/5150.html" title="dedecms织梦后台自定义表单添加搜索功能">dedecms织梦后台自定义表单添加搜索功能</a></li>
-                                <li><span>12-12</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/"><b>故障问题</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/5149.html" title="织梦arclist标签无法调用副栏目文章的解决办法">织梦arclist标签无法调用副栏目文章的解决</a></li>
-                                <li><span>12-12</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/development/"><b>程序开发</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/development/5142.html" title="Dedecms模块开发流程（一）">Dedecms模块开发流程（一）</a></li>
-                                <li><span>12-12</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/development/"><b>程序开发</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/development/5143.html" title="Dedecms模块开发流程（二）">Dedecms模块开发流程（二）</a></li>
-                                <li><span>12-11</span>[<a href="http://www.dede58.com/a/zhimengjiaocheng/development/"><b>程序开发</b></a>]<a href="http://www.dede58.com/a/zhimengjiaocheng/development/5141.html" title="织梦会员签到功能（非插件）">织梦会员签到功能（非插件）</a></li>
-
+                                <?php foreach($articles_center as $k=>$v): if($k>0 && $k<=7): ?>
+                                <li>
+                                    <span><?php echo date('m-d',$v['article_time'])?></span>
+                                    [<a href="/moban/index.php/Home/Study/index/cate/<?php echo ($v['cate_id']); ?>" target="_blank"><b><?php echo ($v['cate_name']); ?></b></a>]
+                                    <a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" title="$v['article_title']}" target="_blank"><?php echo mb_substr($v['article_title'],0,24,'utf-8')?></a>
+                                </li>
+                                <?php endif; endforeach;?>
                             </div>
                         </div>
                     </div>
                     <div class="bankuai2">
+                            <div class="learn-list-item">
+                                <div class="learn-list-title x-left">网络编程</div>
+                                <ul>
+                                    <?php foreach($jsArticles as $v):?>
+                                    <li><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" title="<?php echo ($v['article_title']); ?>" target="_blank"><?php echo mb_substr($v['article_title'],0,22,'utf-8')?></a></li>
+                                    <?php endforeach;?>
+                                </ul>
+                            </div>
 
-                        <div class="learn-list-item">
-                            <div class="learn-list-title x-left">织梦技巧</div>
-                            <ul>
-                                <li><a href="http://www.dede58.com/a/dedejq/5157.html" title="dedecms文章详情页如何显示带链接的＂所属类别＂？">dedecms文章详情页如何显示带链接的＂所属类别＂？</a></li>
-                                <li><a href="http://www.dede58.com/a/dedejq/5155.html" title="如何批量删除织梦dedecms里的垃圾留言？">如何批量删除织梦dedecms里的垃圾留言？</a></li>
-                                <li><a href="http://www.dede58.com/a/dedejq/5154.html" title="分享dede模板制作人性化的时间格式"><strong>分享dede模板制作人性化的时间格式</strong></a></li>
-                                <li><a href="http://www.dede58.com/a/dedejq/5148.html" title="织梦文章页调用当前文章Tag标签并添加Tag超链接">织梦文章页调用当前文章Tag标签并添加Tag超链接</a></li>
-                                <li><a href="http://www.dede58.com/a/dedejq/5139.html" title="织梦分表储存-数据负载性能优化">织梦分表储存-数据负载性能优化</a></li>
+                            <div class="learn-list-item">
+                            <div class="learn-list-title x-left">网页制作</div>
 
-
-                            </ul>
-                        </div><div class="learn-list-item">
-                        <div class="learn-list-title x-left">安装使用</div>
-                        <ul>
-                            <li><a href="http://www.dede58.com/a/dedeaz/5124.html" title="织梦去掉上传图片的水印或者改为自己设计的水印">织梦去掉上传图片的水印或者改为自己设计的水印</a></li>
-                            <li><a href="http://www.dede58.com/a/dedeaz/5110.html" title="dedecms安全防范措施设置的集锦大全">dedecms安全防范措施设置的集锦大全</a></li>
-                            <li><a href="http://www.dede58.com/a/dedeaz/5109.html" title="iis主机下dedecms织梦tag标签实现伪静态的方法">iis主机下dedecms织梦tag标签实现伪静态的方法</a></li>
-                            <li><a href="http://www.dede58.com/a/dedeaz/4900.html" title="使用织梦计划任务功能让网站每5分钟更新一次">使用织梦计划任务功能让网站每5分钟更新一次</a></li>
-                            <li><a href="http://www.dede58.com/a/dedeaz/5104.html" title="DEDE默认模板目录修改方法">DEDE默认模板目录修改方法</a></li>
-
-
-                        </ul>
-                    </div><div class="learn-list-item">
-                        <div class="learn-list-title x-left">标签调用</div>
-                        <ul>
-                            <li><a href="http://www.dede58.com/a/dedebq/2017/1212/5147.html" title="DEDE模板标记、标签、调用以及写法的简介与用法"><strong>DEDE模板标记、标签、调用以及写法的简介与用法</strong></a></li>
-                            <li><a href="http://www.dede58.com/a/dedebq/2017/1212/5145.html" title="实现DedeCms文章标题分栏显示">实现DedeCms文章标题分栏显示</a></li>
-                            <li><a href="http://www.dede58.com/a/dedebq/2017/1212/5144.html" title="织梦DeDeCms列表页隔行换色标签代码">织梦DeDeCms列表页隔行换色标签代码</a></li>
-                            <li><a href="http://www.dede58.com/a/dedebq/2017/1210/5130.html" title="dedecms万能SQL标签使用方法大全">dedecms万能SQL标签使用方法大全</a></li>
-                            <li><a href="http://www.dede58.com/a/dedebq/2017/1209/5122.html" title="dede:arclist 标签排序具体实现">dede:arclist 标签排序具体实现</a></li>
-
-
-                        </ul>
-                    </div>
-                    </div>
+                                <ul>
+                                    <?php foreach($phpArticles as $v):?>
+                                    <li><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" title="<?php echo ($v['article_title']); ?>" target="_blank"><?php echo mb_substr($v['article_title'],0,22,'utf-8')?></a></li>
+                                    <?php endforeach;?>
+                                </ul>
+                        </div>
+                            <div class="learn-list-item">
+                            <div class="learn-list-title x-left">网页编程</div>
+                                <ul>
+                                    <?php foreach($cssArticles as $v):?>
+                                    <li><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" title="<?php echo ($v['article_title']); ?>" target="_blank"><?php echo mb_substr($v['article_title'],0,22,'utf-8')?></a></li>
+                                    <?php endforeach;?>
+                                </ul>
+                        </div>
+                 </div>
                 </div>
                 <div class="bankuai3">
                     <ul class="rank-list">
-                        <li class="rank-top"><a href="http://www.dede58.com/a/dedesp/1781.html" class="x-image-link rank-img" rel="nofollow"><s><b>1</b></s><img data-original="http://www.dede58.com/uploads/allimg/150311/1-1503111J0293T-lp.jpg" src="/moban/Public/images/1-1503111j0293t-lp.jpg" class="x-image-xsmall lazy" style="display: inline;"></a>
-                            <h3><a href="http://www.dede58.com/a/dedesp/1781.html">多款精美 dede 分页 pagelist 样式</a></h3>
-                            <p>栏目：<a href="http://www.dede58.com/a/dedesp/" class="x-hint"> 辅助文档 </a> </p>
-                            <p class="x-hint">点击数：101736</p>
+                        <?php foreach($rightArticles as $k=>$v): if($k<=2): ?>
+                        <li class="rank-top"><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" class="x-image-link rank-img" rel="nofollow" target="_blank"><s><b><?php echo $k+1;?></b></s><img data-original="<?php echo ($v['article_80_60']); ?>" src="/moban/<?php echo ($v['article_80_60']); ?>" class="x-image-xsmall lazy" style="display: inline;"></a>
+                            <h3><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>"><?php echo mb_substr($v['article_title'],0,18,'utf-8')?></a></h3>
+                            <p>栏目：<a href="/moban/index.php/Home/Study/index/cate/<?php echo ($v['cate_id']); ?>" class="x-hint" target="_blank"> <?php echo ($v['cate_name']); ?></a> </p>
+                            <p class="x-hint">点击数：<?php echo ($v['article_comment']); ?></p>
                         </li>
-                        <li class="rank-top"><a href="http://www.dede58.com/a/dedejq/1692.html" class="x-image-link rank-img" rel="nofollow"><s><b>2</b></s><img data-original="http://www.dede58.com/uploads/allimg/150213/1_0213130524V60.jpg" src="/moban/Public/images/1_0213130524v60.jpg" class="x-image-xsmall lazy" style="display: inline;"></a>
-                            <h3><a href="http://www.dede58.com/a/dedejq/1692.html">织梦怎么在图集文章内容页调用缩略图和原图</a></h3>
-                            <p>栏目：<a href="http://www.dede58.com/a/dedejq/" class="x-hint"> 织梦技巧 </a> </p>
-                            <p class="x-hint">点击数：99725</p>
-                        </li>
-                        <li class="rank-top"><a href="http://www.dede58.com/a/dedejq/1619.html" class="x-image-link rank-img" rel="nofollow"><s><b>3</b></s><img data-original="http://www.dede58.com/uploads/allimg/150104/1-1501041GS6263-lp.jpg" src="/moban/Public/images/1-1501041gs6263-lp.jpg" class="x-image-xsmall lazy" style="display: inline;"></a>
-                            <h3><a href="http://www.dede58.com/a/dedejq/1619.html">dede留言版设置需要审核才显示！！</a></h3>
-                            <p>栏目：<a href="http://www.dede58.com/a/dedejq/" class="x-hint"> 织梦技巧 </a> </p>
-                            <p class="x-hint">点击数：96800</p>
-                        </li>
-
-                        <li><i><b>4 </b></i><a href="http://www.dede58.com/a/dedejq/1619.html">dede留言版设置需要审核才显示！！</a></li>
-                        <li><i><b>5 </b></i><a href="http://www.dede58.com/a/zhimengjiaocheng/dedefault/2524.html">dedecms网站管理系统后台空白的解决办法大全</a></li>
-                        <li><i><b>6 </b></i><a href="http://www.dede58.com/a/dedeaz/1389.html">龙书浩最新DedeCmsV5.7建站仿站VIP视频教程</a></li>
-                        <li><i><b>7 </b></i><a href="http://www.dede58.com/a/dedejq/1122.html">DEDE模板中使用php和if判断语句的技巧</a></li>
-                        <li><i><b>8 </b></i><a href="http://www.dede58.com/a/dedebq/2015/0313/1789.html">织梦调用指定顶级栏目名称的方法</a></li>
-                        <li><i><b>9 </b></i><a href="http://www.dede58.com/a/dedeaz/2523.html">安装织梦V5.7手机模板文本教程</a></li>
-                        <li><i><b>10 </b></i><a href="http://www.dede58.com/a/dedejq/1731.html">织梦调用自定义字段</a></li>
-
+                        <?php else:?>
+                        <li><i><b><?php echo $k+1;?></b></i><a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" target="_blank"><?php echo mb_substr($v['article_title'],0,22,'utf-8')?></a></li>
+                        <?php endif; endforeach;?>
                     </ul>
-
                 </div>
             </div>
         </div>

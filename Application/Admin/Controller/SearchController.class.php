@@ -11,7 +11,7 @@ class SearchController extends CommonController {
         $Page->setConfig('prev','上一页');
         $Page->setConfig('next','下一页');
         $show       = $Page->show();//
-        $searchs=$search->limit($Page->firstRow.','.$Page->listRows)->select();
+        $searchs=$search->field('a.id,a.goods_id,a.attr_name,a.attrter_id,b.goods_name')->alias('a')->join('LEFT JOIN moban_goods b ON a.goods_id=b.id')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign(
             array(
                 'ac'=>$ac,
@@ -22,7 +22,8 @@ class SearchController extends CommonController {
         $this->display();
     }
 
-    public function add($id=''){
+    public function add(){
+
         $ac=$this->getAc();
         $search=D('search');
         if(IS_POST){
@@ -110,7 +111,21 @@ class SearchController extends CommonController {
         echo json_encode($attres);
     }
 
+//商品搜索属性列表，搜索标题处理
+    public function searchOthers(){
+        $title=I('goods_name');
+        $where['goods_name']=array('like','%'.$title.'%');
+        $ac=$this->getAc();
+        $search=D('search');
+        $searchs=$search->where($where)->field('a.id,a.goods_id,a.attr_name,a.attrter_id,b.goods_name')->alias('a')->join('LEFT JOIN moban_goods b ON a.goods_id=b.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign(array(
+            'ac'=>$ac,
+            'searchs'=>$searchs,
+        ));
+        $this->display();
 
+
+    }
 
 
 

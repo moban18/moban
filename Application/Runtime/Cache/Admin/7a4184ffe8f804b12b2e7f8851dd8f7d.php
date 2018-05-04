@@ -105,7 +105,7 @@
     <!-- Sidebar Menu -->
     <ul class="nav sidebar-menu">
         <!--Dashboard-->
-        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article'): ?>class="open"<?php endif; ?> >
+        <li <?php if($ac == 'Admin' or $ac == 'Cate' or $ac == 'Article' or $ac == 'Lun'): ?>class="open"<?php endif; ?> >
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
                 <span class="menu-text">控制面版</span>
@@ -119,12 +119,17 @@
                 </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                <a href="/moban/index.php/Admin/Cate/index"><span class="menu-text">栏目  管理</span>
+                    <i class="menu-expand"></i>
+                </a>
+                 </li>
+                <li>
+                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/moban/index.php/Admin/Article/index"><span class="menu-text">文章  管理</span>
+                    <a href="/moban/index.php/Admin/Lun/index"><span class="menu-text">轮播  管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -168,6 +173,44 @@
                 </li>
 
             </ul>
+        </li>
+        <li <?php if($ac == 'User'): ?>class="open"<?php endif; ?> >
+        <a href="#" class="menu-dropdown">
+            <i class="menu-icon fa fa-gear"></i>
+            <span class="menu-text">会员管理</span>
+            <i class="menu-expand"></i>
+        </a>
+        <ul class="submenu">
+            <li>
+                <a href="/moban/index.php/Admin/User/index">
+                                    <span class="menu-text">
+                                        会员管理                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Search/index">
+                                    <span class="menu-text">
+                                        会员等级                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attrtype/index">
+                                    <span class="menu-text">
+                                        ???                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/moban/index.php/Admin/Attr/index">
+                                    <span class="menu-text">
+                                        ???                                    </span>
+                    <i class="menu-expand"></i>
+                </a>
+            </li>
+
+        </ul>
         </li>
         <li>
             <a href="#" class="menu-dropdown">
@@ -236,6 +279,7 @@
                                         <tr>
                                             <th class="text-center">ID</th>
                                             <th class="text-center">文章标题</th>
+                                            <th class="text-center">文章图片</th>
                                             <th class="text-center">属于栏目</th>
                                             <th class="text-center">文章作者</th>
                                             <th class="text-center">浏览次数</th>
@@ -248,6 +292,10 @@
                                         <?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
                                             <td align="center"><?php echo ($v["id"]); ?></td>
                                             <td align="center"><?php echo ($v["article_title"]); ?></td>
+                                            <td align="center">
+                                                <img src="/moban/<?php echo ($v['article_80_60']); ?>" style="width:40px;height:30px;"/>
+
+                                            </td>
                                             <td align="center"><?php echo ($v["cate_name"]); ?></td>
                                             <td align="center"><?php echo ($v["article_anthor"]); ?></td>
                                             <td align="center"><?php echo ($v["article_comment"]); ?></td>

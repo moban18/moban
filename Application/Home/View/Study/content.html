@@ -1,0 +1,155 @@
+
+<extend name="Common/base" />
+
+<block name="main">
+    <div class="article_box clearfix">
+        <div class="article_left">
+            <div class="article_left_top clearfix">
+                <div class="article_top_left">
+                    <a href="###">首页</a><span>></span>
+                    <a href="http://www.moban18.com/">模板易吧</a>>
+                    <a href="__MODULE__/{$showCate['cate_url']}">{$showCate['cate_name']}</a>
+                </div>
+                <div class="article_top_right">
+                    <a href="__MODULE__/Vip" class="anther">相关案例演示</a>
+                </div>
+            </div>
+            <div class="article_recommon">
+                <ul class="godds_recommon">
+                    <?php foreach($goodss as $v):?>
+                    <li>
+                        <a href="__MODULE__/{$ac}/content/id/{$v['id']}">
+                            <img src="__ROOT__/{$v['godds_233_160']}"/>
+                            <span>{$v['goods_name']}</span>
+                        </a>
+                    </li>
+                    <?php endforeach;?>
+
+                </ul>
+            </div>
+            <div class="article_tile">
+                <?php echo mb_substr($article['article_title'],0,55,'utf-8')?>
+            </div>
+            <div id="article_content">
+                <p>
+                    <?php echo htmlspecialchars_decode($article['article_content']);?>
+                </p>
+
+            </div>
+
+            <div class="declare">
+                <span>注意：</span>如需转载，请注明来源<a href="http://www.moban18.com">moban18.com</a>并保留原文链接：<a href="__CONTROLLER__/content/id/{$article['id']}">__CONTROLLER__/content/id/{$article['id']}</a>
+            </div>
+            <div class="article_foot">
+                <div class="goods_pagess clearfix article_pages">
+                    <div class="goods_pagess_pre">
+                        <a href="__CONTROLLER__/content/id/{$pre[0]['id']}">{$pre[0]['article_title']}</a>
+                    </div>
+                    <div class="goods_pagess_nex">
+                        <a href="__CONTROLLER__/content/id/{$nex[0]['id']}">{$nex[0]['article_title']}</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="article_dashang">
+                <div class="dashang_top"></div>
+                <div id="cy-reward-pop" style="display:none">
+                    <div node-type="cy-close-btn" class="cy-close-btn"></div>
+                    <img class="cy-avatar" src="__PUBLIC__/images/pY9YN2e_jpg.jpg">
+                    <div class="cy-reward-title">感谢你的支持，我会继续努力！
+                </div>
+                    <div node-type="cy-reward-code" class="cy-reward-code">
+                        <img node-type="alipay-code" style="display:block" src="__PUBLIC__/images/pY9Ygvv_png.png">
+                        <img node-type="weichat-code" style="display:none" src="__PUBLIC__/images/pY9YfZU_png.png">
+                    </div>
+                    <div class="cy-reward-txt">扫码打赏，建议金额1-10元</div>
+                    <div node-type="platform-choice" class="platform-choice clearfix">
+                        <div class="platform-item clearfix">
+                            <span node-type="check-platform" data-id="alipay" class="platform-radio-box platform-checked"></span>
+                            <span class="platform-logo alipay"></span>
+                        </div>
+                        <div class="platform-item clearfix">
+                         <span node-type="check-platform" data-id="weichat" class="platform-radio-box"></span>
+                        <span class="platform-logo weichat"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article_right">
+            <div class="goods_right_box">
+                <div class="goods_right_box_top">
+                    <h1>相关文章</h1>
+                    <span>/Article</span>
+                    <a href="__MODULE__/Study">更多></a>
+                </div>
+                <div class="goods_right_ul clearfix">
+                    <ul>
+                        <?php foreach($articless as $v):?>
+                        <li>
+                            <a href="__MODULE__/{$v['cate_url']}/content/id/{$v['id']}" target="_blank">{$v['article_title']}</a>
+                            <span><?php echo date('m-d',$v['article_time'])?></span>
+                        </li>
+                        <?php endforeach;?>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="goods_right_box">
+                <div class="goods_right_box_top">
+                    <h1>标签云</h1>
+                    <span>/Tag</span>
+                    <a href="__MODULE__/Vip">更多></a>
+                </div>
+                <div class="goods_right_a clearfix">
+                    <?php foreach($tabs as $v):
+                        $filter=$v['id'].'-0-0-0-0-0';
+                    ?>
+                    <a target="_blank" href="<?php echo U('Vip/index',['filter'=>$filter])?>">{$v['attr_value']}</a>
+                    <?php endforeach;?>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(function() {
+            //标签云JS开始
+
+            var tagss = $('.goods_right_a a');
+            tagss.each(function(){
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                $(this).css("background-color","rgb("+r+","+g+","+b+")");
+                $(this).css("opacity",'0.7');
+            });
+
+            tagss.hover(function(){
+                $(this).css("opacity",'1.0');
+                $(this).mouseout(function(){
+                    $(this).css("opacity",'0.7');
+                });
+            });
+            //标签云JS结束
+
+
+
+
+
+        });
+    </script>
+
+</block>
+
+
+
+
+
+
+
+
+
+

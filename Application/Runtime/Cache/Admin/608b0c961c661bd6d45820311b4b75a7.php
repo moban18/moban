@@ -279,7 +279,7 @@
                                 <span class="widget-caption">商品基本信息</span>
                             </div>
                             <div class="widget-body">
-                                    <form class="form-horizontal" role="form" action="/moban/index.php/Admin/Goods/add/id=" method="post" enctype="multipart/form-data">
+                                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
                                         <input type="hidden" name="id" value="<?php echo ($goodss['id']); ?>"/>
                                         <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">商品标题：</label>
@@ -318,11 +318,7 @@
                                             </div>
                                         </div>
 
-                                        <?php if(!empty($goodss['goods_price'])):?>
-                                            <div id="goods_auth" class="form-group" style="margin-top:10px;">
-                                                <label for="goods_price" class="col-sm-2 control-label " style="text-align:right;padding-top:5px;color:#C55407">商业模板价格：</label> <div class="col-sm-1"> <input class="form-control" name="goods_price" required="" type="text" value="<?php echo ($goodss['goods_price']); ?>"> </div><p class="help-block col-sm-4 red">*商业模板必要填价格</p>
-                                            </div>
-                                            <?php else :?>
+                                        <?php if($goodss['cate_id']!=3):?>
                                         <div id="goods_auth" class="form-group" style="margin-top:10px;">
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px; color:#C55407">下载权限：</label>
                                             <?php $goods_vips=explode(',',$goodss['goods_vips']);?>
@@ -331,6 +327,17 @@
                                             <?php endforeach;?>
                                         </div>
                                         <?php endif;?>
+                                        <!--asfdsfdsfds-->
+
+                                        <div id="goods_price" class="form-group" style="margin-top:10px;">
+                                            <label for="goods_price" class="col-sm-2 control-label " style="text-align:right;padding-top:5px;color:#C55407">模板价格：</label>
+                                            <div class="col-sm-1">
+                                                <input class="form-control" name="goods_price" required="" value="<?php echo ($goodss['goods_price']); ?>" type="text">                                            </div>
+                                            <p class="help-block col-sm-4 red">*模板必要填价格</p>
+                                        </div>
+
+
+
 
                                         <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">属于种类：</label>
@@ -418,7 +425,8 @@
                                                 <input type="file" id="goods_photo" multiple style="display:none;" >
                                                 <?php if($goodss['goods_photo'] != '' ): ?><i id="app">
                                                     <img alt="'+data+'" id="goods_photo_link" src="/moban/<?php echo ($goodss['goods_photo']); ?>"/>
-                                                    <input type=hidden name="goods_photo" id="goods_photo_url" value="<?php echo ($goodss['goods_photo']); ?>" />
+                                                    <input id="hid_photo" name="goods_photo" value="<?php echo ($goodss['goods_photo']); ?>" type="hidden">
+                                                    <input id="hid_photo_small" name="godds_233_160" value="<?php echo ($goodss['godds_233_160']); ?>" type="hidden">
 
                                                 </i><?php endif; ?>
                                             </div>
@@ -482,24 +490,21 @@
                 var html2='';
                 var div=$('#goods_auth');
                 div.html('');
-                if(cate_id==3){
-                    html='<label for="goods_price" class="col-sm-2 control-label " style="text-align:right;padding-top:5px;color:#C55407">商业模板价格：</label> <div class="col-sm-1"> <input class="form-control" name="goods_price" required="" type="text" value=""> </div><p class="help-block col-sm-4 red">*商业模板必要填价格</p>';
-                    div.html(html);
-                }else{
+                if(cate_id!=3){
                     $.ajax({
                         type:'post',
                         url:'/moban/index.php/Admin/Goods/getVip',
                         data:cate_id,
-                        success:function(data){
-                            var a=eval(data);
-                            html='<label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px; color:#C55407">下载权限：</label>';
-                            $(a).each(function(k,v){
-                                html+=' <div class="col-lg-1 col-sm-1 col-xs-1"> <div class="checkbox"> <label> <input type="checkbox" class="colored-blue" name="goods_vips[]" value="'+v.id+'" > <span class="text" style="color:#036F9E">'+v.vip_name+'</span> </label> </div> </div>';
+                        success:function(data) {
+                            var a = eval(data);
+                            html = '<label for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px; color:#C55407">下载权限：</label>';
+                            $(a).each(function (k, v) {
+                                html += ' <div class="col-lg-1 col-sm-1 col-xs-1"> <div class="checkbox"> <label> <input type="checkbox" class="colored-blue" name="goods_vips[]" value="' + v.id + '" > <span class="text" style="color:#036F9E">' + v.vip_name + '</span> </label> </div> </div>';
                             });
 
                             div.html(html);
-
                         }
+
                     });
 
 
@@ -507,7 +512,7 @@
             });
 
 
-        //上传图片与CONTROLLER交换数据
+            //上传图片与CONTROLLER交换数据
             $('#goods_photo').change(function(){
                 var img=$("#goods_photo")[0].files[0];
                 var size = img.size;
@@ -516,16 +521,15 @@
                 var prech=/.(gif|jpg|jpeg|png|GIF|JPG|bmp)$/;
                 var big=2*1024;
                 var html='';
-                var src=$('input[name=goods_photo]').val();
+                var src=$('#hid_photo').val();
+                var smallSrc=$('#hid_photo_small').val();
                 var i=$('#app');
-
                 if(!prech.test(value1)){
                     alert('错误！请上传指定文件类型');
                 }
                 if(!size>big){
                     alert('错误！上传文本大于2M');
                 }
-
                 var data=new FormData();
                 data.append('upload_file', img);
                 $.ajax({
@@ -537,10 +541,13 @@
                     success:function(data){
                         if(src){
                             delPhoto(src);
+                            delPhoto(smallSrc);
                             i.html('');
                         }
-                        html='<img alt="'+data+'" id="goods_photo_link" src="/moban'+data+'"/>';
-                        html+='<input type=hidden name="goods_photo" value="'+data+'" />';
+                        var photos=data.split(',');
+                        html='<img alt="'+data[0]+'" id="goods_photo_link" src="/moban'+photos[0]+'"/>';
+                        html+='<input id="hid_photo" type="hidden" name="goods_photo" value="'+photos[0]+'" />';
+                        html+='<input id="hid_photo_small" type="hidden" name="godds_233_160" value="'+photos[1]+'" />';
                         i.html(html);
                         $('#goods_photo').val('');
 
@@ -558,8 +565,6 @@
                     success:function(data){
                         if(data==1){
                             $('#goods_photo').val('');
-                        }else{
-                            alert('原图片删除失败');
                         }
                    }
                 });

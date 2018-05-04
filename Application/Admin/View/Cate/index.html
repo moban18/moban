@@ -61,6 +61,8 @@
                                             <th class="text-center">ID</th>
                                             <th class="text-center">栏目名称</th>
                                             <th class="text-center">栏目title</th>
+                                            <th class="text-center">栏目URL</th>
+                                            <th class="text-center">模板属性</th>
                                             <th class="text-center">栏目keywords</th>
                                             <th class="text-center">栏目description</th>
                                             <th class="text-center">栏目排序</th>
@@ -74,6 +76,8 @@
                                             <td align="center" id="cate_id">{$v.id}</td>
                                             <td align="center">{$v.cate_name}</td>
                                             <td align="center"><?php echo mb_substr($v['cate_title'],0,20,'utf8').'...';?></td>
+                                            <td align="center">{$v.cate_url}</td>
+                                            <td align="center">{$v.attrtype_name}</td>
                                             <td align="center"><?php echo mb_substr($v['cate_keywords'],0,20,'utf8').'...';?></td>
                                             <td align="center"><?php echo mb_substr($v['cate_description'],0,20,'utf8').'...';?></td>
                                             <td align="center">

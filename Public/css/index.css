@@ -475,18 +475,30 @@ a.dayvip { position: absolute; width: 110px; height: 73px; display: block; right
 .wenzhanglist li { float: left; width: 390px; line-height: 30px; background: rgba(0, 0, 0, 0) url('../images/icon.png') no-repeat scroll 0px -284px; border-bottom: 1px dotted rgb(222, 222, 222); }
 .wenzhanglist li span { float: right; }
 .learn-list-item { float: left; width: 264px; }
-.learn-list-title { padding: 30px 5px 0px; float: left; width: 20px; height: 90px; text-align: center; font-size: 14px; line-height: 16px; font-family: "微软雅黑","宋体"; font-weight: 700; color: rgb(255, 255, 255); background-color: rgb(60, 60, 60); }
+.learn-list-title {
+    padding: 30px 5px 0px;
+    float: left;
+    width: 20px;
+    height: 90px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "微软雅黑","宋体";
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 60, 60);
+}
 .learn-list-item ul { margin-left: 40px; overflow: hidden; padding-right: 10px; }
 .learn-list-item ul li { width: 220px; line-height: 24px; overflow: hidden; height: 24px; }
 .learn-list-item ul li a { color: rgb(102, 102, 102); }
 .learn-list-item ul li a:hover { color: rgb(255, 102, 0); }
 .rank-list { padding: 0px 10px; height: 467px; overflow: hidden; }
 .rank-list li { padding: 5px 0px 3px; border-bottom: 1px dotted rgb(229, 229, 229); line-height: 24px; height: 24px; overflow: hidden; }
-.rank-list li i { float: left; background: rgba(0, 0, 0, 0) url('edu.png') no-repeat scroll 0px -18px; width: 14px; height: 14px; display: block; text-align: center; line-height: 14px; font-weight: 700; font-style: normal; color: rgb(255, 255, 255); margin-right: 5px; font-size: 11px; margin-top: 5px; }
+.rank-list li i { float: left; background: rgba(0, 0, 0, 0) url('../images/edu.png') no-repeat scroll 0px -18px; width: 14px; height: 14px; display: block; text-align: center; line-height: 14px; font-weight: 700; font-style: normal; color: rgb(255, 255, 255); margin-right: 5px; font-size: 11px; margin-top: 5px; }
 .rank-list li i b { transform: scale(0.9); display: block; }
 .rank-list li.rank-top { height: 60px; padding: 5px 0px; line-height: 14px; }
 .rank-img { float: left; }
-.rank-img s { text-decoration: none; font-weight: 700; position: absolute; display: block; color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0) url('edu.png') no-repeat scroll 0px 0px; width: 17px; height: 18px; padding-left: 1px; font-size: 11px; line-height: 11px; }
+.rank-img s { text-decoration: none; font-weight: 700; position: absolute; display: block; color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0) url('../images/edu.png') no-repeat scroll 0px 0px; width: 17px; height: 18px; padding-left: 1px; font-size: 11px; line-height: 11px; }
 .rank-img s b { transform: scale(0.9); display: block; }
 .rank-list li.rank-top h3 { margin-bottom: 8px; margin-left: 90px; height: 14px; overflow: hidden; }
 .rank-list li.rank-top p { margin-left: 90px; margin-bottom: 6px; height: 14px; overflow: hidden; }
@@ -704,7 +716,12 @@ img:hover { opacity: 0.7; }
 .blank5{height:5px; line-height:5px;/* _margin:-3px 0;e c m o b a n*/ clear:both; visibility:hidden;}
 .f_l{float:left;}
 .f_r{float:right;}
-content
+
+
+.main_box {
+    width:1100px;
+    margin:0 auto;
+}
 
 .block,.box {
     width:1100px;
@@ -795,6 +812,19 @@ content
 .AreaR_box_1 {
     margin: 10px;
     font-size: 14px;
+}
+.order_xq span {
+    display: inline-block;
+}
+.order_span {
+    margin-left:15px;
+    font-size:15px;
+    color:#0090CE;
+}
+.order_span i {
+    color: red;
+    font-size: 17px;
+    font-weight:bold;
 }
 .f_l h5 span,.f_r h5 span {
     display: block;
@@ -928,6 +958,99 @@ content
     color: red;
     line-height: 20px;
     background-color: #FFFFE1;
+}
+.alipay_box {
+    min-height: 500px;
+    margin:0 auto;
+}
+.alipay_box img {
+    display: block;
+    margin: 0 auto;
+}
+.alipay_box img:hover {
+    opacity:1;
+}
+.alipay_box2 {
+    margin: 20px auto;
+}
+.alipay_box2 h1 {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin:15px 0;
+}
+.alipay_show_pay {
+    background-color:#EAC547;
+    text-align: center;
+}
+.alipay_show_pay span {
+    display: inline-block;
+    font-size: 16px;
+    padding:5px 0;
+    color:#fff;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px #333333;
+}
+.show_pay_right {
+    margin-right: 150px;
+}
+.show_pay_left {
+    margin-left:100px;
+}
+
+.show_order {
+    width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+.or_info {
+    width: 335px;
+    float:left;
+    border: 1px solid #cccccc;
+    padding:3px 0;
+
+}
+.or_box1 {
+    display: inline-block;
+    margin: 15px 0;
+    padding:0 15px;
+}
+.or_box1 span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight:bold;
+    letter-spacing: 2px;
+
+}
+.alipay_count {
+    display: inline-block;
+    width: 180px;
+    margin-left:10px;
+    padding:2px;
+}
+.or_sm {
+    float:right;
+    width: 315px;
+    border: 1px solid #cccccc;
+    padding:10px;
+}
+.or_sm p {
+    font-size: 16px;
+    display: block;
+    margin: 10px;
+    text-indent: 20px;
+}
+.or_sm a {
+    display: block;
+    background-color:#0090CE;
+    padding:5px;
+    font-size: 14px;
+    color:#fff;
+    margin:20px 20px 0 20px;
+}
+.or_sm a:hover {
+    background-color:#EAC547;
 }
 table {
     width: 100%;
@@ -1214,8 +1337,22 @@ table tr:hover {
     min-height:500px;
     float:right;
 }
-
 /*首页中间VIP模板区的CSS结束*/
+/*每栏目页搜索出来，没有商品出现的图片*/
+.no_result {
+    width:200px;
+    padding:10px;
+    margin:0 auto;
+    text-align: center;
+}
+.no_result img {
+    opacity:1.0;
+}
+.line {
+    display:block;
+    font-size:18px;
+    margin-top:10px;
+}
 
 
 

@@ -1,0 +1,20 @@
+[ 2018-04-16T14:30:24+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'esc LIMIT 12' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` ORDER BY goods_time esc LIMIT 12  
+
+[ 2018-04-16T14:30:36+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'esc LIMIT 12' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` ORDER BY goods_time esc LIMIT 12  
+
+[ 2018-04-16T17:39:11+08:00 ] 127.0.0.1 /moban/index.php/Home/Vip/index/filter/6-0-0-0-0-0.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` WHERE `cate_id` = 1 AND `id` IN () 
+
+[ 2018-04-16T17:55:39+08:00 ] 127.0.0.1 /moban/index.php/Home/Vip/index/filter/5-0-0-0-0-0.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` WHERE `cate_id` = 1 AND `id` IN () 
+
+[ 2018-04-16T17:59:58+08:00 ] 127.0.0.1 /moban/index.php/Home/Vip/index/filter/5-0-0-0-0-5.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_goods` WHERE `cate_id` = 1 AND `id` IN () 
+

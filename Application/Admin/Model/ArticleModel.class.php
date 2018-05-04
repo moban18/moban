@@ -27,5 +27,7 @@ class ArticleModel extends Model {
 
 
 
+
+
 }
 

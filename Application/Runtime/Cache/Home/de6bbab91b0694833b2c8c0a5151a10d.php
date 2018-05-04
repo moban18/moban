@@ -9,8 +9,11 @@
 <meta name="baidu-site-verification" content="DLLJTpAaCu">
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/cate.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
+
 </head>
 <body>
 
@@ -114,12 +117,19 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+ if($ac=='Index' || empty($ac)){ echo 'on'; } ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
-                    <h3><a href=""><?php echo ($v['cate_name']); ?></a></h3>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){ echo 'on'; }?>
+                        ">
+                    <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
+                </li>
+                <?php endforeach;?>
 
 
 
@@ -132,16 +142,17 @@
 </div>
 
 
-<div id="main">
+<div id="main" class="clearfix">
     
-    <div class="box">
-        <div class="blank"></div>
-        <div id="ur_here">
-            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+    <div class="main_box">
+        <div class="box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+            </div>
         </div>
-    </div>
-    <div class="block clearfix1">
-        
+        <div class="block clearfix1">
+            
 <div class="AreaL">
     <div class="AreaL_box">
         <div class="box_1">
@@ -228,87 +239,114 @@
 
 
 
-        <div class="AreaR">
-            <div class="AreaR_box">
-                <div class="AreaR_box_1">
-                    <div class="clearfix">
-                        <h5>
-                            <span style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">会员升级</span>
-                        </h5>
-                        <div id="buynote">
-                            <p><span>优惠活动</span></p>
-                            <p><span> 充200元以上送双倍积分，并立即赠送1个月会员，充的多送的多！！</span></p>
-                            <p><span>充300元永久VIP赠送50元积分</span></p>
-                            <p><span>充值若失败请联系管理员QQ416148489,立即送您双倍积分（PS：目前充值成功率100%）</span></p>
-                        </div>
-                        <div class="blank"></div>
-                        <form  method="post" action="/moban/index.php/Home/Buy/buyVip">
-                            <div class="formdata1">
-                                <table cellpadding="0">
-                                    <thead>
-                                    <tr>
-                                    <th>选择</th>
-                                    <th>产品名称</th>
-                                    <th>会员类型</th>
-                                    <th>时限(天)</th>
-                                    <th>价格</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php if(is_array($vips)): $k = 0; $__LIST__ = $vips;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr <?php if($k%2 == 0): ?>class="row0"<?php else: ?>class="row1"<?php endif; ?>>
-                                        <td><input type="radio" name="vip_id" value="<?php echo ($v["id"]); ?>"/></td>
-                                        <td>本站<?php echo ($v["vip_name"]); ?></td>
-                                        <td><?php echo ($v["vip_type"]); ?></td>
-                                        <td><?php echo ($v["vip_time"]); ?></td>
-                                        <td><?php echo ($v["vip_price"]); ?>元</td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    </tbody>
-
-                                </table>
-                                <input class="userinfo_submit" type="submit" value="购买" style="margin: 20px 0"/>
+            <div class="AreaR">
+                <div class="AreaR_box">
+                    <div class="AreaR_box_1">
+                        <div class="clearfix">
+                            <h5>
+                                <span style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">会员升级</span>
+                            </h5>
+                            <div id="buynote">
+                                <p><span>优惠活动</span></p>
+                                <p><span> 充200元以上送双倍积分，并立即赠送1个月会员，充的多送的多！！</span></p>
+                                <p><span>充300元永久VIP赠送50元积分</span></p>
+                                <p><span>充值若失败请联系管理员QQ416148489,立即送您双倍积分（PS：目前充值成功率100%）</span></p>
                             </div>
-                        </form>
-                        <form  method="post" action="/moban/index.php/Home/Buy/buyJbin#jbin">
-                            <div id="jbin" class="formdata2">
-                                <h2>购买金币（仅用于商业模板）:</h2>
-                                <table cellpadding="0">
-                                    <thead>
-                                    <tr>
+                            <div class="blank"></div>
+                            <form action="/moban/index.php/Home/Buy/buyVip" method="post">
+                                <div class="formdata1">
+                                    <table cellpadding="0">
+                                        <thead>
+                                        <tr>
                                         <th>选择</th>
-                                        <th>点卡类型</th>
-                                        <th>金币数量</th>
-                                        <th>购买价格</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php if(is_array($jbins)): $k = 0; $__LIST__ = $jbins;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr <?php if($k%2 == 0): ?>class="row0"<?php else: ?>class="row1"<?php endif; ?>>
-                                        <td><input type="radio" name="jbin_id" value="<?php echo ($v["id"]); ?>"/> </td>
-                                        <td><?php echo ($v["jbin_type"]); ?>金币</td>
-                                        <td><?php echo ($v["jbin_num"]); ?></td>
-                                        <td><?php echo ($v["jbin_price"]); ?>元</td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    </tbody>
+                                        <th>产品名称</th>
+                                        <th>会员类型</th>
+                                        <th>时限(天)</th>
+                                        <th>价格</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php if(is_array($vips)): $k = 0; $__LIST__ = $vips;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr <?php if($k%2 == 0): ?>class="row0"<?php else: ?>class="row1"<?php endif; ?>>
+                                            <td><input type="radio" name="vip_id" value="<?php echo ($v["id"]); ?>" <?php
+ if($v['id']==3){ echo 'checked="checked"'; } ?>/></td>
+                                            <td>本站<?php echo ($v["vip_name"]); ?></td>
+                                            <td><?php echo ($v["vip_type"]); ?></td>
+                                            <td><?php echo ($v["vip_time"]); ?></td>
+                                            <td><?php echo ($v["vip_price"]); ?>元</td>
+                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </tbody>
 
-                                </table>
-                                <input class="userinfo_submit" type="submit" value="购买" style="margin: 20px 0"/>
-                            </div>
+                                    </table>
+                                    <input class="userinfo_submit vip_submit" type="submit" value="购买" style="margin: 20px 0"/>
+                                </div>
+                            </form>
 
-                        </form>
+                            <form action="/moban/index.php/Home/Buy/buyJbin" method="post">
+                                <div id="jbin" class="formdata2">
+                                    <h2>购买金币（仅用于商业模板）:</h2>
+                                    <table cellpadding="0">
+                                        <thead>
+                                        <tr>
+                                            <th>选择</th>
+                                            <th>点卡类型</th>
+                                            <th>金币数量</th>
+                                            <th>购买价格</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php if(is_array($jbins)): $k = 0; $__LIST__ = $jbins;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr <?php if($k%2 == 0): ?>class="row0"<?php else: ?>class="row1"<?php endif; ?>>
+                                            <td><input type="radio" name="jbin_id" value="<?php echo ($v["id"]); ?>"/> </td>
+                                            <td><?php echo ($v["jbin_type"]); ?>金币</td>
+                                            <td><?php echo ($v["jbin_num"]); ?></td>
+                                            <td><?php echo ($v["jbin_price"]); ?>元</td>
+                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </tbody>
 
+                                    </table>
+                                    <input class="userinfo_submit jb_submit" type="submit" value="购买" style="margin: 20px 0"/>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
     </div>
-
+    <div id="qrcode"></div>
     <script>
+        //会员购买
+      /*  $('.vip_submit').click(function(){
+            var vip_id=$('input[name=vip_id]:checked').val();
+            $.ajax({
+                url:'/moban/index.php/Home/Buy/buyVip',
+                type:'post',
+                data:{
+                    vip_id:vip_id,
+                },
+                dataType:'json',
+                success:function(data){
+                    if(data!=0){
+                        console.log(data.vip_price);
+                    }
+                }
+            });
+        });
+        //金币充值
+        $('.jb_submit').click(function(){
+            var jbin_id=$('input[name=jbin_id]:checked').val();
+            $.ajax({
+                url:'/moban/index.php/Home/Buy/buyJbin',
+                type:'post',
+                data:{
+                    jbin_id:jbin_id,
+                },
+                success:function(data){
 
-
+                }
+            });
+        });*/
     </script>
-
-
-
 
 </div>
 

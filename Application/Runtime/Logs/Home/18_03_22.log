@@ -1,0 +1,14 @@
+[ 2018-03-22T15:12:06+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND (  ) AND (  ) )' at line 1
+ [ SQL语句 ] : SELECT * FROM `moban_attrter` WHERE (  attr_id ) AND (  (  ) AND (  ) AND (  ) ) 
+
+[ 2018-03-22T15:21:37+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 1054:Unknown column 'neq' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `moban_attrter` WHERE (  attr_id ) AND (  (  neq ) AND (  5,6,7 ) ) 
+
+[ 2018-03-22T15:22:19+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 表达式错误:5,6,7
+
+[ 2018-03-22T15:31:15+08:00 ] 127.0.0.1 /moban/index.php
+ERR: 表达式错误:5
+

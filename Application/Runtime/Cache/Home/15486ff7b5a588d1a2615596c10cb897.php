@@ -9,8 +9,11 @@
 <meta name="baidu-site-verification" content="DLLJTpAaCu">
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/cate.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
+
 </head>
 <body>
 
@@ -118,7 +121,7 @@
                     <h3><a href="http://127.0.0.1/">首页</a></h3>
                 </li>
                 <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
-                    <h3><a href=""><?php echo ($v['cate_name']); ?></a></h3>
+                    <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
                 </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
@@ -132,16 +135,17 @@
 </div>
 
 
-<div id="main">
+<div id="main" class="clearfix">
     
-    <div class="box">
-        <div class="blank"></div>
-        <div id="ur_here">
-            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+    <div class="main_box">
+        <div class="box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+            </div>
         </div>
-    </div>
-    <div class="block clearfix1">
-        
+        <div class="block clearfix1">
+            
 <div class="AreaL">
     <div class="AreaL_box">
         <div class="box_1">
@@ -228,64 +232,55 @@
 
 
 
-        <div class="AreaR">
-            <div class="AreaR_box">
-                <div class="AreaR_box_1">
-                    <div class="clearfix">
-                        <h5><span style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">我的下载</span></h5>
-                        <div class="blank" ></div>
-                        <table bgcolor="#F6F6F6" border="0" cellpadding="5" cellspacing="1" width="100%">
-                            <tbody>
-                            <tr align="center">
-                                <td bgcolor="#ffffff" width="40%">标题</td>
-                                <td bgcolor="#ffffff">类型</td>
-                                <td bgcolor="#ffffff" width="30%">标签</td>
-                                <td bgcolor="#ffffff">下单时间</td>
-                            </tr>
-                            <tr>
-                                <td align="center"><a href="#" alt="">素材火官网后台模板下载</a></td>
-                                <td align="center">	网站模板</td>
-                                <td align="center">
-                                    <p class="tags">
-                                        <a href="#">响应式</a>
-                                        <a href="#">后台</a>
-                                    </p>
-                                </td>
-                                <td align="center">2018-01-23 17:50</td>
-                            </tr>
-                            <tr>
-                                <td align="center"><a href="#" alt="">纯CSS自定义动画开关、选择框和单选按钮</a></td>
-                                <td align="center">	网页特效</td>
-                                <td align="center">
-                                    <p class="tags">
-                                        <a href="#">按钮</a>
-                                        <a href="#">单选</a>
-                                        <a href="#">选复</a>
-                                        <a href="#">选框</a>
-                                        <a href="#">checkbox</a>
-                                        <a href="#">checkbox</a>
-                                        <a href="#">checkbox</a>
-                                        <a href="#">checkbox</a>
-                                    </p>
-                                </td>
-                                <td align="center">2017-12-29 15:49</td>
-                            </tr>
-                            </tbody>
+            <div class="AreaR">
+                <div class="AreaR_box">
+                    <div class="AreaR_box_1">
+                        <div class="clearfix">
+                            <h5><span style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">我的下载</span></h5>
+                            <div class="blank" ></div>
+                            <table bgcolor="#F6F6F6" border="0" cellpadding="5" cellspacing="1" width="100%">
+                                <tbody>
+                                <tr align="center">
+                                    <td bgcolor="#ffffff" width="40%">标题</td>
+                                    <td bgcolor="#ffffff">类型</td>
+                                    <td bgcolor="#ffffff" width="30%">标签</td>
+                                    <td bgcolor="#ffffff">下单时间</td>
+                                </tr>
+                                <?php foreach($newDowns as $v):?>
+                                <tr>
+                                    <td align="center"><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['goods_id']); ?>" alt="" target="_blank"><?php echo ($v['goods_name']); ?></a></td>
+                                    <td align="center"><?php echo ($v['attrtype_name']); ?></td>
+                                    <td align="center">
+                                        <p class="tags">
+                                            <?php foreach($v['attr_name'] as $m):?>
+                                            <a href="#"><?php echo $m['attr_name'];?></a>
+                                            <?php endforeach;?>
+                                        </p>
+                                    </td>
+                                    <td align="center"><?php echo date('Y-m-d H:i',$v['download_time'])?></td>
+                                </tr>
+                                <?php endforeach;?>
 
-                        </table>
-                        <div class="blank5"></div>
-                        <div id="pager" class="pagebar">
-                                <span class="f_l " style="margin-right:10px;">总计 <b>0</b>  个记录</span>
+                                </tbody>
+
+                            </table>
+                            <div class="blank5"></div>
+                            <div id="pager" class="pagebar">
+                                    <span class="f_l " style="margin-right:10px;">总计 <b><?php echo ($downs_num); ?></b>  个记录</span>
+
+                            </div>
+                            <div class="page">
+                                         <?php echo ($page); ?>
+                            </div>
+
+
 
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
 

@@ -1,0 +1,2230 @@
+[ 2018-04-11T21:48:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T21:48:14+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_admin` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_admin` WHERE `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-04-11T21:48:14+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_admin`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T21:48:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0260s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-04-11T21:55:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\moban\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-11T21:55:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-04-11T21:56:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2018-04-11T21:57:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.317019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.318019s ]
+
+[ 2018-04-11T22:01:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0090s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013001s ]
+
+[ 2018-04-11T22:01:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0050s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-04-11T22:02:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0130s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2018-04-11T22:03:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0080s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-04-11T22:04:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:04:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:05:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.083005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0050s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:05:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:06:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-11T22:07:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T22:08:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-04-11T22:08:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T22:09:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T22:10:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-11T22:10:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-04-11T22:10:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-11T22:11:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:11:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2018-04-11T22:12:15+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0130s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-04-11T22:12:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0080s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-04-11T22:12:44+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-04-11T22:12:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:13:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-11T22:13:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:14:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0080s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-04-11T22:15:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-04-11T22:17:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0150s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-04-11T22:17:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-11T22:17:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0130s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-11T22:20:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:20:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-04-11T22:20:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-04-11T22:22:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0130s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-11T22:24:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0050s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T22:24:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0090s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T22:25:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0060s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:26:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0110s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:26:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:26:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0050s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-11T22:27:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.134008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0070s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:29:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0080s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-11T22:30:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0060s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.167010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-11T22:30:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0090s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:30:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-11T22:37:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0120s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0040s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0030s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0020s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-04-11T22:37:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0090s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-04-11T22:37:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0100s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-11T22:38:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.goods_vips,a.goods_price,a.goods_photo,a.goods_comment,a.goods_store,a.goods_recommend,a.download_num,a.goods_search,a.goods_tuijian,b.cate_name FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_vip` [ RunTime:0.0140s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2','3','4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('4')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3','4')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0010s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('3')  [ RunTime:0.0000s ]
+SQL: SELECT `vip_name` FROM `moban_vip` WHERE `id` IN ('2')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+

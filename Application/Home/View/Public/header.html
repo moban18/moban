@@ -59,14 +59,14 @@
             <div class="searchx">
                 <div class="ss">
                     <div class="s_form">
-                        <form name="formsearch" method="get" action="" target="_blank">
-                            <input name="kwtype" value="0" type="hidden">
-                            <input name="typeid" value="1" type="hidden">
+                        <form name="" method="get" action="__CONTROLLER__/search" target="_blank">
+                            <!--<input name="kwtype" value="0" type="hidden">
+                            <input name="typeid" value="1" type="hidden">-->
                             <div class="s1">
-                                <input class="keywords" name="q" id="q" title="请输入关键字" value="模板18搜索..." onfocus="if(this.value=='模板18搜索...'){this.value='';}" onblur="if(this.value==''){this.value='模板18搜索...';}" maxlength="27" type="text">
+                                <input class="keywords" name="keywords" id="q" title="请输入关键字" value="模板18搜索..." onfocus="if(this.value=='模板18搜索...'){this.value='';}" onblur="if(this.value==''){this.value='模板18搜索...';}" maxlength="27" type="text">
                             </div>
                             <div class="s2">
-                                <select name="typeid" class="search-option" id="typeid">
+                                <select name="cate_id" class="search-option" id="typeid">
                                     <option value="0" selected="1">全部</option>
                                     <volist name="cates" id="v">
                                      <option value="{$v.id}">{$v.cate_name}</option>
@@ -100,14 +100,24 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+                    if($ac=='Index' || empty($ac)){
+                        echo 'on';
+                    }
+                    ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <volist name="cates" id="v">
-                <li class="nLi">
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){
+                    echo 'on';
+                }?>
+                        ">
                     <h3><a href="__MODULE__/{$v['cate_url']}">{$v['cate_name']}</a></h3>
                 </li>
-                </volist>
+                <?php endforeach;?>
 
 
 

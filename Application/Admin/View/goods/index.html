@@ -28,10 +28,11 @@
         /*后台商品搜索CSS*/
         .float_left{float:left;}
         .goods_search{float:left;margin-left:10px;}
-        .goods_search_input{width:300px;height:25px;padding:2px 1px 2px 10px;}
+        .goods_search_input{width:250px;height:25px;padding:2px 1px 2px 10px;}
         .goods_search_submit{background-color:#2BBBDF;color:#fff}
-        .goods_search2{margin-left:10px;}
+        .goods_search2{margin-left:40px;}
         .goods_search_select{height:28px;font-size:11px;}
+        .search_btn_box{margin-left:15px;}
 
     </style>
 </head>
@@ -60,32 +61,41 @@
 
             <!-- Page Body -->
             <div class="page-body">
+                <div class="goods_search_box clearfix">
+                    <form method="post" action="__CONTROLLER__/searchOthers">
+                    <button type="button" tooltip="添加商品" class="btn btn-sm btn-azure btn-addon float_left" onClick="javascript:window.location.href = '__CONTROLLER__/add'"> <i class="fa fa-plus"></i> Add
+                    </button>
+                    <div class="goods_search">
+                        <span style="color:#2BBBDF">查询商品标题：</span>
+                            <input type="text" class="goods_search_input" name="goods_name"/>
+                    </div>
+                    <div class="goods_search2 float_left">
+                        <span style="color:#2BBBDF">栏目商品搜索：</span>
+                        <select class="goods_search_select" name="cate_id">
+                            <option value="0">请选栏目</option>
+                            <?php foreach($cates as $v):?>
+                            <option value="{$v['id']}">{$v['cate_name']}</option>
+                            <?php endforeach;?>
+                        </select>
+                    </div>
+                    <div class="goods_search2 float_left clearfix">
+                        <label>
+                            <input type="checkbox" class="colored-blue" name="goods_search" value="1">
+                            <span class="text" style="color:#2DC3E8">搜索设置0</span>
+                        </label>
+                    </div>
+                    <div class="goods_search2 float_left clearfix">
+                        <label>
+                            <input type="checkbox" class="colored-blue" name="goods_tuijian" value="1">
+                            <span class="text" style="color:#2DC3E8">推荐商品</span>
+                        </label>
+                    </div>
+                    <div class="search_btn_box float_left clearfix">
+                        <input class="goods_search_submit btn btn-sm" type="submit" value="查询"/>
+                    </div>
+                    </form>
+                </div>
 
-                <button type="button" tooltip="添加商品" class="btn btn-sm btn-azure btn-addon float_left" onClick="javascript:window.location.href = '__CONTROLLER__/add'"> <i class="fa fa-plus"></i> Add
-                </button>
-                <div class="goods_search">
-                    <span style="color:#2BBBDF">查询商品标题：</span>
-                    <input type="text" class="goods_search_input" name="goods_search"/>
-                    <input type="submit" name="goods_search_sub" class="goods_search_submit btn btn-sm " value="查询"/>
-                </div>
-                <div class="goods_search2 float_left">
-                    <span style="color:#2BBBDF">栏目商品搜索：</span>
-                    <select class="goods_search_select">
-                        <option>请选栏目</option>
-
-                    </select>
-                </div>
-                <div class="goods_search2 float_left">
-                    <span style="color:#2BBBDF">搜索设置数量：</span>
-                    <select class="goods_search_select">
-                        <option>搜索设置数</option>
-                        <option>0</option>
-                        <option>小于3</option>
-                        <option>小于5</option>
-                        <option>6</option>
-                        <option>大于6</option>
-                    </select>
-                </div>
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="widget">
@@ -99,6 +109,7 @@
                                             <th class="text-center">商品图片</th>
                                             <th class="text-center">所属栏目</th>
                                             <th class="text-center">下载权限</th>
+                                            <th class="text-center">下载金币</th>
                                             <th class="text-center">浏览量</th>
                                             <th class="text-center">收藏量</th>
                                             <th class="text-center">评论量</th>
@@ -127,6 +138,7 @@
                                                     {$v['goods_vips']}
                                                  </if>
                                             </td>
+                                            <td align="center">{$v['goods_price']}</td>
                                             <td align="center">{$v['goods_comment']}</td>
                                             <td align="center">{$v['goods_store']}</td>
                                             <td align="center">{$v['goods_recommend']}</td>

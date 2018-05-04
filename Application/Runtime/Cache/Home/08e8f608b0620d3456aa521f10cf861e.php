@@ -9,8 +9,11 @@
 <meta name="baidu-site-verification" content="DLLJTpAaCu">
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/cate.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
+
 </head>
 <body>
 
@@ -114,12 +117,19 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+ if($ac=='Index' || empty($ac)){ echo 'on'; } ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
-                    <h3><a href=""><?php echo ($v['cate_name']); ?></a></h3>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){ echo 'on'; }?>
+                        ">
+                    <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
+                </li>
+                <?php endforeach;?>
 
 
 
@@ -132,16 +142,17 @@
 </div>
 
 
-<div id="main">
+<div id="main" class="clearfix">
     
-    <div class="box">
-        <div class="blank"></div>
-        <div id="ur_here">
-            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+    <div class="main_box">
+        <div class="box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+            </div>
         </div>
-    </div>
-    <div class="block clearfix1">
-        
+        <div class="block clearfix1">
+            
 <div class="AreaL">
     <div class="AreaL_box">
         <div class="box_1">
@@ -228,82 +239,76 @@
 
 
 
-        <div class="AreaR">
-            <div class="AreaR_box">
-                <div class="AreaR_box_1">
-                    <div class="clearfix">
-                        <h5><span
-                                style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">个人资料</span>
-                        </h5>
-                        <div class="blank"></div>
-                        <ul id="userinfo">
-                            <li><a href="/moban/index.php/Home/User/ziliao" class="user_active">基本资料</a></li>
-                            <li><a href="/moban/index.php/Home/User/tx">头像设置</a></li>
-                        </ul>
-                        <form method="post" action="">
-                        <div id="user_info">
-                            <div class="userinfo_box">
-                                <ul>
-                                    <li>
-                                        <span>帐号类型：</span>
-                                        <p><?php echo ($users['vip_name']); ?></p>
-                                    </li>
-                                    <li>
-                                        <span>用户邮箱：</span>
-                                        <p><?php echo ($users['user_email']); ?></p>
-                                    </li>
-                                    <li>
-                                        <span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
-                                        <input name="nick_name" value="<?php echo ($users['user_nick']); ?>"/>(个人会员该项为昵称，企业会员填写公司名称)
+            <div class="AreaR">
+                <div class="AreaR_box">
+                    <div class="AreaR_box_1">
+                        <div class="clearfix">
+                            <h5><span
+                                    style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">个人资料</span>
+                            </h5>
+                            <div class="blank"></div>
+                            <ul id="userinfo">
+                                <li><a href="/moban/index.php/Home/User/ziliao" class="user_active">基本资料</a></li>
+                                <li><a href="/moban/index.php/Home/User/tx">头像设置</a></li>
+                            </ul>
+                            <form method="post" action="">
+                            <div id="user_info">
+                                <div class="userinfo_box">
+                                    <ul>
+                                        <li>
+                                            <span>帐号类型：</span>
+                                            <p><?php echo ($users['vip_name']); ?></p>
+                                        </li>
+                                        <li>
+                                            <span>用户邮箱：</span>
+                                            <p><?php echo ($users['user_email']); ?></p>
+                                        </li>
+                                        <li>
+                                            <span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
+                                            <input name="nick_name" value="<?php echo ($users['user_nick']); ?>"/>(个人会员该项为昵称，企业会员填写公司名称)
 
-                                    </li>
-                                    <li>
-                                        <span>原&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
-                                        <input name="password" value=""/>
+                                        </li>
+                                        <li>
+                                            <span>原&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
+                                            <input name="password" value=""/>
 
-                                    </li>
-                                    <li>
-                                        <span>新&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
-                                        <input name="password1" value=""/>(不修改密码请保留此项为空)
+                                        </li>
+                                        <li>
+                                            <span>新&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
+                                            <input name="password1" value=""/>(不修改密码请保留此项为空)
 
-                                    </li>
-                                    <li>
-                                        <span>确认密码：</span>
-                                        <input name="password2" value=""/>(不修改密码请保留此项为空)
+                                        </li>
+                                        <li>
+                                            <span>确认密码：</span>
+                                            <input name="password2" value=""/>(不修改密码请保留此项为空)
 
-                                    </li>
-                                    <li id="verifly">
-                                        <span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
-                                        <input name="verifly" style="width: 60px" value=""/>
-                                        <img src="/moban/index.php/Home/User/verifly_img" style="cursor: pointer" onclick="this.src='/moban/index.php/Home/User/verifly_img/'+Math.random()"/>
+                                        </li>
+                                        <li id="verifly">
+                                            <span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
+                                            <input name="verifly" style="width: 60px" value=""/>
+                                            <img src="/moban/index.php/Home/User/verifly_img" style="cursor: pointer" onclick="this.src='/moban/index.php/Home/User/verifly_img/'+Math.random()"/>
 
-                                    </li>
+                                        </li>
 
-                                </ul>
+                                    </ul>
 
-                                <input class="userinfo_submit" name="submit" type="submit" value="确认修改"/>
-
-
-                            </div>
+                                    <input class="userinfo_submit" name="submit" type="submit" value="确认修改"/>
 
 
-                            </div>
-                        </form>
+                                </div>
 
 
+                                </div>
+                            </form>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
     </div>
-
-    <script>
-
-
-    </script>
-
-
 
 
 </div>

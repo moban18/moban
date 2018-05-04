@@ -11,7 +11,8 @@ class ArticleController extends CommonController {
         $Page->setConfig('prev','上一页');
         $Page->setConfig('next','下一页');
         $show       = $Page->show();//
-        $articles=$article->field('a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,b.cate_name')->alias('a')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $articles=$article->field('a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name')->alias('a')->join('LEFT JOIN moban_cate b ON a.cate_id=b.id')->order('article_time Desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        /*print_r($articles);die;*/
         $this->assign(
             array(
                 'ac'=>$ac,
@@ -31,7 +32,10 @@ class ArticleController extends CommonController {
                 'cate_id'=>I('cate_id'),
                 'article_comment'=>I('article_comment'),
                 'article_anthor'=>I('article_anthor'),
+                'article_dec'=>I('article_dec'),
                 'article_content'=>I('article_content'),
+                'article_136_86'=>I('article_136_86'),
+                'article_80_60'=>I('article_80_60'),
                 'article_time'=>time(),
             );
             if($article->create($data)){
@@ -50,10 +54,11 @@ class ArticleController extends CommonController {
                 $anthores=explode(',',$anthors);
             }
             $cates=M('cate')->where(array('attrtype_id'=>2))->select();
+            $newCates=$this->handleCates($cates);
             $this->assign(
                 array(
                     'ac'=>$ac,
-                    'cates'=>$cates,
+                    'newCates'=>$newCates,
                     'anthores'=>$anthores,
                 )
             );
@@ -71,6 +76,9 @@ class ArticleController extends CommonController {
                 'cate_id'=>I('cate_id'),
                 'article_comment'=>I('article_comment'),
                 'article_anthor'=>I('article_anthor'),
+                'article_dec'=>I('article_dec'),
+                'article_136_86'=>I('article_136_86'),
+                'articl_80_60'=>I('articl_80_60'),
                 'article_content'=>I('article_content'),
             );
             if($article->create($data)){
@@ -159,6 +167,60 @@ class ArticleController extends CommonController {
         session('a_name',null);
         $this->redirect('Login/index');
     }
+
+    //处理cate的子栏目数组
+    public function handleCates($cates,$parent_id=0,$level=0)
+    {
+        static $newCates = array();
+        if (!empty($cates)) {
+            foreach ($cates as $k => $v) {
+                if ($v['parent_id'] == $parent_id) {
+                    $v['level'] = $level;
+                    $newCates[] = $v;
+                    $this->handleCates($cates, $v['id'], $level + 1);
+                }
+            }
+            return $newCates;
+        }
+    }
+
+        //图片上传，与AJAX数据交互
+        public function uploadImg(){
+            if($_FILES['upload_file']['tmp_name']){
+                $upload = new \Think\Upload();
+                $upload->rootPath='./';
+                $upload->savePath  =      './ArImgs/';
+                $info   =   $upload->upload();
+                $Path=$info['upload_file']['savepath'];
+                $Name=$info['upload_file']['savename'];
+                $allPath=$Path.$Name;
+                //处理宽度为136*86像素的图片
+                $image = new \Think\Image();
+                 $image->open($allPath);
+                $image->crop(136, 86)->save($allPath);
+                //裁剪80*60首页显示的商品图片
+                $image->open($allPath);
+                $width=$image->width();
+                $small='80_';
+                $smallPath=$Path.$small.$Name;
+                $image->crop(80, 60)->save($smallPath);
+                $total=$allPath.','.$smallPath;
+                echo $total;
+            }
+
+        }
+        //图片上传，上传不正确图片，再上传，删除之前的图片，与Ajax数据交换
+        public function delPhoto(){
+            $src=I('src');
+            if(unlink($src)){
+                echo 1;
+            }else{
+                echo 0;
+            }
+        }
+
+
+
 
 
 }

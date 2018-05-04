@@ -1,0 +1,244 @@
+
+<extend name="Common/base" />
+
+<block name="main">
+    <div class="article_box clearfix">
+        <div class="article_left">
+            <div class="article_left_top clearfix">
+                <div class="article_top_left">
+                    <a href="###">首页</a><span>></span>
+                    <a href="###">建站小识</a><span>></span>
+                    <a href="###">建站小识</a><span>></span>
+                </div>
+                <div class="article_top_right">
+                    <a href="###" class="anther">相关案例演示</a>
+                </div>
+
+            </div>
+            <div class="article_recommon">
+                <ul class="godds_recommon">
+                    <li>
+                        <a href="###">
+                            <img src="__PUBLIC__/images/artrecommon1.png"/>白蓝色bootstrap课程模板_精选教育模板
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <img src="__PUBLIC__/images/artrecommon2.png"/>白蓝色bootstrap课程模板_精选教育模板
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <img src="__PUBLIC__/images/artrecommon1.png"/>白蓝色bootstrap课程模板_精选教育模板
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <img src="__PUBLIC__/images/artrecommon2.png"/>白蓝色bootstrap课程模板_精选教育模板
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <img src="__PUBLIC__/images/artrecommon1.png"/>白蓝色bootstrap课程模板_精选教育模板
+                        </a>
+                    </li>
+                    <li>
+                        <a href="###">
+                            <img src="__PUBLIC__/images/artrecommon2.png"/>白蓝色bootstrap课程模板_精选教育模板
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="article_content">
+                <p>织梦移动站使用方法：
+
+                    一、 安装Dedecms移动站点的两种方式：
+
+                    （1）下载新版本直接安装使用，Dedecms版本：V5.7SP1正式版(2015-06-18)该版本包含旧版本所没有的移动站点功能。
+                    （2）老版本升级（仅针对增加移动站点功能），下载最新版本（注意网站编码需与原站一致），复制压缩包中以下文件到原站对应目录下：
+                    织梦dedeCMS手机移动端站点安装搭建使用教程
+                    织梦DedeCMS移动端手机端站点安装搭建使用教程
+
+                    注意：如果原站有非默认模板，如某栏目模板为/templets/defaultst_default_news.htm，可将/templets/defaultst_default_m.htm复制一份改名为list_default_news_m.htm。即：pc端网站模板需有对应的移动端网站模板，后者文件名为前者文件名后“_m”。
+
+                    安装或升级dedecms完成，此时应该就可以进行制作移动网站了，但dedecms20150618版本提供的移动站点功能在使用过程中发现一些问题，需要进行修改后才可正常使用，所以有了下面的dedecms修改步骤…
+
+                    二、修改Dedecms
+
+                     </p>
+
+            </div>
+            <div class="goods_tags clearfix">
+                <span>标签：</span>
+                <a class="tags_a" href="###" target="_blank">摄影</a>
+
+            </div>
+            <div class="declare">
+                <span>注意：</span>如需转载，请注明来源<a href="http://www.moban18.com">moban18.com</a>并保留原文链接：<a href="http://www.sucaihuo.com/templates/4339.html">http://www.sucaihuo.com/templates/4339.html</a>
+            </div>
+            <div class="article_foot">
+                <div class="goods_pagess clearfix article_pages">
+                    <div class="goods_pagess_pre">
+                        <a href="###">卡通风格html5响应式儿童学校教育网站模板</a>
+                    </div>
+                    <div class="goods_pagess_nex">
+                        <a href="###">品牌服装鞋子箱包奢侈品购物商城手机模板</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="article_dashang">
+                <div class="dashang_top"></div>
+                <div id="cy-reward-pop" style="display:none">
+                    <div node-type="cy-close-btn" class="cy-close-btn"></div>
+                    <img class="cy-avatar" src="__PUBLIC__/images/pY9YN2e_jpg.jpg">
+                    <div class="cy-reward-title">感谢你的支持，我会继续努力！
+                </div>
+                    <div node-type="cy-reward-code" class="cy-reward-code">
+                        <img node-type="alipay-code" style="display:block" src="__PUBLIC__/images/pY9Ygvv_png.png">
+                        <img node-type="weichat-code" style="display:none" src="__PUBLIC__/images/pY9YfZU_png.png">
+                    </div>
+                    <div class="cy-reward-txt">扫码打赏，建议金额1-10元</div>
+                    <div node-type="platform-choice" class="platform-choice clearfix">
+                        <div class="platform-item clearfix">
+                            <span node-type="check-platform" data-id="alipay" class="platform-radio-box platform-checked"></span>
+                            <span class="platform-logo alipay"></span>
+                        </div>
+                        <div class="platform-item clearfix">
+                         <span node-type="check-platform" data-id="weichat" class="platform-radio-box"></span>
+                        <span class="platform-logo weichat"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article_right">
+            <div class="goods_right_box">
+                <div class="goods_right_box_top">
+                    <h1>相关文章</h1>
+                    <span>/Article</span>
+                    <a href="###">更多></a>
+                </div>
+                <?php print_r($articless)?>
+                <div class="goods_right_ul clearfix">
+                    <ul>
+                        <?php foreach($articless as $v):?>
+                        <li>
+                            <a href="__MODULE__/{$v['cate_url   ']}/content/{$v['id']}">{$v['article_title']}</a>
+                            <span><?php echo date('m-d',$v['article_time'])?></span>
+                        </li>
+                        <?php endforeach;?>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="goods_right_box">
+                <div class="goods_right_box_top">
+                    <h1>标签云</h1>
+                    <span>/Tag</span>
+                    <a href="###">更多></a>
+                </div>
+                <div class="goods_right_a clearfix">
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-装修.html">装修</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-绿色.html">绿色</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-企业模板.html">企业模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-后台模板.html">后台模板</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-响应式.html">响应式</a>
+                    <a target="_blank" href="http://www.sucaihuo.com/templates/tag-bootstrap.html">bootstrap</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(function() {
+            //标签云JS开始
+
+            var tagss = $('.goods_right_a a');
+            tagss.each(function(){
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                $(this).css("background-color","rgb("+r+","+g+","+b+")");
+                $(this).css("opacity",'0.7');
+            });
+
+            tagss.hover(function(){
+                $(this).css("opacity",'1.0');
+                $(this).mouseout(function(){
+                    $(this).css("opacity",'0.7');
+                });
+            });
+            //标签云JS结束
+
+
+
+
+
+        });
+    </script>
+
+</block>
+
+
+
+
+
+
+
+
+
+

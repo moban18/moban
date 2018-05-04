@@ -2,92 +2,87 @@
 <extend name="User/Base/base" />
 
 <block name="main">
-    <div class="box">
-        <div class="blank"></div>
-        <div id="ur_here">
-            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+    <div class="main_box">
+        <div class="box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+            </div>
         </div>
-    </div>
-    <div class="block clearfix1">
-        <include file="User/Public/left"/>
+        <div class="block clearfix1">
+            <include file="User/Public/left"/>
 
 
-        <div class="AreaR">
-            <div class="AreaR_box">
-                <div class="AreaR_box_1">
-                    <div class="clearfix">
-                        <h5><span
-                                style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">个人资料</span>
-                        </h5>
-                        <div class="blank"></div>
-                        <ul id="userinfo">
-                            <li><a href="__CONTROLLER__/ziliao" class="user_active">基本资料</a></li>
-                            <li><a href="__CONTROLLER__/tx">头像设置</a></li>
-                        </ul>
-                        <form method="post" action="">
-                        <div id="user_info">
-                            <div class="userinfo_box">
-                                <ul>
-                                    <li>
-                                        <span>帐号类型：</span>
-                                        <p>{$users['vip_name']}</p>
-                                    </li>
-                                    <li>
-                                        <span>用户邮箱：</span>
-                                        <p>{$users['user_email']}</p>
-                                    </li>
-                                    <li>
-                                        <span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
-                                        <input name="nick_name" value="{$users['user_nick']}"/>(个人会员该项为昵称，企业会员填写公司名称)
+            <div class="AreaR">
+                <div class="AreaR_box">
+                    <div class="AreaR_box_1">
+                        <div class="clearfix">
+                            <h5><span
+                                    style="font-size: 20px;display: block;margin-bottom:10px;border-bottom:1px solid #DDDDDD;">个人资料</span>
+                            </h5>
+                            <div class="blank"></div>
+                            <ul id="userinfo">
+                                <li><a href="__CONTROLLER__/ziliao" class="user_active">基本资料</a></li>
+                                <li><a href="__CONTROLLER__/tx">头像设置</a></li>
+                            </ul>
+                            <form method="post" action="">
+                            <div id="user_info">
+                                <div class="userinfo_box">
+                                    <ul>
+                                        <li>
+                                            <span>帐号类型：</span>
+                                            <p>{$users['vip_name']}</p>
+                                        </li>
+                                        <li>
+                                            <span>用户邮箱：</span>
+                                            <p>{$users['user_email']}</p>
+                                        </li>
+                                        <li>
+                                            <span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
+                                            <input name="nick_name" value="{$users['user_nick']}"/>(个人会员该项为昵称，企业会员填写公司名称)
 
-                                    </li>
-                                    <li>
-                                        <span>原&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
-                                        <input name="password" value=""/>
+                                        </li>
+                                        <li>
+                                            <span>原&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
+                                            <input name="password" value=""/>
 
-                                    </li>
-                                    <li>
-                                        <span>新&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
-                                        <input name="password1" value=""/>(不修改密码请保留此项为空)
+                                        </li>
+                                        <li>
+                                            <span>新&nbsp;&nbsp;密&nbsp;&nbsp;码：</span>
+                                            <input name="password1" value=""/>(不修改密码请保留此项为空)
 
-                                    </li>
-                                    <li>
-                                        <span>确认密码：</span>
-                                        <input name="password2" value=""/>(不修改密码请保留此项为空)
+                                        </li>
+                                        <li>
+                                            <span>确认密码：</span>
+                                            <input name="password2" value=""/>(不修改密码请保留此项为空)
 
-                                    </li>
-                                    <li id="verifly">
-                                        <span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
-                                        <input name="verifly" style="width: 60px" value=""/>
-                                        <img src="__CONTROLLER__/verifly_img" style="cursor: pointer" onclick="this.src='__CONTROLLER__/verifly_img/'+Math.random()"/>
+                                        </li>
+                                        <li id="verifly">
+                                            <span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
+                                            <input name="verifly" style="width: 60px" value=""/>
+                                            <img src="__CONTROLLER__/verifly_img" style="cursor: pointer" onclick="this.src='__CONTROLLER__/verifly_img/'+Math.random()"/>
 
-                                    </li>
+                                        </li>
 
-                                </ul>
+                                    </ul>
 
-                                <input class="userinfo_submit" name="submit" type="submit" value="确认修改"/>
-
-
-                            </div>
+                                    <input class="userinfo_submit" name="submit" type="submit" value="确认修改"/>
 
 
-                            </div>
-                        </form>
+                                </div>
 
 
+                                </div>
+                            </form>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
     </div>
-
-    <script>
-
-
-    </script>
-
-
 
 </block>
 

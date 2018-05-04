@@ -9,8 +9,11 @@
 <meta name="baidu-site-verification" content="DLLJTpAaCu">
 <meta http-equiv="mobile-agent" content="format=xhtml;url=http://www.dede58.com/m/index.php">
 <link media="all" href="/moban/Public/css/index.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/study.css" type="text/css" rel="stylesheet">
+<link media="all" href="/moban/Public/css/cate.css" type="text/css" rel="stylesheet">
 <script src="/moban/Public/js/jquery-1.4.4.min.js"></script>
 <script src="/moban/Public/js/index.js"></script>
+
 </head>
 <body>
 
@@ -114,12 +117,19 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+ if($ac=='Index' || empty($ac)){ echo 'on'; } ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){ echo 'on'; }?>
+                        ">
                     <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </li>
+                <?php endforeach;?>
 
 
 
@@ -132,16 +142,17 @@
 </div>
 
 
-<div id="main">
+<div id="main" class="clearfix">
     
-    <div class="box">
-        <div class="blank"></div>
-        <div id="ur_here">
-            当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+    <div class="main_box">
+        <div class="box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+            </div>
         </div>
-    </div>
-    <div class="block clearfix1">
-        
+        <div class="block clearfix1">
+            
 <div class="AreaL">
     <div class="AreaL_box">
         <div class="box_1">
@@ -228,42 +239,47 @@
 
 
 
-        <div class="AreaR">
-            <div class="AreaR_box">
-                <div class="AreaR_box_1">
-                    <div class="clearfix" >
-                        <font class="f5"><b class="f4"><?php echo ($users["user_email"]); ?></b> 欢迎您回来 平台唯一客服QQ：188818310</font><br>
-                        <div class="blank"></div>
-                        您的上一次登录时间: <?php echo date('Y-m-d H:i:s',$users['log_time']);?><br>
-                        <div class="blank"></div>
-                        您的IP: <?php echo $_SERVER['REMOTE_ADDR']; ?> ，来自：<?php echo $location->province.$location->city;?><br>
-                        <div class="blank5"></div>
-                        您的等级是 <span style="color: #0090CE"><?php echo ($users['vip_name']); ?> </span> ，马上升级VIP <a style="color: #008000;text-decoration:underline" href="/moban/index.php/Home/User/buy">点击这里</a> <br>
-                        <div class="blank5"></div>
-
-                        <div style="margin:5px 0; border:1px solid #f7dd98;padding:10px 20px; background-color:#0090CE; color:#fff">
-                            <img src="/moban/Public/images/note.gif" alt="">&nbsp;用户中心公告！           </div>
-                        <br><br>
-                        <div class="f_l" style="width:350px;">
-                            <h5><span>您的账户</span></h5>
+            <div class="AreaR">
+                <div class="AreaR_box">
+                    <div class="AreaR_box_1">
+                        <div class="clearfix" >
+                            <font class="f5"><b class="f4"><?php echo ($users["user_email"]); ?></b> 欢迎您回来 平台唯一客服QQ：188818310</font><br>
                             <div class="blank"></div>
-                            会员种类：<a href="/moban/index.php/Home/User/buy"><?php echo ($users['vip_name']); ?></a><br>
-                            金币余额：<a href="/moban/index.php/Home/User/buy#jbin" style="color:#006bd0;"><?php echo ($users['user_jbin']); ?></a><br>
-                            积&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：<?php echo ($users['user_points']); ?>积分<br>
-                        </div>
-                        <div class="f_r" style="width:350px;">
-                            <h5><span>用户提醒</span></h5>
+                            您的上一次登录时间: <?php echo date('Y-m-d H:i:s',$users['log_time']);?><br>
                             <div class="blank"></div>
-                            您最近30天内提交了<a href="/moban/index.php/Home/User/myorder" style="color: #0090CE">&nbsp;0&nbsp;</a>个下载<br>
+                            您的IP: <?php echo $_SERVER['REMOTE_ADDR']; ?> ，来自：<?php echo $location->province.$location->city;?><br>
+                            <div class="blank5"></div>
+                            会员到期：<span style="color:orange">
+                                    <?php if($users['vipover_time']){ echo date('Y-m-d H:i',$users['vipover_time']); }else{ echo '普通会员'; }?>
+                                        </span>
+                            <div class="blank5"></div>
+                            您的等级是 <span style="color: #0090CE"><?php echo ($users['vip_name']); ?> </span> ，马上升级VIP <a style="color: #008000;text-decoration:underline" href="/moban/index.php/Home/User/buy" target="_blank">点击这里</a> <br>
+                            <div class="blank5"></div>
+
+                            <div style="margin:5px 0; border:1px solid #f7dd98;padding:10px 20px; background-color:#0090CE; color:#fff">
+                                <img src="/moban/Public/images/note.gif" alt="">&nbsp;用户中心公告！           </div>
+                            <br><br>
+                            <div class="f_l" style="width:350px;">
+                                <h5><span>您的账户</span></h5>
+                                <div class="blank"></div>
+                                会员种类：<a href="/moban/index.php/Home/User/buy"><?php echo ($users['vip_name']); ?></a><br>
+                                金币余额：<a href="/moban/index.php/Home/User/buy#jbin" style="color:#006bd0;"><?php echo ($users['user_jbin']); ?></a><br>
+                                积&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：<?php echo ($users['user_points']); ?>积分<br>
+                            </div>
+                            <div class="f_r" style="width:350px;">
+                                <h5><span>用户提醒</span></h5>
+                                <div class="blank"></div>
+                                您最近30天内提交了<a href="/moban/index.php/Home/User/myorder" style="color: #0090CE">&nbsp;0&nbsp;</a>个下载<br>
+                            </div>
+
+
+
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
 

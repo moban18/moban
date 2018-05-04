@@ -1,0 +1,111 @@
+
+<extend name="User/Base/base" />
+<block name="main">
+    <script src="{:C('QRCODE')}/jquery.qrcode.min.js"></script>
+    <div class="main_box">
+        <div class="box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="mbmeilishuo/">首页</a> <code>&gt;</code> 用户中心
+            </div>
+        </div>
+        <div class="block clearfix1">
+            <include file="User/Public/left"/>
+            <div class="AreaR">
+                <div class="AreaR_box">
+                    <div class="AreaR_box_1">
+                        <div class="clearfix order_xq">
+                            <h5>
+                                    <span style="font-size: 20px;margin-bottom:10px;">订单详情:</span>
+                                    <?php if($_GET['type']==1):?>
+                                    <span class="order_span">购买：&nbsp;&nbsp;<i><?php echo $_GET['vipType']?></i></span>
+                                    <span class="order_span">价格：&nbsp;&nbsp;<i><?php echo $_GET['price']?></i>&nbsp;&nbsp;元</span>
+                                    <?php else:?>
+                                    <span class="order_span">购买：&nbsp;&nbsp;<i><?php echo $_GET['jbNun']?></i>&nbsp;&nbsp;个金币</span>
+                                    <span class="order_span">价格：&nbsp;&nbsp;<i><?php echo $_GET['price']?></i>&nbsp;&nbsp;元</span>
+                                    <?php endif;?>
+                            </h5>
+                            <div id="buynote">
+                                <p><span>优惠活动</span></p>
+                                <p><span> 充200元以上送双倍积分，并立即赠送1个月会员，充的多送的多！！</span></p>
+                                <p><span>充300元永久VIP赠送50元积分</span></p>
+                                <p><span>充值若失败请联系管理员QQ416148489,立即送您双倍积分（PS：目前充值成功率100%）</span></p>
+                            </div>
+                            <div class="blank"></div>
+                            <div class="alipay_box">
+                                <div class="alipay_box2 clearfix">
+                                    <h1>您的充值订单已经生成</h1>
+                                    <div class="show_order">
+                                        <div class="or_info">
+                                            <div class="or_box1">
+                                                <span>收款帐号：</span>
+                                                <input type="text" name="alipay_count" class="alipay_count" value="188818310@qq.com"/>
+                                            </div>
+                                            <div class="or_box1">
+                                                <span>充值金额：</span>
+                                                <input type="text" name="alipay_jy" class="alipay_count" value="<?php echo $_GET['price']?>"/>
+                                            </div>
+                                            <div class="or_box1">
+                                                <span>订单备注：</span>
+                                                <input type="text" name="alipay_bz" class="alipay_count" value="<?php echo $_GET['orderId']?>"/>
+                                            </div>
+                                        </div>
+                                        <div class="or_sm">
+                                            <p>于支付宝官方频频更新升级，导致网站充值不能直接读取账户信息，请各位会员充值时复制左边信息到支付宝转账，即可实现自动到账（如下图）</p>
+                                            <a href="https://shenghuo.alipay.com/send/payment/fill.htm?_tosheet=true&_pdType=afcabecbafgggffdhjch" class="alipay_bottom" target="_blank">立即充值</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="alipay_show_pay">
+                                    <span class="show_pay_right">手机操作方式</span>
+                                    <span class="show_pay_left">电脑操作方式</span>
+                                </div>
+                                <img src="__PUBLIC__/images/alipay_ma.jpg" alt="支付宝支付"/>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="qrcode"></div>
+    <script>
+        $('.userinfo_submit').click(function(){
+
+            $('#qrcode').qrcode({
+                render: "canvas", //table方式
+                width: 200, //宽度
+                height:200, //高度
+                text: "www.baidu.com" //任意内容
+            });
+
+           /* var vip_id=$('input[name=vip_id]:checked').val();
+            $.ajax({
+                url:'__MODULE__/Buy/buyVip',
+                type:'post',
+                data:{
+                    vip_id:vip_id,
+                },
+                success:function(data){
+
+                }
+            });*/
+        });
+    </script>
+</block>
+
+
+
+
+
+
+
+
+
+

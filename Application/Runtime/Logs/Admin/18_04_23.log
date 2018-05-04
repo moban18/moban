@@ -1,0 +1,897 @@
+[ 2018-04-23T11:17:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:17:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_admin` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `moban_admin` WHERE `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-04-23T11:17:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_admin` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_admin`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:17:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:17:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-23T11:18:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-04-23T11:18:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:19:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:19:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES ('阿里云提示织梦DedeCMS uploadsa','10','125','moban18.com','暮云春树魂牵梦萦压顶无可奈何花落去a','&lt;p&gt;多将织梦dedecms安装在阿里云的ecs的站长每次都会看到阿里云盾就会通知有一个上传漏洞，引起的文件是/include/uploadsafe.inc.php文件，&lt;/p&gt;&lt;p style=&quot;padding: 0px; margin: 0px; outline: none; font-stretch: normal; font-size: 16px; line-height: 1.7; font-family: &amp;#39;Microsoft Yahei&amp;#39;, Tahoma, Verdana, 宋体; color: rgb(51, 51, 51);&quot;&gt;
+	原因是dedecms原生提供一个&amp;quot;本地变量注册&amp;quot;的模拟实&lt;span style=&quot;padding: 0px; margin: 0px; outline: none; color: rgb(0, 0, 0);&quot;&gt;现，原则上允许黑客覆盖任意变量，就会导致被攻击，下面告诉大家解决的办法：&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;padding: 0px; margin: 0px; outline: none; font-stretch: normal; font-size: 16px; line-height: 1.7; font-family: &amp;#39;Microsoft Yahei&amp;#39;, Tahoma, Verdana, 宋体; color: rgb(51, 51, 51);&quot;&gt;
+	&lt;span style=&quot;color: rgb(0, 0, 0); line-height: 1.7;&quot;&gt;我们找到并打开/include/uploadsafe.inc.php文件，在里面找到如下代码：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add50bb6a66d.jpg','./ArImgs/2018-04-23/80_5add50bb6a66d.jpg','1524453581') [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:19:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2018-04-23T11:20:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:20:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-04-23T11:20:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES ('织梦百度快照劫持注入代码防范','11','1232','moban18.com','暮云春树fdsf','&lt;p&gt;织梦百度快照劫持注入代码防范及修正，很多站长做站的过程中，都碰过百度快照被劫持等问题，明明已经修复模板文件了，还是没有更新回正常的快照，以织梦系统为例，&lt;br/&gt;&lt;br/&gt;往往根目录/index.php也被植入恶意代码&lt;br/&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add50f409893.png','./ArImgs/2018-04-23/80_5add50f409893.png','1524453629') [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:20:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2018-04-23T11:20:33+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:20:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:21:02+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES ('软件模型把introduce字段里的图片把相对地址改成绝对路径','12','343','moban18.com','afasdfdsfsdfdsfds','&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	需求分析：我们需要做手机站用到软件模型时，后台这个选项就不管用了。&lt;span style=&quot;color:#ff0000;&quot;&gt;(是/否)支持多站点，开启此项后附件、栏目连接、arclist内容启用绝对网址&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	而我们需要做的是：&lt;br/&gt;
+	被替换内容： src=&amp;quot;/uploads/&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	替换为：src=&amp;quot;http://你的域名/uploads/&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	直接通过程序的办法替换&lt;/p&gt;&lt;p&gt;
+
+	让织梦软件模型把introduce字段里的图片把相对地址改成&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add5114c5fb5.jpg','./ArImgs/2018-04-23/80_5add5114c5fb5.jpg','1524453662') [ RunTime:0.0380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:21:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-04-23T11:21:10+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:21:24+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-23T11:21:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES ('PHP文件根据id输出指定代码文本','13','2234','moban18.com','afdsfdsfdsfdsf','&lt;p&gt;然后我们在其关联的模板htm文件 写入 &amp;lt;div id=&amp;#39;testx&amp;#39;&amp;gt;&amp;lt;/div&amp;gt;&lt;br/&gt;&lt;br/&gt;再扩展下，便可得&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;
+	document.getElementById(&amp;quot;Comment&amp;quot;).innerHTML=&amp;quot;&amp;lt;?php&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp; $dsql-&amp;gt;GetOne(&amp;quot;select * from `archives` WHERE channel=&amp;#39;3&amp;#39; order by id DESC limit 9&amp;quot;);&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp; $dsql-&amp;gt;Execute(&amp;#39;me&amp;#39;);&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp; while ($row = $dsql-&amp;gt;GetArray(&amp;#39;me&amp;#39;)){&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp;if($row[&amp;#39;flag&amp;#39;] == &amp;quot;c,p&amp;quot;){&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp;&lt;span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;&gt; &lt;/span&gt;$tj = &amp;quot;&amp;lt;i class=&amp;#39;tj&amp;#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;quot;;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add5134d7850.jpg','./ArImgs/2018-04-23/80_5add5134d7850.jpg','1524453695') [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-04-23T11:21:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:21:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:21:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T11:22:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES ('PHP文件根据id输出指定代码文本','14','534543','moban18.com','fsadfdsfdsfsd','&lt;p&gt;我们在其关联的模板htm文件 写入 &amp;lt;div id=&amp;#39;testx&amp;#39;&amp;gt;&amp;lt;/div&amp;gt;&lt;br/&gt;&lt;br/&gt;再扩展下，便可得&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;
+	document.getElementById(&amp;quot;Comment&amp;quot;).innerHTML=&amp;quot;&amp;lt;?php&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp; $dsql-&amp;gt;GetOne(&amp;quot;select * from `archives` WHERE channel=&amp;#39;3&amp;#39; order by id DESC limit 9&amp;quot;);&lt;/p&gt;&lt;p&gt;
+	&amp;nbsp; $dsql-&amp;gt;Execute(&amp;#39;me&amp;#39;);&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add5152b38f3.jpg','./ArImgs/2018-04-23/80_5add5152b38f3.jpg','1524453723') [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T11:22:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-04-23T12:24:13+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-23T12:24:56+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-04-23T12:25:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES (' 软件模型把introduce字段里的图片把相对地址改成绝对路径','11','1443','moban18.com','需求分析：我们需要做手机站用到软件模型时，后台这个选项就不管用了。(是/否)支持多站点，开启此项后附件、栏目连接、arclist内容启用绝对网址','&lt;p&gt;&lt;a href=&quot;http://www.dede58.com/&quot;&gt;首页&lt;/a&gt; &amp;gt; &lt;a href=&quot;http://www.dede58.com/a/zhimengjiaocheng/&quot;&gt;织梦学院&lt;/a&gt; &amp;gt; &lt;a href=&quot;http://www.dede58.com/a/zhimengjiaocheng/zhanchangshouji/&quot;&gt;站长手记&lt;/a&gt; &amp;gt;&lt;/p&gt;&lt;h1&gt;软件模型把introduce字段里的图片把相对地址改成绝对路径&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.dede58.com/shop/&quot; target=&quot;_blank&quot;&gt;相关案例演示&lt;/a&gt;
+ &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/p&gt;&lt;p&gt;
+					&lt;/p&gt;&lt;p&gt;
+						&lt;/p&gt;&lt;ul class=&quot;flder list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3264.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3264.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/160410/1-1604101641300-L.png&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3264.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;学生桌学习用品家具等产品展示行业公司网站织梦模板（&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3264.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3264.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0724/4293.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0724/4293.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/170724/1-1FH41AR60-L.jpg&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0724/4293.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;营销型智能集成吊顶行业织梦模板(带手机端)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0724/4293.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0724/4293.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0513/4097.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0513/4097.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/170513/1-1F5131352390-L.png&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0513/4097.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;响应式金融信贷担保投资风险类织梦模板(自适应手机端)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0513/4097.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0513/4097.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/1204/3809.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/1204/3809.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/161204/1-1612041412230-L.jpg&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/1204/3809.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;中英文商务工商注册税务类企业网站织梦模板(带手机端)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/1204/3809.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/1204/3809.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+
+							&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3664.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3664.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/161001/1-1610011I415495.png&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3664.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;响应式网络建设设计公司网站织梦模板(自适应移动设备)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3664.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3664.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3295.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3295.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/160920/1-1609201KPC26.png&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3295.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;创意动态全屏大图百变配色企业通用织梦模板&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3295.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3295.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3876.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3876.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/170110/1-1F110131K10-L.jpg&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3876.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;电气设备科技类网站织梦dedecms模板(带手机端)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3876.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3876.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3731.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3731.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/161030/1-1610300940050-L.jpg&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3731.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;响应式企业通用类网站织梦dedecms模板(自适应手机端)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3731.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/svip/3731.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+
+							&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0622/4216.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0622/4216.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/170622/1-1F622134Q30-L.jpg&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0622/4216.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;HTML5清新文艺个人博客文章类织梦模板(支持移动设备)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0622/4216.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0622/4216.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0829/3586.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0829/3586.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/160920/1-160920155RN93.png&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0829/3586.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;中英双语响应式绿色新能源企业织梦模板(自适应)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0829/3586.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0829/3586.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3271.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3271.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/160410/1-1604101SJ30-L.png&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3271.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;html响应式自适应建筑装修服务行业企业公司网站织梦模&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3271.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2016/0410/3271.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+									&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0617/4199.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0617/4199.html&quot; target=&quot;_blank&quot;&gt;
+											&lt;img class=&quot;dealImg&quot; src=&quot;http://www.dede58.com/uploads/allimg/170617/1-1F61G12S00-L.jpg&quot; alt=&quot;&quot;/&gt;
+											
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0617/4199.html&quot; target=&quot;_blank&quot;&gt;
+												
+												&lt;span class=&quot;stockWord&quot;&gt;响应式刑事辩护律师资讯网站织梦模板(自适应手机端)&lt;/span&gt;
+											&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0617/4199.html&quot; target=&quot;_blank&quot;&gt;
+										&lt;/a&gt;&lt;/p&gt;&lt;a class=&quot;saleDeal&quot; href=&quot;http://www.dede58.com/shop/2017/0617/4199.html&quot; target=&quot;_blank&quot;&gt;
+										
+										
+									&lt;/a&gt;
+								&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+
+							&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+						
+						
+					&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	需求分析：我们需要做手机站用到软件模型时，后台这个选项就不管用了。&lt;span style=&quot;color:#ff0000;&quot;&gt;(是/否)支持多站点，开启此项后附件、栏目连接、arclist内容启用绝对网址&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	而我们需要做的是：&lt;br/&gt;
+	被替换内容： src=&amp;quot;/uploads/&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	替换为：src=&amp;quot;http://你的域名/uploads/&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	直接通过程序的办法替换&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	让织梦软件模型把introduce字段里的图片把相对地址改成绝对路径的修改方法&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	1、修改目录include下的文件extend.func.php，在最后面添加一个函数方法&lt;/p&gt;&lt;p style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft Yahei&amp;#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; line-height: 28px; text-align: justify;&quot;&gt;
+	function replaceurl($newurl)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add6018d1e98.jpg','./ArImgs/2018-04-23/80_5add6018d1e98.jpg','1524457505') [ RunTime:0.0290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T12:25:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-04-23T12:26:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `moban_cate` WHERE `attrtype_id` = 2  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-23T12:26:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/uploadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T12:26:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_article` (`article_title`,`cate_id`,`article_comment`,`article_anthor`,`article_dec`,`article_content`,`article_136_86`,`article_80_60`,`article_time`) VALUES ('织梦dedecms插件实现您是本站的多少位访客织梦dedecms插件实现您是本站的多少位访客','11','54543','moban18.com','1.将文件复制到网站目录
+
+　　2.在模板中加入以下代码
+
+　　&lt;script type=&quot;text/javascript&quot; src=&quot;{dede:field name=\'phpurl\'/}/stat.php&quot;&gt;&lt;/script&gt;
+
+　　3.重新生成html,OK
+
+　　效果如下图：','&lt;p&gt;&lt;span style=&quot;color: rgb(85, 85, 85); font-family: Tahoma, 微软雅黑, Geneva, sans-serif; font-size: 14px; line-height: 21.6px;&quot;&gt;1.将文件复制到网站目录&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;color: rgb(85, 85, 85); font-family: Tahoma, 微软雅黑, Geneva, sans-serif; font-size: 14px; line-height: 21.6px;&quot;&gt;　　2.在模板中加入以下代码&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;color: rgb(85, 85, 85); font-family: Tahoma, 微软雅黑, Geneva, sans-serif; font-size: 14px; line-height: 21.6px;&quot;&gt;　　&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;{dede:field name=&amp;#39;phpurl&amp;#39;/}/stat.php&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;color: rgb(85, 85, 85); font-family: Tahoma, 微软雅黑, Geneva, sans-serif; font-size: 14px; line-height: 21.6px;&quot;&gt;　　3.重新生成html,OK&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;color: rgb(85, 85, 85); font-family: Tahoma, 微软雅黑, Geneva, sans-serif; font-size: 14px; line-height: 21.6px;&quot;&gt;　　效果如下图：&lt;/span&gt;&lt;/p&gt;','./ArImgs/2018-04-23/5add6072d03d3.jpg','./ArImgs/2018-04-23/80_5add6072d03d3.jpg','1524457612') [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-04-23T12:26:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_article` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `moban_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.article_title,a.article_comment,a.article_anthor,a.article_time,a.article_80_60,b.cate_name FROM moban_article a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY article_time Desc LIMIT 0,15   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.083005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.087005s ]
+

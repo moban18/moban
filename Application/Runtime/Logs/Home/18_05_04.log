@@ -1,0 +1,48 @@
+[ 2018-05-04T12:23:36+08:00 ] 127.0.0.1 /moban/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.010000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `moban_cate` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `moban_cate` WHERE `parent_id` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_user` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `moban_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_goods` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `moban_attrter` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `moban_attrter` WHERE `attr_id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `moban_attrter` WHERE `attr_id` IN ('5','6','7','8','9')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_lun` WHERE `lun_lock` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cate_id` FROM `moban_goods` WHERE `id` = 26 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `cate_url` FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cate_id` FROM `moban_goods` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cate_url` FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cate_id` FROM `moban_goods` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cate_url` FROM `moban_cate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,b.cate_url FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  ORDER BY goods_time Desc LIMIT 12   [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.goods_name,a.godds_233_160,b.cate_url FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  WHERE `cate_id` = 1 ORDER BY goods_time Desc LIMIT 18   [ RunTime:0.0030s ]
+SQL: SELECT a.id,a.goods_name,a.goods_time,b.cate_url FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  WHERE (  `cate_id` = 1 ) AND (  `goods_tuijian` = 1 ) ORDER BY goods_time Desc LIMIT 22   [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.goods_name,a.godds_233_160,b.cate_url FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  WHERE `cate_id` = 2 ORDER BY goods_time Desc LIMIT 18   [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.goods_name,a.goods_time,b.cate_url FROM moban_goods a LEFT JOIN moban_cate b ON a.cate_id=b.id  WHERE (  `cate_id` = 2 ) AND (  `goods_tuijian` = 1 ) ORDER BY goods_time Desc LIMIT 22   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`cate_name`,`cate_url` FROM `moban_cate` WHERE `parent_id` = 9  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `moban_article_view` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `moban_article_view` ORDER BY article_time Desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_article_view` WHERE `cate_id` = 10 ORDER BY article_time Desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_article_view` WHERE `cate_id` = 11 ORDER BY article_time Desc LIMIT 5   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `moban_article_view` WHERE `cate_id` = 14 ORDER BY article_time Desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `moban_article_view` ORDER BY article_comment Desc LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+

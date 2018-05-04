@@ -1,0 +1,2393 @@
+[ 2018-03-26T22:06:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-26T22:06:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_admin` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `moban_admin` WHERE `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-03-26T22:06:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `moban_admin` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `moban_admin`  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-26T22:06:50+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-26T22:06:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-26T22:06:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:10:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-03-26T22:10:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:10:45+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2018-03-26T22:10:49+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-03-26T22:10:53+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2018-03-26T22:10:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:11:26+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016001s ]
+
+[ 2018-03-26T22:11:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:11:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:11:57+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:13:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:14:12+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:14:14+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-03-26T22:14:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-03-26T22:14:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:15:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:15:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-03-26T22:17:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:17:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:18:22+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:18:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-03-26T22:18:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:18:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:18:51+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:18:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2018-03-26T22:21:19+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011000s ]
+
+[ 2018-03-26T22:21:20+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2018-03-26T22:21:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:21:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:21:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:21:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-03-26T22:23:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-03-26T22:23:35+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:23:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:23:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:23:46+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\moban\Application\Admin\Model\LunModel.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-03-26T22:24:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:24:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:24:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-03-26T22:24:42+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-03-26T22:24:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:24:48+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:24:55+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\moban\Application\Admin\Model\LunModel.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:25:54+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:26:27+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:30:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:30:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-03-26T22:31:03+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:31:04+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-03-26T22:31:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:31:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:31:28+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:31:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_lun` (`lun_name`,`lun_notise`,`lun_lock`,`lun_photos`) VALUES ('第一个测试图片','第一个测试图片','1','./Public/Uploads/2018-03-26/5ab90440ce748.jpg,./Public/Uploads/2018-03-26/5ab90440a5ecf.jpg,./Public/Uploads/2018-03-26/5ab9044075953.png') [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:31:38+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:32:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2018-03-26T22:32:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-03-26T22:32:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:32:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-03-26T22:32:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_lun` (`lun_name`,`lun_notise`,`lun_lock`,`lun_photos`,`lun_time`) VALUES ('第二个测试图片','第二个测试图片','1','./Public/Uploads/2018-03-26/5ab904858ff04.jpg,./Public/Uploads/2018-03-26/5ab9048562869.jpg','1522074761') [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:32:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-03-26T22:33:29+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2018-03-26T22:33:30+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:33:39+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:33:58+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2018-03-26T22:34:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-03-26T22:34:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.029002s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-03-26T22:34:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-03-26T22:34:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-03-26T22:34:07+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:35:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 288 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 315 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2018-03-26T22:35:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 289 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 316 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-03-26T22:37:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: users D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 289 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 316 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-03-26T22:39:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_email D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined index: user_nick D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 293 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_time D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 296 行.
+NOTIC: [8] Undefined index: user_email D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined index: user_nick D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 293 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_time D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 296 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012000s ]
+
+[ 2018-03-26T22:39:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_email D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined index: user_nick D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 293 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_time D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 296 行.
+NOTIC: [8] Undefined index: user_email D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 292 行.
+NOTIC: [8] Undefined index: user_nick D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 293 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_time D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 296 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2018-03-26T22:40:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_nick D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 293 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: user_nick D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 293 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-03-26T22:40:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: vip_name D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 294 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-03-26T22:42:23+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: lun_loci D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined index: lun_loci D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-03-26T22:42:32+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006001s ]
+NOTIC: [8] Undefined index: lun_loci D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined index: lun_loci D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 295 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-03-26T22:42:40+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020001s ]
+
+[ 2018-03-26T22:42:52+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined index: log_ip D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 297 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:43:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:50:25+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011000s ]
+
+[ 2018-03-26T22:51:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-03-26T22:51:31+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:51:34+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2018-03-26T22:52:00+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:52:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2018-03-26T22:52:01+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:52:05+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_lun` (`lun_name`,`lun_notise`,`lun_lock`,`lun_photos`,`lun_time`) VALUES ('第三个测试图片','第三个测试图片','1','./Public/Uploads/2018-03-26/5ab909114619c.jpg,./Public/Uploads/2018-03-26/5ab909110a486.jpg,./Public/Uploads/2018-03-26/5ab90910ce533.jpg','1522075925') [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:52:06+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2018-03-26T22:52:17+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\5401bc9030fd45b35fba00e7e59b51bc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:52:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:52:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T22:52:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:52:36+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:52:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-03-26T22:52:37+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/uploadify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\moban\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-03-26T22:52:41+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\moban\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `moban_lun` (`lun_name`,`lun_notise`,`lun_lock`,`lun_photos`,`lun_time`) VALUES ('第四个图片','第四个图片','1','./Public/Uploads/2018-03-26/5ab90935878c6.jpg,./Public/Uploads/2018-03-26/5ab9093538714.jpg,./Public/Uploads/2018-03-26/5ab90934d9d08.jpg,./Public/Uploads/2018-03-26/5ab90934995b9.jpg,./Public/Uploads/2018-03-26/5ab9093466545.jpg','1522075961') [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:52:43+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_lun`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\moban\Application\Runtime\Cache\Admin\9a0c1983ba1f6b29d28c425543780237.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-03-26T22:54:16+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T22:54:18+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T23:00:47+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/edit/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `moban_lun` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-26T23:01:09+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/edit/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `moban_lun` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-26T23:01:11+08:00 ] 127.0.0.1 /moban/index.php/Admin/Lun/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `moban_lun` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `moban_lun` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 106 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 137 行.
+NOTIC: [8] Undefined variable: ac D:\wamp\www\moban\Application\Runtime\Cache\Admin\c9a30f15deccdeb35f430851b394f5a7.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+

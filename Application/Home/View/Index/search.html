@@ -1,0 +1,118 @@
+
+<extend name="Common/base" />
+
+<block name="main">
+    <div id="cate_body" class="clearfix">
+        <div class="marquee_box clearfix">
+            <div class="w_list">
+                <marquee scrollamount="3" scrolldelay="10">【<span class="marquee_main">
+                <span class="red"><a href="http://www.sucaihuo.com/member/pay.html" rel="nofollow"
+                                     target="_blank">在线充值</a> 温馨提示：</span>充200元以上立即赠送1个月会员，充的多送的多，永久会员再送50元积分</span>，<a
+                        href="http://www.lanrenzhijia.com" target="_blank">懒人之家</a>投放广告和技术问题协助联系QQ416148489】
+                </marquee>
+            </div>
+        </div>
+
+        <div id="content" class="content clearfix">
+            <div id="list" class="list">
+                <div class="list_box clearfix">
+                    <?php foreach($goodres as $v):?>
+                    <div class="goods_box">
+                        <a href="__MODULE__/{$v['cate_url']}/content/id/{$v['id']}"><img src="__ROOT__/{$v['goods_photo']}" alt=""/></a>
+                        <p class="goods_title">
+                            <a href="###">{$v['goods_name']}</a>
+                        </p>
+                        <div class="statics">
+                            <a class="download citecommon">下载 <em>
+                                <?php if($v['download_num']){
+                                    echo $v['download_num'];
+                                }else{
+                                    echo 0;
+                                }?>
+                                次
+                            </em></a>
+                            <a class="comment citecommon">评论 <em>
+                                <?php if($v['goods_recommend']){
+                                    echo $v['goods_recommend'];
+                                }else{
+                                    echo 0;
+                                }?>
+                                条
+                            </em></a>
+                            <a class="scores citecommon">浏览 <em>
+                                <?php if($v['goods_comment']){
+                                    echo $v['goods_comment'];
+                                }else{
+                                    echo 0;
+                                }?>
+                                次
+                            </em></a>
+                            <a class="modalnum citecommon last">模板 <em>
+                                <?php if($v['moban_num']){
+                                    echo $v['moban_num'];
+                                }else{
+                                    echo 0;
+                                }?>
+                                个
+                            </em></a>
+                        </div>
+                    </div>
+                    <?php endforeach;?>
+                </div>
+            </div>
+            <?php if(!empty($goodres)):?>
+            <div class="page_list clearfix">
+                共 <span class="tatle">{$count}</span> 个网站模板
+
+                <a href="
+                <?php if(!I('p')):?>
+                  javascript:vode(0);
+                  <?php elseif(I('p')<=1):?>
+                   javascript:vode(0);
+                   <?php else:?>
+                   __CONTROLLER__/search/?keywords={:I('keywords')}&cate_id={:I('cate_id')}&p={:I('p')-1}
+                <?php endif;?>
+                        " class="pre">上一页</a>
+                <?php for($i=0;$i<$pages;$i++):?>
+                <a class="
+                <?php if(I('p')==$i+1){
+                    echo 'current';
+                }else{
+                    echo 'num';
+                }
+                ?>
+                        " href="__CONTROLLER__/search/?keywords={:I('keywords')}&cate_id={:I('cate_id')}&p={$i+1}"><?php echo $i+1?></a>
+                <?php endfor;?>
+                <a href="
+                <?php if(I('p')>=$pages):?>
+                    javascript:vode(0);
+                <?php else:?>
+                __CONTROLLER__/search/?keywords={:I('keywords')}&cate_id={:I('cate_id')}&p={:I('p')+1}
+                <?php endif;?>
+                        " class="next">下一页</a>
+
+            </div>
+            <?php else:?>
+            <div class="no_result">
+                <p><img src="__PUBLIC__/images/no_result.png" alt="暂无相关网站模板" width="96" height="120"></p>
+                <p class="words"><span class="line">暂无相关网站模板</span></p>
+            </div>
+            <?php endif;?>
+
+        </div>
+
+
+    </div>
+
+
+</block>
+
+
+
+
+
+
+
+
+
+

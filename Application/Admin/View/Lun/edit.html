@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>Dashboard</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    
+    <!--Basic Styles-->
+    <link href="ADMIN_CSS/bootstrap.css" rel="stylesheet">
+    <link href="ADMIN_CSS/font-awesome.css" rel="stylesheet">
+    <link href="ADMIN_CSS/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="ADMIN_CSS/beyond.css" rel="stylesheet" type="text/css">
+    <link href="ADMIN_CSS/demo.css" rel="stylesheet">
+    <link href="ADMIN_CSS/typicons.css" rel="stylesheet">
+    <link href="ADMIN_CSS/animate.css" rel="stylesheet">
+    <link href="UPLOADIFY/uploadify.css" rel="stylesheet">
+    <style>
+        #addPhotos img {margin-bottom:5px;}
+        .img_photo_box{ position:relative;}
+        .img_phpoto{display:block;border:1px solid #eee;}
+        .close_icon{width:25px;height:25px;background:url('ADMIN_IMG/close.png');display:block;position:absolute;cursor:pointer; display:none;}
+    </style>
+</head>
+<body>
+	<!-- 头部 -->
+    <include file="Public/head"/>
+
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <include file="Public/left"/>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li>
+                        <a href="__CONTROLLER__/index">轮播管理</a>
+                    </li>
+                                        <li class="active">编辑轮播</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">编辑轮播</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="{$luns.id}"/>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">轮播名称：</label>
+                            <div class="col-sm-4">
+                                <input class="form-control"  name="lun_name" required="" type="text" value="{$luns.lun_name}">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填,不超过25个字符</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">轮播简介：</label>
+                            <div class="col-sm-4">
+                                <textarea name="lun_notise" style="width:340px;">{$luns.lun_notise}</textarea>
+                            </div>
+
+                        </div>
+                        <div class="form-group" style="clear:both;">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">轮播图片：</label>
+                            <div class="col-sm-4">
+                                <input id="lun_photos"  name="lun_photos" type="file" style="float:left;border:0">
+                        </div>
+                            <p class="help-block col-sm-4 red">* 多张图片，直接选择多张</p>
+                            <div id="addPhotos" style="clear:both;margin-left:18%;">
+
+                                <?php $lunPhotos=explode(',',$luns['lun_photos']);
+                                foreach($lunPhotos as $v):
+                                ?>
+                                <div class="img_photo_box">
+                                    <img class="img_phpoto" name="lun_photos[]" src="__ROOT__/{$v}" alt="{$v}" style="opacity: 1;">
+                                    <i class="close_icon" style="left: 376px; top: 0px; display: none;"></i>
+                                </div>
+                                <input name="lun_photos[]" class="lun_photos" value="{$v}" type="hidden">
+                                <?php endforeach;?>
+                            </div>
+                       </div>
+                        <div id="goods_links_box">
+                            <?php
+                            if($luns['goods_links']){
+                                $goods_links=explode(',',$luns['goods_links']);
+                            }
+                            ?>
+                            <?php foreach($goods_links as $v1):?>
+                            <div class="form-group clearfix goods_links"  >
+                                <label for="username" class="col-sm-2 control-label no-padding-right">商品链接：</label>
+                                <div id="add_links" style="background:url('ADMIN_IMG/jiahao.png');width:35px;height:35px;float:left;" onclick="addGoodsLinks(this);"></div>
+                                <div class="col-xs-4" style="float: left">
+                                    <label>
+                                        <select name="goods_links[]">
+                                            <option value="">请选择商品</option>
+                                            <?php foreach($goodss as $v):?>
+                                            <option value="{$v['id']}"
+                                             <?php if($v['id']==$v1){
+                                             echo $select='selected="selected"';
+                                             }
+                                            ?>
+                                            >{$v['id']}、{$v['goods_name']}</option>
+                                            <?php endforeach;?>
+                                        </select>
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+                                <div id="del_links" style="background:url('ADMIN_IMG/jianhao.png');width:35px;height:35px;float:left;margin-left:70px;" onclick="delGoodsLinks(this);"></div>
+                            </div>
+                            <?php endforeach;?>
+                        </div>
+
+
+                        <div class="form-group" style="clear:both;">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">是否显示：</label>
+                            <div class="col-xs-4">
+                                <label>
+                                    <input class="checkbox-slider yesno" name="lun_lock" value="1" type="checkbox" <if condition="$luns['lun_lock'] eq 1">checked='checked'</if> >
+                                    <span class="text"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button id="lun_submit" type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="ADMIN_CSS/jquery_002.js"></script>
+    <script src="ADMIN_CSS/bootstrap.js"></script>
+    <script src="ADMIN_CSS/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="ADMIN_CSS/beyond.js"></script>
+    <script src="UPLOADIFY/jquery.uploadify.min.js"></script>
+    <script>
+            var html='';
+            var html1='';
+            var div=$('#addPhotos');
+            var img=div.find('img');
+            $("#lun_photos").uploadify({
+                uploader:'__CONTROLLER__/uploadify',           // 服务器端处理地址
+                swf:'UPLOADIFY/uploadify.swf',    // 上传使用的 Flash
+                buttonText:"图片上传",
+                dataType: 'json',
+                onUploadSuccess:function(file, data, response){
+                    html='<div class="img_photo_box">';
+                    html+='<img class="img_phpoto"  src="__ROOT__'+data+'" alt="'+data+'"/>';
+                    html+='<i class="close_icon"></i></div>';
+                    var divHtml=div.html();
+                    if(divHtml!=''){
+                        html=divHtml+html;
+                        div.html(html);
+                    }else{
+                        div.html(html);
+                    }
+                    html1='<input name="lun_photos[]" class="lun_photos" type="hidden" value="'+data+'">';
+                    div.after(html1);
+                }
+            });
+
+
+            $('#addPhotos').bind('mouseover',function(event){
+                event.stopPropagation();
+                $('.img_photo_box').bind('mouseover',function(event){
+                    event.stopPropagation();
+                    $(this).find('img').css({'filter':'alpha(Opacity=50)','opacity': '0.5'});
+                    var w= $(this).find('img').width();
+                    $(this).find('.close_icon').css({'left':w-25,'top':'0px'});
+                    $(this).find('.close_icon').show();
+                    $(this).find('.close_icon').mouseover(function(){
+                        $(this).find('.close_icon').show();
+                        $(this).find('img').css({'filter':'alpha(Opacity=50)','opacity': '0.5'});
+                    });
+                    $(this).mouseout(function(){
+                        $(this).find('img').css({'filter':'alpha(Opacity=100)','opacity': '1'});
+                        $(this).find('.close_icon').hide();
+                    });
+                });
+            });
+
+            /*$('.close_icon').click(function(){
+                var div1 =$(this).parent('.img_photo_box');
+                var path=div1.find('.img_phpoto').attr('alt');
+                alert(path);
+                $.ajax({
+                    type:'post',
+                    url:'__CONTROLLER__/delLocatePhotos',
+                    data:{
+                        path:path
+                    },
+                    success:function(data){
+                        if(data==1){
+                            div1.remove();
+                            delInput(path);
+                        }
+                    }
+
+                });
+
+            });*/
+            $('#addPhotos').bind('mouseover',function(event){
+                event.stopPropagation();
+                $(this).find('.close_icon').click(function(event){
+                    event.stopPropagation();
+                    var _this=$(this);
+                    event.stopPropagation();
+                    var path= _this.parent('.img_photo_box').find('img').attr('alt');
+                    event.stopPropagation();
+                    $.ajax({
+                        type:'post',
+                        url:'__CONTROLLER__/delLocatePhotos',
+                        data:{
+                            path:path
+                        },
+                        success:function(data){
+                            if(data==1){
+                                _this.parent('.img_photo_box').remove();
+                                delInput(path);
+                            }
+                        }
+
+                    });
+                });
+
+            });
+
+
+        function delInput(value){
+          var values= $('.lun_photos');
+            for(var i=0;i<values.length;i++){
+               /* alert(values[i].value);*/
+                if(values[i].value==value){
+                    values[i].remove();
+                }
+            }
+        }
+            //添加轮播图片的对应产品 链接
+            function addGoodsLinks(o){
+                var div=$(o).parent();
+                $('#goods_links_box').append(div.clone());
+            }
+            //删除轮播图片的对应的产品链接
+            function delGoodsLinks(o){
+                var div = $(o).parent();
+                div.remove();
+            }
+
+
+    </script>
+
+
+
+</body></html>

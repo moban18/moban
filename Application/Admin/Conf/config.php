@@ -10,6 +10,6 @@ return array(
         'UPLOADIFY'=>__ROOT__.'/Application/Extends/uploadify',
     ),
 
-    'ANTHOR' =>'http://www.moban18.com/',
+    'ANTHOR' =>'moban18.com',
 
 );

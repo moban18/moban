@@ -4,8 +4,8 @@ use Think\Controller;
 class CommonController extends Controller {
 
     public function getCates(){
-        $cate=D('cate');
-        $cates=$cate->select();
+        $cate=M('cate');
+        $cates=$cate->where(array('parent_id'=>0))->select();
         $this->assign('cates',$cates);
     }
     //检查是否为登陆
@@ -55,7 +55,7 @@ class CommonController extends Controller {
     }
     //前台会员中心左则，获取方法结构以达到，自动选择
     public function getAc(){
-        return CONTROLLER_NAME.'/'.ACTION_NAME;
+        return CONTROLLER_NAME;
     }
 
 
@@ -63,7 +63,7 @@ class CommonController extends Controller {
     public function getUser()
     {
         $user=D('user');
-        $users=$user->where(array('a.id'=>$_SESSION['userid']))->alias('a')->field('a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,b.vip_name')->join('LEFT JOIN moban_vip b ON a.user_viptype=b.id')->find();
+        $users=$user->where(array('a.id'=>$_SESSION['userid']))->alias('a')->field('a.id,a.user_email,a.user_openid,a.user_nick,a.user_points,a.user_jbin,a.user_photo,a.log_time,a.vipover_time,b.vip_name')->join('LEFT JOIN moban_vip b ON a.user_viptype=b.id')->find();
         $this->assign(array(
             'users'=>$users,
         ));

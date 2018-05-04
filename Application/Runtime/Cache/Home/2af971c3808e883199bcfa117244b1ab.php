@@ -117,12 +117,19 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+ if($ac=='Index' || empty($ac)){ echo 'on'; } ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){ echo 'on'; }?>
+                        ">
                     <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </li>
+                <?php endforeach;?>
 
 
 
@@ -141,789 +148,201 @@
     <div class="atr_contain clearfix">
         <div class="contain_box ">
             <div class="contain_top clearfix">
-                <h1>建站小识</h1>
+                <h1><?php echo ($showCate['cate_name']); ?></h1>
                 <div class="contain_nav">
-                    <a href="###">模板易吧</a>>
-                    <a href="###">建站小识</a>
+                    <a href="http://www.moban18.com/">模板易吧</a>>
+                    <a href="/moban/index.php/Home/<?php echo ($showCate['cate_url']); ?>"><?php echo ($showCate['cate_name']); ?></a>
                 </div>
 
                 <div class="research">
-                    <div class="research_box">
-                        <img class="research_img" src="/moban/Public/images/search.gif" alt=""/>
-                        <input name="research" type="text" class="research_input" placeholder="请输入搜索内容"/>
-                        <input type="submit" name="res_sub" class="res_sub" value="查询" />
-                    </div>
+                    <form action="/moban/index.php/Home/Study/articleSearch" method="post">
+                        <div class="research_box">
+                            <img class="research_img" src="/moban/Public/images/search.gif" alt=""/>
+                            <input name="article_research" type="text" class="research_input" placeholder="请输入搜索内容"/>
+                            <input type="submit" class="res_sub" value="查询" />
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="mail2">
-                <!--文章体块-->
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
+            <div class="contain_bottom clearfix">
+                <div class="mail2">
+                    <!--文章体块-->
+                    <?php foreach($articles as $v):?>
+                    <div class="main1">
+                        <div class="contain_left">
+                            <div class="container_box">
+                                <div class="contain_left_top">
+                                    <div class="contain_left_top_box clearfix">
+                                        <a href="/moban/index.php/Home/Study/content/id/<?php echo ($v['id']); ?>" target="_blank"><?php echo mb_substr($v['article_title'],0,30,'utf-8')?></a>
+                                        <img src="/moban/Public/images/tx.jpg" alt="作者头像"/>
+                                    </div>
+                                </div>
+                                <div class="contain_left_center clearfix">
+                                    <div class="center_box_top">
+                                        <div class="center_box_top_left">
+                                            <a href="/moban/index.php/Home/Study/cate/<?php echo ($V['']); ?>" alt=""><?php echo ($v['cate_name']); ?></a>>
+                                            <a href="http://www.moban18.com/" alt=""><?php echo ($v['article_anthor']); ?></a>•
+                                            <span>
+                                                <?php echo date('Y-m-d H:i',$v['article_time'])?>
+                                            </span>
+                                            <span>•20文章评论</span>
+                                        </div>
+                                        <div class="center_box_top_right">
+                                            <span>
+                                                <?php if($v['article_comment']){ echo $v['article_comment']; }else{ echo 10; }?>
+                                                次点击</span>
+                                        </div>
+                                    </div>
+                                    <div class="center_box_center clearfix">
+                                        <p> <?php echo ($v['article_dec']); ?>...</p>
+
+                                    </div>
+                                    <div class="center_box_bottom">
+                                        <div class="center_box_bottom_box">
+                                            <img src="/moban/Public/images/tx.jpg" alt=""/>
+                                            <span>PHP您不是一个人！模板易吧(moban18.com)</span>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
 
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!--文章体块结束-->
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!--文章体块-->
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!--文章体块结束-->
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main1">
-                    <div class="contain_left">
-                        <div class="container_box">
-                            <div class="contain_left_top">
-                                <div class="contain_left_top_box clearfix">
-                                    <a href="###">2018年课程计划表</a>
-                                    <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                </div>
-                            </div>
-                            <div class="contain_left_center clearfix">
-                                <div class="center_box_top">
-                                    <div class="center_box_top_left">
-                                        <a href="###" alt="">原创课程及资料</a>>
-                                        <a href="###" alt="">童攀</a>•
-                                        <span>2018-01-23 9:37</span>
-                                        <span>•20文章评论</span>
-                                    </div>
-                                    <div class="center_box_top_right">
-                                        <span>1054 次点击</span>
-                                    </div>
-                                </div>
-                                <div class="center_box_center clearfix">
-                                    <p> tp5.1实战开发微信商城 预计发布时间3月10号，内容多多 Laravel第一季 博客（含重要基础知识） Laravel第二季 社区...</p>
-
-                                </div>
-                                <div class="center_box_bottom">
-                                    <div class="center_box_bottom_box">
-                                        <img src="/moban/Public/images/tx.jpg" alt=""/>
-                                        <span>已通知管理员处理</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="contain_page">
-                    <div class="contain_page_box clearfix">
-                        <div class="page_left">
-                            <a href="###">1</a>
-                            <a href="###">2</a>
-                            <a href="###">3</a>
-                            <a href="###">4</a>
-                            <a href="###">5</a>
-                            <a href="###">6</a>
-                            <a href="###">7</a>
-                            <a href="###">8</a>
-                            <a href="###">9</a>
-                            <a href="###">10</a>
-                        </div>
-                        <div class="page_right">
-                            <span class="page-small">
-                                <a class="prev-btn page-btn" href="javascript:void(0);">
-                                    <span class="arrow-left arrow arrow-left-none"></span>
-                                </a>
-                                <span class="orange">1</span>/5
-                                <a class="pnext-btn page-btn" href="###">
-                                    <span class="arrow-right arrow "></span>
-                                </a>
-                            </span>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!--黄金分割线-->
-            <!--右边sidebar-->
-            <div class="sidebar">
-                <div class="contain_right ">
-                <div class="contain_right_box">
-                    <div class="sidebar_contain">
-                        <div class="sidebar_contain_top clearfix">
-                            <h1><a herf="###">PHP最新技术</a></h1>
-                            <a href="###">更多>></a>
-                        </div>
-                        <div class="sidebar_contain_center clearfix">
-                            <img src="/moban/Public/images/w1.jpg" alt=""/>
-                            <div class="sidebar_contain_center_box">
-                                <a href="###">使用织梦计划任务功能让网站</a>
-                                <p>使用过dedecms织梦系统的人都知道有一个计划任务的功能，这个功能很多人不.....</p>
-                            </div>
-                        </div>
-                        <div class="sidebar_contain_bottom">
-                            <div class="sidebar_contain_bottom_box">
-                                <ul>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-                                    <li>
-                                        <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                        <span>02-02</span>
-                                    </li>
-
-                                </ul>
-                            </div>
                         </div>
                     </div>
+                    <?php endforeach;?>
+                    <!--文章体块结束-->
+                    <?php if($pages):?>
+                    <div class="contain_page">
+                        <div class="contain_page_box clearfix">
 
+                            <div class="page_left">
+                                <!--上一页开始-->
+                                    <?php if(I('p')>1): $pre=I('p')-1; ?>
+                                    <div class="article_pre">
+                                        <a href="/moban/index.php/Home/Study/index/p/<?php echo ($pre); ?>" title="上一页">上一页</a>
+                                    </div>
+                                    <?php endif;?>
+                                <!--上一页结束-->
+                                <!--数字页码开始-->
+                                <?php for($i=0;$i<$pages;$i++): if($i<=9): ?>
+                                    <a href="/moban/index.php/Home/Study/index/p/<?php echo ($i+1); ?>" class="
+                                    <?php if(I('p')){ if(I('p')==$i+1){ echo 'page_on'; } }else{ if($i+1==1){ echo 'page_on'; } }?>
+                                    "><?php echo ($i+1); ?></a>
 
+                                <?php endif; endfor;?>
+                                <!--数字页码结束-->
+                                <!--下一页开始-->
 
+                                    <div class="article_nex">
+                                        <a href="
+                                        <?php if(!I('p')): $nex=2; ?>
+                                        /moban/index.php/Home/Study/index/p/<?php echo ($nex); ?>
+                                        <?php elseif(I('p')<$pages): $nex=I('p')+1; ?>
+                                        /moban/index.php/Home/Study/index/p/<?php echo ($nex); ?>
+                                        <?php else:?>
+                                        javascript:void(0)
+                                        <?php endif;?>
+" title="下一页">下一页</a>
+                                    </div>
 
+                                <!--下一页结束-->
 
-                </div>
-
-
-            </div>
-                <div class="contain_right ">
-                    <div class="contain_right_box">
-                        <div class="sidebar_contain">
-                            <div class="sidebar_contain_top clearfix">
-                                <h1><a herf="###">PHP最新技术</a></h1>
-                                <a href="###">更多>></a>
                             </div>
-                            <div class="sidebar_contain_center clearfix">
-                                <img src="/moban/Public/images/w1.jpg" alt=""/>
-                                <div class="sidebar_contain_center_box">
-                                    <a href="###">使用织梦计划任务功能让网站</a>
-                                    <p>使用过dedecms织梦系统的人都知道有一个计划任务的功能，这个功能很多人不.....</p>
-                                </div>
-                            </div>
-                            <div class="sidebar_contain_bottom">
-                                <div class="sidebar_contain_bottom_box">
-                                    <ul>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
+                            <div class="page_right">
+                                共 <span class="orange" style="font-weight:bold"><?php echo ($count); ?> </span>条
+                                <span class="page-small">
+                                    <a class="prev-btn page-btn" href="
+                                    <?php if(I('p')>1): $pre=I('p')-1; ?>
+                                    /moban/index.php/Home/Study/index/p/<?php echo ($pre); ?>
+                                    <?php else:?>
+                                        javascript:void(0)
+                                    <?php endif;?>
+                                    ">
+                                        <span class="arrow-left arrow arrow-left-none
+                                        <?php if(I('p')>1){echo 'arrow_left_color';}?>
+                                        "></span>
+                                    </a>
+                                    <span class="orange">
+                                        <?php if(I('p')){ echo I('p'); }else{ echo 1; }?>
+                                    </span>/<?php echo ($pages); ?>
+                                    <a class="pnext-btn page-btn" href="
+                                    <?php if(!I('p')): $nex=2; ?>
+                                     /moban/index.php/Home/Study/p/<?php echo ($nex); ?>
+                                    <?php elseif(I('p')<$pages): $nex=I('p')+1; ?>
+                                     /moban/index.php/Home/Study/p/<?php echo ($nex); ?>
+                                    <?php else:?>
+                                        javascript:void(0)
+                                    <?php endif;?>
 
-                                    </ul>
-                                </div>
+                                    ">
+                                        <span class="arrow-right arrow
+                                        <?php if(I('p')>=$pages){echo 'arrow_right_color';}?>
+                                        "></span>
+                                    </a>
+                                </span>
+
+
                             </div>
+
                         </div>
-
-
-
-
-
                     </div>
-
-
+                    <?php endif;?>
                 </div>
-                <div class="contain_right ">
-                    <div class="contain_right_box">
-                        <div class="sidebar_contain">
-                            <div class="sidebar_contain_top clearfix">
-                                <h1><a herf="###">PHP最新技术</a></h1>
-                                <a href="###">更多>></a>
-                            </div>
-                            <div class="sidebar_contain_center clearfix">
-                                <img src="/moban/Public/images/w1.jpg" alt=""/>
-                                <div class="sidebar_contain_center_box">
-                                    <a href="###">使用织梦计划任务功能让网站</a>
-                                    <p>使用过dedecms织梦系统的人都知道有一个计划任务的功能，这个功能很多人不.....</p>
-                                </div>
-                            </div>
-                            <div class="sidebar_contain_bottom">
-                                <div class="sidebar_contain_bottom_box">
-                                    <ul>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-
-
-                </div>
-                <div class="contain_right ">
-                    <div class="contain_right_box">
-                        <div class="sidebar_contain">
-                            <div class="sidebar_contain_top clearfix">
-                                <h1><a herf="###">PHP最新技术</a></h1>
-                                <a href="###">更多>></a>
-                            </div>
-                            <div class="sidebar_contain_center clearfix">
-                                <img src="/moban/Public/images/w1.jpg" alt=""/>
-                                <div class="sidebar_contain_center_box">
-                                    <a href="###">使用织梦计划任务功能让网站</a>
-                                    <p>使用过dedecms织梦系统的人都知道有一个计划任务的功能，这个功能很多人不.....</p>
-                                </div>
-                            </div>
-                            <div class="sidebar_contain_bottom">
-                                <div class="sidebar_contain_bottom_box">
-                                    <ul>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-                                        <li>
-                                            <a href="###">dedecms伪静态设置以及目录链接301跳转</a>
-                                            <span>02-02</span>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-
-
-                </div>
-                <div class="contain_right ">
-                    <div class="contain_right_box">
-                        <div class="sidebar_contain">
-                            <div class="sidebar_contain_top clearfix">
-                                <h1><a herf="###">标签汇集</a></h1>
-                            </div>
-
-                            <div class="tabs">
-                                <span>网站模板</span>
-                                <div class="tabs_box">
-                                    <a href="###">企业模板</a>
-                                    <a href="###">企业模板</a>
-                                    <a href="###">企业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">响应式模板</a>
-                                    <a href="###">响应式模板</a>
-                                    <a href="###">响应式模板</a>
-                                </div>
-                            </div>
-                            <div class="tabs">
-                                <span>网站特效</span>
-                                <div class="tabs_box">
-                                    <a href="###">企业模板</a>
-                                    <a href="###">企业模板</a>
-                                    <a href="###">企业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">响应式模板</a>
-                                    <a href="###">响应式模板</a>
-                                    <a href="###">响应式模板</a>
-                                </div>
-                            </div>
-                            <div class="tabs">
-                                <span>网站源码</span>
-                                <div class="tabs_box">
-                                    <a href="###">企业模板</a>
-                                    <a href="###">企业模板</a>
-                                    <a href="###">企业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">行业模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">商城模板</a>
-                                    <a href="###">响应式模板</a>
-                                    <a href="###">响应式模板</a>
-                                    <a href="###">响应式模板</a>
+                <!--黄金分割线-->
+                <!--右边sidebar-->
+                <div class="sidebar_box">
+                    <?php foreach($newArticles as $k=> $v):?>
+                    <div class="sidebar clearfix">
+                        <?php if($k<=4):?>
+                        <div class="contain_right clearfix ">
+                            <div class="contain_right_box">
+                                <div class="sidebar_contain clearfix">
+                                    <div class="sidebar_contain_top clearfix">
+                                        <h1><a herf="/moban/index.php/Home/Study/index/cate/<?php echo ($v['id']); ?>"><?php echo ($v['cate_name']); ?></a></h1>
+                                        <a href="/moban/index.php/Home/Study/index/cate/<?php echo ($v['id']); ?>">更多>></a>
+                                    </div>
+                                    <?php if($v['articles']): foreach($v['articles'] as $k1=> $v1): if($k1<1): ?>
+                                    <div class="sidebar_contain_center clearfix">
+                                        <img src="/moban/<?php echo ($v1['article_136_86']); ?>" alt=""/>
+                                        <div class="sidebar_contain_center_box">
+                                            <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" target="_blank">
+                                                <?php echo $str=mb_substr($v1['article_title'],0,15,'utf-8');?>
+                                            </a>
+                                            <p>
+                                                <?php echo $str=mb_substr($v1['article_dec'],0,50,'utf-8');?>.....
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <?php else:?>
+                                    <div class="sidebar_contain_bottom">
+                                        <div class="sidebar_contain_bottom_box">
+                                            <ul>
+                                                <li>
+                                                    <a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>/content/id/<?php echo ($v['id']); ?>" target="_blank">
+                                                        <?php echo $str=mb_substr($v1['article_title'],0,28,'utf-8');?>
+                                                    </a>
+                                                    <span><?php echo date('m-d',$v1['article_time']);?></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <?php endif; endforeach;endif;?>
                                 </div>
                             </div>
 
 
                         </div>
-
-
-
-
-
+                        <?php endif;?>
                     </div>
-
-
+                    <?php endforeach;?>
                 </div>
-            </div>
+
 
         </div>
 
 
     </div>
+</div>
 
     <script>
         $('.research_input').focus(function(){
@@ -932,6 +351,7 @@
                 $(this).attr('placeholder','请输入搜索内容');
             });
         });
+
     </script>
 
 </div>

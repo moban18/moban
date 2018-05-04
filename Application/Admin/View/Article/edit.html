@@ -71,7 +71,7 @@
                         </div>
                         <div class="form-group">
                             <label for="username" class="col-sm-2 control-label no-padding-right">选择栏目：</label>
-                            <div class="col-sm-1">
+                            <div class="col-sm-2">
                                 <select name="cate_id">
                                     <option value=0>选择栏目</option>
                                     <volist name="cates" id="v">
@@ -91,6 +91,28 @@
                             <label for="username" class="col-sm-2 control-label no-padding-right">文章作者：</label>
                             <div class="col-sm-2">
                                 <input class="form-control"  name="article_anthor" required="" type="text" value="{$articles['article_anthor']}">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top:10px;">
+                            <span for="username" class="col-sm-2 control-label " style="text-align:right;padding-top:5px">文章首页图片：</span>
+                            <div class="col-sm-4">
+                                <label for="goods_photo"><img src="ADMIN_IMG/upload.png"></label>
+                                <input type="file" id="goods_photo" multiple style="display:none;" >
+                                <if condition="$articles['article_136_86'] neq '' ">
+                                    <i id="app">
+                                        <img alt="'+data+'" id="goods_photo_link" src="__ROOT__/{$articles['article_136_86']}"/>
+                                        <input id="hid_photo" name="article_136_86" value="{$articles['article_136_86']}" type="hidden">
+                                        <input id="hid_photo_small" name="article_80_60" value="{$articles['article_80_60']}" type="hidden">
+
+                                    </i>
+                                </if>
+                            </div>
+                            <p class="help-block col-sm-4 red">*直接上传新的图片就会自动修改</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">文章简介：</label>
+                            <div class="col-sm-1">
+                                <textarea name="article_dec" style="width:520px;min-height:100px;">$articles['article_dec']}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -133,7 +155,67 @@
             initialFrameHeight:320
         });
 
+        //上传图片与CONTROLLER交换数据
+        $('#goods_photo').change(function(){
+            var img=$("#goods_photo")[0].files[0];
+            var size = img.size;
+            var value1 =$("#goods_photo")[0].value;
+            var types='gif,jpeg,jpg,png,bmp';
+            var prech=/.(gif|jpg|jpeg|png|GIF|JPG|bmp)$/;
+            var big=2*1024;
+            var html='';
+            var src=$('#hid_photo').val();
+            var smallSrc=$('#hid_photo_small').val();
+            var i=$('#app');
+            if(!prech.test(value1)){
+                alert('错误！请上传指定文件类型');
+            }
+            if(!size>big){
+                alert('错误！上传文本大于2M');
+            }
+            var data=new FormData();
+            data.append('upload_file', img);
+            $.ajax({
+                type:'post',
+                url:'__CONTROLLER__/uploadImg',
+                data:data,
+                contentType: false,
+                processData: false,
+                success:function(data){
+                    if(src){
+
+                        delPhoto(src);
+                        delPhoto(smallSrc);
+                        i.html('');
+                    }
+                    var photos=data.split(',');
+                    html='<img alt="'+photos[0]+'" id="goods_photo_link" src="__ROOT__'+photos[0]+'"/>';
+                    html+='<input id="hid_photo" type="hidden" name="article_136_86" value="'+photos[0]+'" />';
+                    html+='<input id="hid_photo_small" type="hidden" name="article_80_60" value="'+photos[1]+'" />';
+                    i.html(html);
+                    $('#goods_photo').val('');
+
+                }
+            });
+        });
+        //上传图片，把不要的图片从后台删除
+        function delPhoto(src){
+            $.ajax({
+                type:'post',
+                url:'__CONTROLLER__/delPhoto',
+                data:{
+                    src:src,
+                },
+                success:function(data){
+                    if(data==1){
+                        $('#goods_photo').val('');
+                    }
+                }
+            });
+        }
+
     </script>
+
 
 
 </body></html>

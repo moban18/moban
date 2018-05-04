@@ -117,12 +117,19 @@
         <div class="wrap">
             <a class="qiandao" href="" target="_self" title="随机增送5-12个金币，可用来购买商业模板">签到领金币！</a>
             <ul id="nav" class="nav clearfix">
-                <li class="nLi on">
-                    <h3><a href="http://127.0.0.1/">首页</a></h3>
+                <li class="nLi
+                    <?php
+ if($ac=='Index' || empty($ac)){ echo 'on'; } ?>
+                    ">
+                    <h3><a href="http://127.0.0.1/moban/index.php">首页</a></h3>
                 </li>
-                <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="nLi">
+                <?php foreach($cates as $v):?>
+                <li class="nLi
+                <?php if($ac==$v['cate_url']){ echo 'on'; }?>
+                        ">
                     <h3><a href="/moban/index.php/Home/<?php echo ($v['cate_url']); ?>"><?php echo ($v['cate_name']); ?></a></h3>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </li>
+                <?php endforeach;?>
 
 
 
@@ -172,12 +179,14 @@
                                 </span>不限</span>
                             </a>
                         </dd>
+
                         <!--这里取得URL的filter变量-->
                         <?php if(I('filter')){ $e=explode('-',I('filter')); foreach ($v['child'] as $i =>$h){ foreach ($h['value'] as $p=>$o){ if($e[0]==$o['vid']){ $cur=true; $cur_id= $o['id']; } } } }?>
                         <!--这里取得URL的filter变量结束-->
                         <?php foreach($v['child'] as $v1):?>
                         <?php
- $a[$ok]=$v1['id']; $filter=implode('-',$a); ?>
+ $a[$ok]=$v1['id']; $a[$num+1]=0; $filter=implode('-',$a); ?>
+
                         <dd class="<?php
  if(I('filter') && $e[$ok]==$v1['id']){ echo 'on1'; } if($cur && $cur_id==$v1['id']){ echo 'on1'; } ?>">
                             <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
@@ -201,19 +210,23 @@
                         </dt>
                     </dl>
                     <dl class="tg_classify_wrap_right">
-                        <?php $filter=implode('-',$a);?>
+
+                        <?php if($filter){ $feilei=$n[$ok]; $n[$num+1]=0; }?>
                         <dd class="<?php
- if(!I('filter') or $a[$ok]==0){ echo 'on1'; } if($a[$k]==$j['id']){ echo 'on1'; } ?>">
-                            <a href="<?php echo U('Vip/index',['filter'=>$filter]);?>">
+ if(!I('filter') or $feilei==0){ echo 'on1'; } if(in_array($feilei,$parent_ids)){ echo 'on1'; } ?>">
+
+                            <a href="<?php
+ if($filter){ if(in_array($feilei,$parent_ids)){ $n[$ok]=$feilei; }else{ foreach($attrterss as $x){ if($feilei==$x['attrter_id']){ $n[$ok]=$x['attr_id']; } } } $filter=implode('-',$n); echo U('Vip/index',['filter'=>$filter]); } ?>">
+
                                 </span>不限</span>
                             </a>
                         </dd>
-
                         <?php foreach($j['value'] as $m):?>
                         <?php
- $a=explode('-',I('filter')); $a[$ok]=$m['vid']; $filter=implode('-',$a); ?>
+ $a=explode('-',I('filter')); $a[$ok]=$m['vid']; $a[$num+1]=0; $current=$m['id']; $filter=implode('-',$a); ?>
                         <dd class="<?php if(I('filter') && $e[0]==$m['vid']){echo 'on1';}?>">
                             <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
+
                                 <span><?php echo ($m["v1"]); ?></span>
                             </a>
                         </dd>
@@ -236,7 +249,7 @@
                     <dl class="tg_classify_wrap_right">
                         <?php $filter=implode('-',$a);?>
                         <dd class="<?php if(!I('filter') or $a[$k]==0){echo 'on1';}?>">
-                            <?php $c=explode('-',I('filter')); $c[$k]=0; $filter=implode('-',$c); ?>
+                            <?php $c=explode('-',I('filter')); $c[$ok]=0; $c[$num+1]=0; $filter=implode('-',$c); ?>
                             <a href="<?php
  if($filter=='0-0-0-0-0-0'){ echo U('Vip/index'); }elseif(!I('filter')){ echo U('Vip/index'); }else{ echo U('Vip/index',['filter'=>$filter]); } ?>">
                                 </span>不限</span>
@@ -247,7 +260,8 @@
                         <!--这里取得URL的filter变量结束-->
 
                         <?php foreach($v['value'] as $v1):?>
-                        <?php $a[$ok]=$v1['id']; $filter=implode('-',$a);?>
+                        <?php
+ $a[$ok]=$v1['id']; $a[$num+1]=0; $filter=implode('-',$a); ?>
                         <dd class="<?php if(I('filter') && $d[$ok]==$v1['id']){echo 'on1';}?>">
                             <a href="<?php echo U('Vip/index',['filter'=>$filter])?>">
                                 <span><?php echo ($v1["v1"]); ?></span>
@@ -314,7 +328,11 @@
  if($L[$ok]>=1){ echo 'style="border-right: 5px solid #666666;"'; } ?>
                         ></span>
                     </a>
-                    <span class="orange"><?php if($a[$ok]==0){echo 1;}else{echo $a[$ok];}?></span>/<?php echo ($pages); ?>
+                    <!--处理页数显示开始-->
+                    <?php
+ if($filter){ $p=explode('-',$filter); } ?>
+                    <!--处理页数显示结束-->
+                    <span class="orange"><?php if($p[$ok]==0){echo 1;}else{echo $p[$ok];}?></span>/<?php echo ($pages); ?>
                         <?php if(I('filter')){ $L=explode('-',I('filter')); $L[$ok]= $L[$ok]+1; if($L[$ok]>=$pages){ $L[$ok]=$pages; } $nex=implode('-',$L); }else{ $L=array_fill(0,$num+1+1,0); $L[$ok]= 1; $L[$ok]=$L[$ok]+1; $nex=implode('-',$L); } ?>
                     <a class="pnext-btn page-btn" href="<?php echo U('Vip/index',['filter'=>$nex])?>">
                         <span class="arrow-right arrow "
@@ -328,21 +346,33 @@
                 <div class="list_box clearfix">
                     <?php foreach($goodres as $v):?>
                     <div class="goods_box">
-                        <a href="###"><img src="/moban/<?php echo ($v['goods_photo']); ?>" alt=""/></a>
+                        <a href="/moban/index.php/Home/Vip/content/id/<?php echo ($v['id']); ?>"><img src="/moban/<?php echo ($v['goods_photo']); ?>" alt=""/></a>
                         <p class="goods_title">
                             <a href="###"><?php echo ($v['goods_name']); ?></a>
                         </p>
                         <div class="statics">
-                            <a class="download citecommon">下载 <em>0次</em></a>
-                            <a class="comment citecommon">评论 <em>0条</em></a>
-                            <a class="scores citecommon">浏览 <em>1次</em></a>
-                            <a class="modalnum citecommon last">模板 <em>7个</em></a>
+                            <a class="download citecommon">下载 <em>
+                                <?php if($v['download_num']){ echo $v['download_num']; }else{ echo 0; }?>
+                                次
+                            </em></a>
+                            <a class="comment citecommon">评论 <em>
+                                <?php if($v['goods_recommend']){ echo $v['goods_recommend']; }else{ echo 0; }?>
+                                条
+                            </em></a>
+                            <a class="scores citecommon">浏览 <em>
+                                <?php if($v['goods_comment']){ echo $v['goods_comment']; }else{ echo 0; }?>
+                                次
+                            </em></a>
+                            <a class="modalnum citecommon last">模板 <em>
+                                <?php if($v['moban_num']){ echo $v['moban_num']; }else{ echo 0; }?>
+                                个
+                            </em></a>
                         </div>
                     </div>
                     <?php endforeach;?>
                 </div>
             </div>
-
+            <?php if(!empty($goodres)):?>
             <div class="page_list clearfix">
                 共 <span class="tatle">4260</span> 个网站模板
                 <?php if(I('filter')){ $L=explode('-',I('filter')); $L[$ok]= $L[$ok]-1; $pre=implode('-',$L); }?>
@@ -366,6 +396,12 @@
                 <a href="<?php echo U('Vip/index',['filter'=>$nex])?>" class="next">下一页</a>
 
             </div>
+            <?php else:?>
+            <div class="no_result">
+                <p><img src="/moban/Public/images/no_result.png" alt="暂无相关网站模板" width="96" height="120"></p>
+                <p class="words"><span class="line">暂无相关网站模板</span></p>
+            </div>
+            <?php endif;?>
 
         </div>
 
@@ -380,6 +416,8 @@
 
 
     </script>
+
+
 
 
 </div>
